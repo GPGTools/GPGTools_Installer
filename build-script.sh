@@ -21,7 +21,7 @@ export pathDist="$pathDownload/payload/";
 export fileLog="$pathDownload/build.log";
 ################################################################################
 
-# the sources ##################################################################
+# the releases #################################################################
 gka_url="https://github.com/downloads/GPGTools/GPGKeychainAccess/";
 gka_version="GPG%20Keychain%20Access-0.8.10";
 gka_fileExt=".dmg";
@@ -98,7 +98,8 @@ fi
 
 echo "Configuration:";
 echo " * Target: $pathDist"; mkdir -p "$pathDist";
-echo " * fileLog: $fileLog"; :> "$fileLog";
+echo " * Log: $fileLog"; :> "$fileLog";
+echo "Downloading releases:";
 ################################################################################
 
 ################################################################################
@@ -124,13 +125,13 @@ function download {
     exec 3>&1 4>&2 >> $fileLog 2>&1
     echo " ############### Download: $5$2$3"
     curl -s -C - -L -O "$5$2$3"
-    if [ "$4" != "" ] && [ "" != "`which gpg2`" ] ; then
-        curl -s -O "$5$2$4"
-        #gpg2 --verify "$2$4"
-    fi
+    #if [ "$4" != "" ] && [ "" != "`which gpg2`" ] ; then
+    #    curl -s -O "$5$2$4"
+    #     gpg2 --verify "$2$4"
+    #fi
     if [ "$?" != "0" ]; then
         exec 1>&3 2>&4
-        echo "Could not get the sources for '$5$2$3'!";
+        echo "Could not get the binaries for '$5$2$3'!";
         exit 1;
     fi
     exec 1>&3 2>&4
@@ -205,16 +206,16 @@ echo " * Downloading the binaries in the background...";
 download "$gpgmail_build" "$gpgmail_version" "$gpgmail_fileExt" "$gpgmail_sigExt" "$gpgmail_url"
 download "$gka_build" "$gka_version" "$gka_fileExt" "$gka_sigExt" "$gka_url" &
 gka_pid=${!}
-download "$macgpg2_build" "$macgpg2_version" "$macgpg2_fileExt" "$macgpg2_sigExt" "$macgpg2_url" &
-macgpg2_pid=${!}
-download "$macgpg1_build" "$macgpg1_version" "$macgpg1_fileExt" "$macgpg1_sigExt" "$macgpg1_url" &
-macgpg1_pid=${!}
-download "$enigmail_build" "$enigmail_version" "$enigmail_fileExt" "$enigmail_sigExt" "$enigmail_url" &
-enigmail_pid=${!}
 download "$gpgservices_build" "$gpgservices_version" "$gpgservices_fileExt" "$gpgservices_sigExt" "$gpgservices_url" &
 gpgservices_pid=${!}
 download "$gpgpreferences_build" "$gpgpreferences_version" "$gpgpreferences_fileExt" "$gpgpreferences_sigExt" "$gpgpreferences_url" &
 gpgpreferences_pid=${!}
+download "$enigmail_build" "$enigmail_version" "$enigmail_fileExt" "$enigmail_sigExt" "$enigmail_url" &
+enigmail_pid=${!}
+download "$macgpg1_build" "$macgpg1_version" "$macgpg1_fileExt" "$macgpg1_sigExt" "$macgpg1_url" &
+macgpg1_pid=${!}
+download "$macgpg2_build" "$macgpg2_version" "$macgpg2_fileExt" "$macgpg2_sigExt" "$macgpg2_url" &
+macgpg2_pid=${!}
 ################################################################################
 
 ################################################################################
@@ -231,51 +232,26 @@ unpack "$gpgmail_build"\
 
 ################################################################################
 echo " * Working on 'GPG Keychain Access'...";
-waitfor "$gka_target" "$gka_pid";
+waitfor "GPG Keychain Access" "$gka_pid";
 copy "$gka_build"\
-       "$gka_version"\
-       "$gka_fileExt"\
-       "$gka_volume"\
-       "$gka_installer"\
-       "$gka_target"\
-       "$pathDist"
+      "$gka_version"\
+      "$gka_fileExt"\
+      "$gka_volume"\
+      "$gka_installer"\
+      "$gka_target"\
+      "$pathDist"
 ################################################################################
 
 ################################################################################
-echo " * Working on 'MacGPG2'...";
-waitfor "$macgpg2_target" "$macgpg2_pid";
-unpack "$macgpg2_build"\
-       "$macgpg2_version"\
-       "$macgpg2_fileExt"\
-       "$macgpg2_volume"\
-       "$macgpg2_installer"\
-       "$macgpg2_target"\
-       "$pathDist"\
-       "$macgpg2_package"\
-       "$macgpg2_package2"
-################################################################################
-
-################################################################################
-echo " * Working on 'MacGPG1'...";
-waitfor "$macgpg1_target" "$macgpg1_pid";
-unpack "$macgpg1_build"\
-       "$macgpg1_version"\
-       "$macgpg1_fileExt"\
-       "$macgpg1_volume"\
-       "$macgpg1_installer"\
-       "$macgpg1_target"\
-       "$pathDist"\
-       "$macgpg1_package"
-################################################################################
-
-################################################################################
-echo " * Working on 'Enigmail'...";
-waitfor "Enigmail" "$enigmail_pid";
-simplecopy "$enigmail_build"\
-           "$enigmail_version"\
-           "$enigmail_fileExt"\
-           "$enigmail_target"\
-           "$pathDist"
+echo " * Working on 'GPG Preferences'...";
+waitfor "GPG Preferences" "$gpgpreferences_pid";
+copy "$gpgpreferences_build"\
+     "$gpgpreferences_version"\
+     "$gpgpreferences_fileExt"\
+     "$gpgpreferences_volume"\
+     "$gpgpreferences_installer"\
+     "$gpgpreferences_target"\
+     "$pathDist"
 ################################################################################
 
 ################################################################################
@@ -292,15 +268,40 @@ unpack "$gpgservices_build"\
 ################################################################################
 
 ################################################################################
-echo " * Working on 'GPG Preferences'...";
-waitfor "GPG Preferences" "$gpgpreferences_pid";
-copy "$gpgpreferences_build"\
-       "$gpgpreferences_version"\
-       "$gpgpreferences_fileExt"\
-       "$gpgpreferences_volume"\
-       "$gpgpreferences_installer"\
-       "$gpgpreferences_target"\
-       "$pathDist"
+echo " * Working on 'Enigmail'...";
+waitfor "Enigmail" "$enigmail_pid";
+simplecopy "$enigmail_build"\
+           "$enigmail_version"\
+           "$enigmail_fileExt"\
+           "$enigmail_target"\
+           "$pathDist"
+################################################################################
+
+################################################################################
+echo " * Working on 'MacGPG1'...";
+waitfor "$macgpg1_target" "$macgpg1_pid";
+unpack "$macgpg1_build"\
+       "$macgpg1_version"\
+       "$macgpg1_fileExt"\
+       "$macgpg1_volume"\
+       "$macgpg1_installer"\
+       "$macgpg1_target"\
+       "$pathDist"\
+       "$macgpg1_package"
+################################################################################
+
+################################################################################
+echo " * Working on 'MacGPG2'...";
+waitfor "MacGPG2" "$macgpg2_pid";
+unpack "$macgpg2_build"\
+       "$macgpg2_version"\
+       "$macgpg2_fileExt"\
+       "$macgpg2_volume"\
+       "$macgpg2_installer"\
+       "$macgpg2_target"\
+       "$pathDist"\
+       "$macgpg2_package"\
+       "$macgpg2_package2"
 ################################################################################
 
 exit

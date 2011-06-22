@@ -7,7 +7,8 @@ In order to use OpenPGP on OS X you can chose to install / update to:
 * GPG Keychain Access 0.8.10 (managing GPG keys)
 * GPGServices 1.6 (OS X text service menu for GPG)
 * GPGPreferences 0.6 (GPGTools preferences, gpgmail autofix only)
-* Enigmail 1.1.2 (for Mozilla Thunderbird)
+* Enigmail 1.1.2 (for Mozilla Thunderbird) [no installed automatically]
+* MacGPG 1.4.11-6 (simple MacGPG version) [no installed automatically]
 
 Have a look at http://gpgtools.org for further information.
 
