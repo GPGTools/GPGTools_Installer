@@ -459,7 +459,7 @@
 				<key>OVERWRITE_PERMISSIONS</key>
 				<false/>
 				<key>VERSION</key>
-				<string>20110622</string>
+				<string>10.8.10</string>
 			</dict>
 			<key>UUID</key>
 			<string>E5494601-62BF-4382-A372-85179E4217FD</string>
@@ -1503,7 +1503,7 @@
 			<key>PACKAGE_SETTINGS</key>
 			<dict>
 				<key>AUTHENTICATION</key>
-				<integer>1</integer>
+				<false/>
 				<key>CONCLUSION_ACTION</key>
 				<integer>0</integer>
 				<key>IDENTIFIER</key>
@@ -3574,7 +3574,7 @@
 			ZW50LVN0eWxlLVR5cGUiIGNvbnRlbnQ9InRleHQvY3NzIj4KPHRp
 			dGxlPjwvdGl0bGU+CjxtZXRhIG5hbWU9IkdlbmVyYXRvciIgY29u
 			dGVudD0iQ29jb2EgSFRNTCBXcml0ZXIiPgo8bWV0YSBuYW1lPSJD
-			b2NvYVZlcnNpb24iIGNvbnRlbnQ9IjEwMzguMzUiPgo8c3R5bGUg
+			b2NvYVZlcnNpb24iIGNvbnRlbnQ9IjEwMzguMzYiPgo8c3R5bGUg
 			dHlwZT0idGV4dC9jc3MiPgo8L3N0eWxlPgo8L2hlYWQ+Cjxib2R5
 			Pgo8L2JvZHk+CjwvaHRtbD4K
 			</data>
@@ -3914,7 +3914,7 @@ $HOME/Library/PreferencePanes/</string>
 									<key>HIDDEN</key>
 									<false/>
 									<key>STATE</key>
-									<integer>2</integer>
+									<integer>1</integer>
 								</dict>
 								<key>PACKAGE_UUID</key>
 								<string>76B8D8BE-BAFF-4C33-8FAE-B176FD99DE6A</string>
@@ -3955,7 +3955,7 @@ $HOME/Library/PreferencePanes/</string>
 										<key>NAME</key>
 										<string>Thunderbird installed</string>
 										<key>STATE</key>
-										<false/>
+										<true/>
 									</dict>
 								</array>
 								<key>TITLE</key>
@@ -4177,7 +4177,7 @@ $HOME/Library/PreferencePanes/</string>
 			<key>ADVANCED_OPTIONS</key>
 			<dict/>
 			<key>BUILD_FORMAT</key>
-			<integer>0</integer>
+			<integer>1</integer>
 			<key>BUILD_PATH</key>
 			<dict>
 				<key>PATH</key>
