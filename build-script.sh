@@ -41,6 +41,24 @@ gpgmail_installer="GPGMail.pkg";
 gpgmail_package="GPGMail.pkg"
 gpgmail_target="gpgmail";
 
+gpgmail105_url="https://github.com/downloads/GPGTools/GPGMail/";
+gpgmail105_version="GPGMail-1.2.0-10.5";
+gpgmail105_fileExt=".dmg";
+gpgmail105_sigExt=".dmg.sig"
+gpgmail105_build="$pathDownload/gpgmail105";
+gpgmail105_volume="GPGMail 1.2.0";
+gpgmail105_installer="GPGMail.mailbundle";
+gpgmail105_target="gpgmail105";
+
+gpgmail104_url="https://github.com/downloads/GPGTools/GPGMail/";
+gpgmail104_version="GPGMail-1.1.2-10.4";
+gpgmail104_fileExt=".dmg";
+gpgmail104_sigExt=".dmg.sig"
+gpgmail104_build="$pathDownload/gpgmail104";
+gpgmail104_volume="GPGMail-1.1.2-10.4";
+gpgmail104_installer="GPGMail.mailbundle";
+gpgmail104_target="gpgmail104";
+
 macgpg2_url="https://github.com/downloads/GPGTools/MacGPG2/";
 macgpg2_version="MacGPG2-2.0.17-9";
 macgpg2_fileExt=".dmg";
@@ -62,12 +80,19 @@ macgpg1_installer="MacGPG1.pkg";
 macgpg1_package="MacGPG1.pkg";
 macgpg1_target="MacGPG1";
 
-enigmail_url="http://www.mozilla-enigmail.org/download/release/0.93/";
-enigmail_version="enigmail-0.93.0-moz17-darwin";
+enigmail_url="http://addons.mozilla.org/en-US/thunderbird/downloads/file/92939/";
+enigmail_version="enigmail-1.1.2-tb-macosx";
 enigmail_fileExt=".xpi";
 enigmail_sigExt=".xpi.sig"
 enigmail_build="$pathDownload/enigmail";
 enigmail_target="enigmail";
+
+enigmail5_url="http://addons.mozilla.org/thunderbird/downloads/file/124320/";
+enigmail5_version="enigmail-1.2-sm-mac";
+enigmail5_fileExt=".xpi";
+enigmail5_sigExt=".xpi.sig"
+enigmail5_build="$pathDownload/enigmail5";
+enigmail5_target="enigmail5";
 
 gpgservices_url="https://github.com/downloads/GPGTools/GPGServices/";
 gpgservices_version="GPGServices-1.6";
@@ -141,7 +166,6 @@ function unpack {
     cd "$1";
     echo -n "   * [`date '+%H:%M:%S'`] Unpacking '$2'...";
     if [ -e '.installed' ]; then echo "skipped"; return 0; else echo ""; fi
-    :> $fileLog
     exec 3>&1 4>&2 >> $fileLog 2>&1
     hdiutil attach -quiet $2$3
     rm -rf "tmp";  mkdir "tmp"; cd "tmp";
@@ -165,11 +189,12 @@ function copy {
     cd "$1";
     echo -n "   * [`date '+%H:%M:%S'`] Unpacking '$2'...";
     if [ -e '.installed' ]; then echo "skipped"; return 0; else echo ""; fi
-    :> $fileLog
     exec 3>&1 4>&2 >> $fileLog 2>&1
     hdiutil attach -quiet $2$3
+    if [ -e "$7/$6/$5/Contents" ]; then
+      rm -rf "$7/$6";
+    fi
     mkdir -p "$7/$6";
-    rm -rf "$7/$6/$5/Contents";
     cp -Rn "/Volumes/$4/$5" "$7/$6"
     if [ "$?" != "0" ]; then
         exec 1>&3 2>&4
@@ -185,9 +210,9 @@ function simplecopy {
     cd "$1";
     echo -n "   * [`date '+%H:%M:%S'`] Unpacking '$2'...";
     if [ -e '.installed' ]; then echo "skipped"; return 0; else echo ""; fi
-    :> $fileLog
-    #exec 3>&1 4>&2 >> $fileLog 2>&1
+    exec 3>&1 4>&2 >> $fileLog 2>&1
     mkdir -p "$5/$4";
+    echo "Copy: $1/$2$3 to $5/$4";
     cp -Rn "$1/$2$3" "$5/$4"
     if [ "$?" != "0" ]; then
         exec 1>&3 2>&4
@@ -195,7 +220,7 @@ function simplecopy {
         exit 1;
     fi
     touch "$1/.installed"
-    #exec 1>&3 2>&4
+    exec 1>&3 2>&4
 }
 
 ################################################################################
@@ -204,6 +229,10 @@ function simplecopy {
 echo " * Downloading the binaries in the background...";
 #first one is the buffer
 download "$gpgmail_build" "$gpgmail_version" "$gpgmail_fileExt" "$gpgmail_sigExt" "$gpgmail_url"
+download "$gpgmail105_build" "$gpgmail105_version" "$gpgmail105_fileExt" "$gpgmail105_sigExt" "$gpgmail105_url" &
+gpgmail105_pid=${!}
+download "$gpgmail104_build" "$gpgmail104_version" "$gpgmail104_fileExt" "$gpgmail104_sigExt" "$gpgmail104_url" &
+gpgmail104_pid=${!}
 download "$gka_build" "$gka_version" "$gka_fileExt" "$gka_sigExt" "$gka_url" &
 gka_pid=${!}
 download "$gpgservices_build" "$gpgservices_version" "$gpgservices_fileExt" "$gpgservices_sigExt" "$gpgservices_url" &
@@ -212,6 +241,8 @@ download "$gpgpreferences_build" "$gpgpreferences_version" "$gpgpreferences_file
 gpgpreferences_pid=${!}
 download "$enigmail_build" "$enigmail_version" "$enigmail_fileExt" "$enigmail_sigExt" "$enigmail_url" &
 enigmail_pid=${!}
+download "$enigmail5_build" "$enigmail5_version" "$enigmail5_fileExt" "$enigmail5_sigExt" "$enigmail5_url" &
+enigmail5_pid=${!}
 download "$macgpg1_build" "$macgpg1_version" "$macgpg1_fileExt" "$macgpg1_sigExt" "$macgpg1_url" &
 macgpg1_pid=${!}
 download "$macgpg2_build" "$macgpg2_version" "$macgpg2_fileExt" "$macgpg2_sigExt" "$macgpg2_url" &
@@ -228,6 +259,30 @@ unpack "$gpgmail_build"\
        "$gpgmail_target"\
        "$pathDist"\
        "$gpgmail_package"
+################################################################################
+
+################################################################################
+echo " * Working on 'GPGMail for 10.5'...";
+waitfor "GPGMail 10.5" "$gpgmail105_pid";
+copy "$gpgmail105_build"\
+      "$gpgmail105_version"\
+      "$gpgmail105_fileExt"\
+      "$gpgmail105_volume"\
+      "$gpgmail105_installer"\
+      "$gpgmail105_target"\
+      "$pathDist"
+################################################################################
+
+################################################################################
+echo " * Working on 'GPGMail for 10.4'...";
+waitfor "GPGMail 10.4" "$gpgmail104_pid";
+copy "$gpgmail104_build"\
+      "$gpgmail104_version"\
+      "$gpgmail104_fileExt"\
+      "$gpgmail104_volume"\
+      "$gpgmail104_installer"\
+      "$gpgmail104_target"\
+      "$pathDist"
 ################################################################################
 
 ################################################################################
@@ -274,6 +329,16 @@ simplecopy "$enigmail_build"\
            "$enigmail_version"\
            "$enigmail_fileExt"\
            "$enigmail_target"\
+           "$pathDist"
+################################################################################
+
+################################################################################
+echo " * Working on 'Enigmail' for Thunderbird 5...";
+waitfor "Enigmail for Thunderbird 5" "$enigmail5_pid";
+simplecopy "$enigmail5_build"\
+           "$enigmail5_version"\
+           "$enigmail5_fileExt"\
+           "$enigmail5_target"\
            "$pathDist"
 ################################################################################
 
