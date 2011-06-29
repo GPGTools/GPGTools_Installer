@@ -5444,11 +5444,11 @@ $HOME/Library/PreferencePanes/</string>
 					<key>NAME</key>
 					<string>Snow Leopard</string>
 					<key>STATE</key>
-					<true/>
+					<false/>
 				</dict>
 				<dict>
 					<key>BEHAVIOR</key>
-					<integer>3</integer>
+					<integer>2</integer>
 					<key>DICTIONARY</key>
 					<dict>
 						<key>IC_REQUIREMENT_SCRIPT_ARGUMENTS</key>
