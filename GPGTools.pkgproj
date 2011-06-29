@@ -3044,7 +3044,7 @@
 				<key>LOCATION</key>
 				<integer>0</integer>
 				<key>NAME</key>
-				<string>GPGPreferences</string>
+				<string>GPGPToolsPreferences</string>
 				<key>OVERWRITE_PERMISSIONS</key>
 				<false/>
 				<key>VERSION</key>
@@ -5730,6 +5730,50 @@ $HOME/Library/PreferencePanes/</string>
 										<key>STATE</key>
 										<true/>
 									</dict>
+									<dict>
+										<key>BEHAVIOR</key>
+										<integer>1</integer>
+										<key>DICTIONARY</key>
+										<dict>
+											<key>IC_REQUIREMENT_SCRIPT_ARGUMENTS</key>
+											<array>
+												<dict>
+													<key>IC_REQUIREMENT_SCRIPT_ARGUMENT_STATE</key>
+													<true/>
+													<key>IC_REQUIREMENT_SCRIPT_ARGUMENT_VALUE</key>
+													<string>3</string>
+												</dict>
+											</array>
+											<key>IC_REQUIREMENT_SCRIPT_COMPARATOR</key>
+											<integer>0</integer>
+											<key>IC_REQUIREMENT_SCRIPT_EMBED</key>
+											<true/>
+											<key>IC_REQUIREMENT_SCRIPT_PATH</key>
+											<dict>
+												<key>PATH</key>
+												<string>Dependencies/GPGTools_Core/scripts/check_for_thunderbirdver.sh</string>
+												<key>PATH_TYPE</key>
+												<integer>1</integer>
+											</dict>
+											<key>IC_REQUIREMENT_SCRIPT_VALUE</key>
+											<integer>0</integer>
+										</dict>
+										<key>IDENTIFIER</key>
+										<string>fr.whitebox.Packages.requirement.scripts</string>
+										<key>MESSAGE</key>
+										<array>
+											<dict>
+												<key>LANGUAGE</key>
+												<string>English</string>
+												<key>VALUE</key>
+												<string>Only for Thunderbird 3</string>
+											</dict>
+										</array>
+										<key>NAME</key>
+										<string>Thinderbird 3</string>
+										<key>STATE</key>
+										<true/>
+									</dict>
 								</array>
 								<key>TITLE</key>
 								<array/>
@@ -5752,33 +5796,10 @@ $HOME/Library/PreferencePanes/</string>
 								</array>
 								<key>OPTIONS</key>
 								<dict>
-									<key>DEPENDENCY</key>
-									<dict>
-										<key>ENABLED_DEPENDENCY</key>
-										<dict>
-											<key>COMPARATOR</key>
-											<integer>1</integer>
-											<key>OBJECT</key>
-											<integer>1</integer>
-											<key>UUID</key>
-											<string>4D9ADBA4-5612-4497-906D-53A5B8E79CCB</string>
-										</dict>
-										<key>ENABLED_MODE</key>
-										<integer>2</integer>
-										<key>SELECTED_DEPENDENCY</key>
-										<dict>
-											<key>COMPARATOR</key>
-											<integer>1</integer>
-											<key>OBJECT</key>
-											<integer>1</integer>
-											<key>UUID</key>
-											<string>4D9ADBA4-5612-4497-906D-53A5B8E79CCB</string>
-										</dict>
-									</dict>
 									<key>HIDDEN</key>
 									<false/>
 									<key>STATE</key>
-									<integer>3</integer>
+									<integer>1</integer>
 								</dict>
 								<key>PACKAGE_UUID</key>
 								<string>C2B24E2E-52E0-4E59-AC98-B9056C0703FD</string>
@@ -5818,6 +5839,50 @@ $HOME/Library/PreferencePanes/</string>
 										</array>
 										<key>NAME</key>
 										<string>Thunderbird installed</string>
+										<key>STATE</key>
+										<true/>
+									</dict>
+									<dict>
+										<key>BEHAVIOR</key>
+										<integer>1</integer>
+										<key>DICTIONARY</key>
+										<dict>
+											<key>IC_REQUIREMENT_SCRIPT_ARGUMENTS</key>
+											<array>
+												<dict>
+													<key>IC_REQUIREMENT_SCRIPT_ARGUMENT_STATE</key>
+													<true/>
+													<key>IC_REQUIREMENT_SCRIPT_ARGUMENT_VALUE</key>
+													<string>5</string>
+												</dict>
+											</array>
+											<key>IC_REQUIREMENT_SCRIPT_COMPARATOR</key>
+											<integer>0</integer>
+											<key>IC_REQUIREMENT_SCRIPT_EMBED</key>
+											<true/>
+											<key>IC_REQUIREMENT_SCRIPT_PATH</key>
+											<dict>
+												<key>PATH</key>
+												<string>Dependencies/GPGTools_Core/scripts/check_for_thunderbirdver.sh</string>
+												<key>PATH_TYPE</key>
+												<integer>1</integer>
+											</dict>
+											<key>IC_REQUIREMENT_SCRIPT_VALUE</key>
+											<integer>0</integer>
+										</dict>
+										<key>IDENTIFIER</key>
+										<string>fr.whitebox.Packages.requirement.scripts</string>
+										<key>MESSAGE</key>
+										<array>
+											<dict>
+												<key>LANGUAGE</key>
+												<string>English</string>
+												<key>VALUE</key>
+												<string>Only for Thunderbird 5</string>
+											</dict>
+										</array>
+										<key>NAME</key>
+										<string>Thinderbird 5</string>
 										<key>STATE</key>
 										<true/>
 									</dict>
