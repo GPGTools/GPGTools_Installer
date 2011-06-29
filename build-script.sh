@@ -50,14 +50,14 @@ gpgmail105_volume="GPGMail 1.2.0";
 gpgmail105_installer="GPGMail.mailbundle";
 gpgmail105_target="gpgmail105";
 
-gpgmail104_url="https://github.com/downloads/GPGTools/GPGMail/";
-gpgmail104_version="GPGMail-1.1.2-10.4";
-gpgmail104_fileExt=".dmg";
-gpgmail104_sigExt=".dmg.sig"
-gpgmail104_build="$pathDownload/gpgmail104";
-gpgmail104_volume="GPGMail-1.1.2-10.4";
-gpgmail104_installer="GPGMail.mailbundle";
-gpgmail104_target="gpgmail104";
+#gpgmail104_url="https://github.com/downloads/GPGTools/GPGMail/";
+#gpgmail104_version="GPGMail-1.1.2-10.4";
+#gpgmail104_fileExt=".dmg";
+#gpgmail104_sigExt=".dmg.sig"
+#gpgmail104_build="$pathDownload/gpgmail104";
+#gpgmail104_volume="GPGMail-1.1.2-10.4";
+#gpgmail104_installer="GPGMail.mailbundle";
+#gpgmail104_target="gpgmail104";
 
 macgpg2_url="https://github.com/downloads/GPGTools/MacGPG2/";
 macgpg2_version="MacGPG2-2.0.17-9";
@@ -231,8 +231,8 @@ echo " * Downloading the binaries in the background...";
 download "$gpgmail_build" "$gpgmail_version" "$gpgmail_fileExt" "$gpgmail_sigExt" "$gpgmail_url"
 download "$gpgmail105_build" "$gpgmail105_version" "$gpgmail105_fileExt" "$gpgmail105_sigExt" "$gpgmail105_url" &
 gpgmail105_pid=${!}
-download "$gpgmail104_build" "$gpgmail104_version" "$gpgmail104_fileExt" "$gpgmail104_sigExt" "$gpgmail104_url" &
-gpgmail104_pid=${!}
+#download "$gpgmail104_build" "$gpgmail104_version" "$gpgmail104_fileExt" "$gpgmail104_sigExt" "$gpgmail104_url" &
+#gpgmail104_pid=${!}
 download "$gka_build" "$gka_version" "$gka_fileExt" "$gka_sigExt" "$gka_url" &
 gka_pid=${!}
 download "$gpgservices_build" "$gpgservices_version" "$gpgservices_fileExt" "$gpgservices_sigExt" "$gpgservices_url" &
@@ -274,15 +274,15 @@ copy "$gpgmail105_build"\
 ################################################################################
 
 ################################################################################
-echo " * Working on 'GPGMail for 10.4'...";
-waitfor "GPGMail 10.4" "$gpgmail104_pid";
-copy "$gpgmail104_build"\
-      "$gpgmail104_version"\
-      "$gpgmail104_fileExt"\
-      "$gpgmail104_volume"\
-      "$gpgmail104_installer"\
-      "$gpgmail104_target"\
-      "$pathDist"
+#echo " * Working on 'GPGMail for 10.4'...";
+#waitfor "GPGMail 10.4" "$gpgmail104_pid";
+#copy "$gpgmail104_build"\
+#      "$gpgmail104_version"\
+#      "$gpgmail104_fileExt"\
+#      "$gpgmail104_volume"\
+#      "$gpgmail104_installer"\
+#      "$gpgmail104_target"\
+#      "$pathDist"
 ################################################################################
 
 ################################################################################
