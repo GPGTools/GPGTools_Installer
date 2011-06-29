@@ -1,5 +1,5 @@
 Thank you for installing GPGTools
-Version: 20110627
+Version: 20110628
 
 In order to use OpenPGP on OS X you can chose to install / update to:
 
