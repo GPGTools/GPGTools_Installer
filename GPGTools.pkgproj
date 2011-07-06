@@ -1496,7 +1496,12 @@
 					<integer>1</integer>
 				</dict>
 				<key>PREINSTALL_PATH</key>
-				<dict/>
+				<dict>
+					<key>PATH</key>
+					<string>Dependencies/GPGTools_Core/scripts/enigmail-preinstall.sh</string>
+					<key>PATH_TYPE</key>
+					<integer>1</integer>
+				</dict>
 				<key>RESOURCES</key>
 				<array/>
 			</dict>
@@ -4578,7 +4583,12 @@
 					<integer>1</integer>
 				</dict>
 				<key>PREINSTALL_PATH</key>
-				<dict/>
+				<dict>
+					<key>PATH</key>
+					<string>Dependencies/GPGTools_Core/scripts/enigmail-preinstall.sh</string>
+					<key>PATH_TYPE</key>
+					<integer>1</integer>
+				</dict>
 				<key>RESOURCES</key>
 				<array/>
 			</dict>
