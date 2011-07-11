@@ -1,10 +1,10 @@
-Thank you for installing GPGTools 20110629
+Thank you for installing GPGTools 20110711
 
 In order to use OpenPGP on OS X you can chose to install:
 
 (have a look at http://gpgtools.org for further information)
 
-* GPG Keychain Access 0.8.10
+* GPG Keychain Access 0.8.13
   * Description: Managing OpenPGP keys
   * Requirements: OS X >= 10.5
 * GPGServices 1.6
