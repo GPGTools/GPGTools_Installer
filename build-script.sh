@@ -87,8 +87,8 @@ enigmail_sigExt=".xpi.sig"
 enigmail_build="$pathDownload/enigmail";
 enigmail_target="enigmail";
 
-enigmail5_url="http://addons.mozilla.org/thunderbird/downloads/file/124320/";
-enigmail5_version="enigmail-1.2-sm-mac";
+enigmail5_url="http://addons.mozilla.org/thunderbird/downloads/file/127673/";
+enigmail5_version="enigmail-1.2.1-tb+sm-mac";
 enigmail5_fileExt=".xpi";
 enigmail5_sigExt=".xpi.sig"
 enigmail5_build="$pathDownload/enigmail5";
@@ -156,7 +156,7 @@ function download {
     #fi
     if [ "$?" != "0" ]; then
         exec 1>&3 2>&4
-        echo "Could not get the binaries for '$5$2$3'!";
+        echo "Could not get the binaries for '$5$2$3'! (1)";
         exit 1;
     fi
     exec 1>&3 2>&4
@@ -177,7 +177,7 @@ function unpack {
     fi
     if [ "$?" != "0" ]; then
         exec 1>&3 2>&4
-        echo "Could not install the binaries for '$1'!";
+        echo "Could not install the binaries for '$1'! (2)";
         exit 1;
     fi
     touch "$1/.installed"
@@ -195,10 +195,11 @@ function copy {
       rm -rf "$7/$6";
     fi
     mkdir -p "$7/$6";
+    rm -f "$7/$6/$5"
     cp -Rn "/Volumes/$4/$5" "$7/$6"
     if [ "$?" != "0" ]; then
         exec 1>&3 2>&4
-        echo "Could not install the binaries for '$1'!";
+        echo "Could not install the binaries for '$1'! (3)";
         exit 1;
     fi
     touch "$1/.installed"
@@ -213,10 +214,11 @@ function simplecopy {
     exec 3>&1 4>&2 >> $fileLog 2>&1
     mkdir -p "$5/$4";
     echo "Copy: $1/$2$3 to $5/$4";
+    rm -f "$5/$4/$2$3"
     cp -Rn "$1/$2$3" "$5/$4"
     if [ "$?" != "0" ]; then
         exec 1>&3 2>&4
-        echo "Could not install the binaries for '$1'!";
+        echo "Could not install the binaries for '$1'! (4)";
         exit 1;
     fi
     touch "$1/.installed"
