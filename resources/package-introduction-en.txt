@@ -16,7 +16,7 @@ In order to use OpenPGP on OS X you can chose to install:
 * GPGToolsPreferences 0.6
   * Description: OpenPGP system preferences
   * Requirements: OS X >= 10.5
-* Enigmail 1.2 / 1.1.2
+* Enigmail 1.2.1 / 1.1.2
   * Description: OpenPGP integration for Thunderbird
   * Requirements: Thunderbird 5.x / 3.x
 * MacGPG 2.0.17-9 / 1.4.11-6
