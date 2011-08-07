@@ -20,7 +20,7 @@
 									<key>CHILDREN</key>
 									<array/>
 									<key>GID</key>
-									<integer>80</integer>
+									<integer>20</integer>
 									<key>PATH</key>
 									<string>build/payload/keychain_access/GPG Keychain Access.app</string>
 									<key>PATH_TYPE</key>
@@ -30,7 +30,7 @@
 									<key>TYPE</key>
 									<integer>3</integer>
 									<key>UID</key>
-									<integer>0</integer>
+									<integer>501</integer>
 								</dict>
 								<dict>
 									<key>CHILDREN</key>
@@ -4419,7 +4419,7 @@
 													<key>GID</key>
 													<integer>80</integer>
 													<key>PATH</key>
-													<string>build/payload/enigmail5/enigmail-1.2-sm-mac.xpi</string>
+													<string>build/payload/enigmail5/enigmail-1.2.1-tb+sm-mac.xpi</string>
 													<key>PATH_TYPE</key>
 													<integer>1</integer>
 													<key>PERMISSIONS</key>
