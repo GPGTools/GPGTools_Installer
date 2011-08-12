@@ -31,15 +31,15 @@ gka_volume="GPG Keychain Access.localized";
 gka_installer="GPG Keychain Access.app";
 gka_target="keychain_access";
 
-gpgmail_url="https://github.com/downloads/GPGTools/GPGMail/";
-gpgmail_version="GPGMail-1.3.3";
-gpgmail_fileExt=".dmg";
-gpgmail_sigExt=".dmg.sig"
-gpgmail_build="$pathDownload/gpgmail";
-gpgmail_volume="GPGMail";
-gpgmail_installer="GPGMail.pkg";
-gpgmail_package="GPGMail.pkg"
-gpgmail_target="gpgmail";
+gpgmail106_url="https://github.com/downloads/GPGTools/GPGMail/";
+gpgmail106_version="GPGMail-1.3.3";
+gpgmail106_fileExt=".dmg";
+gpgmail106_sigExt=".dmg.sig"
+gpgmail106_build="$pathDownload/gpgmail106";
+gpgmail106_volume="GPGMail";
+gpgmail106_installer="GPGMail.pkg";
+gpgmail106_package="GPGMail.pkg"
+gpgmail106_target="gpgmail106";
 
 gpgmail105_url="https://github.com/downloads/GPGTools/GPGMail/";
 gpgmail105_version="GPGMail-1.2.0-10.5";
@@ -230,7 +230,7 @@ function simplecopy {
 # download files ###############################################################
 echo " * Downloading the binaries in the background...";
 #first one is the buffer
-download "$gpgmail_build" "$gpgmail_version" "$gpgmail_fileExt" "$gpgmail_sigExt" "$gpgmail_url"
+download "$gpgmail106_build" "$gpgmail106_version" "$gpgmail106_fileExt" "$gpgmail106_sigExt" "$gpgmail106_url"
 download "$gpgmail105_build" "$gpgmail105_version" "$gpgmail105_fileExt" "$gpgmail105_sigExt" "$gpgmail105_url" &
 gpgmail105_pid=${!}
 #download "$gpgmail104_build" "$gpgmail104_version" "$gpgmail104_fileExt" "$gpgmail104_sigExt" "$gpgmail104_url" &
@@ -253,14 +253,14 @@ macgpg2_pid=${!}
 
 ################################################################################
 echo " * Working on 'GPGMail'...";
-unpack "$gpgmail_build"\
-       "$gpgmail_version"\
-       "$gpgmail_fileExt"\
-       "$gpgmail_volume"\
-       "$gpgmail_installer"\
-       "$gpgmail_target"\
+unpack "$gpgmail106_build"\
+       "$gpgmail106_version"\
+       "$gpgmail106_fileExt"\
+       "$gpgmail106_volume"\
+       "$gpgmail106_installer"\
+       "$gpgmail106_target"\
        "$pathDist"\
-       "$gpgmail_package"
+       "$gpgmail106_package"
 ################################################################################
 
 ################################################################################
