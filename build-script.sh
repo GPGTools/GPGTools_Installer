@@ -80,14 +80,14 @@ macgpg1_installer="MacGPG1.pkg";
 macgpg1_package="MacGPG1.pkg";
 macgpg1_target="MacGPG1";
 
-enigmail_url="http://addons.mozilla.org/en-US/thunderbird/downloads/file/92939/";
+enigmail_url="http://addons.mozilla.org/en-US/thunderbird/downloads/file/127743/";
 enigmail_version="enigmail-1.1.2-tb-macosx";
 enigmail_fileExt=".xpi";
 enigmail_sigExt=".xpi.sig"
 enigmail_build="$pathDownload/enigmail";
 enigmail_target="enigmail";
 
-enigmail5_url="http://addons.mozilla.org/thunderbird/downloads/file/127673/";
+enigmail5_url="http://addons.mozilla.org/en-US/thunderbird/downloads/file/127743/";
 enigmail5_version="enigmail-1.2.1-tb+sm-mac";
 enigmail5_fileExt=".xpi";
 enigmail5_sigExt=".xpi.sig"
