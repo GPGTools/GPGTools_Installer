@@ -31,6 +31,16 @@ gka_volume="GPG Keychain Access.localized";
 gka_installer="GPG Keychain Access.app";
 gka_target="keychain_access";
 
+gpgmail107_url="https://github.com/downloads/GPGTools/GPGMail/";
+gpgmail107_version="GPGMail-2.0a2";
+gpgmail107_fileExt=".dmg";
+gpgmail107_sigExt=".dmg.sig"
+gpgmail107_build="$pathDownload/gpgmail107";
+gpgmail107_volume="GPGMail";
+gpgmail107_installer="GPGMail.pkg";
+gpgmail107_package="GPGMail.pkg"
+gpgmail107_target="gpgmail107";
+
 gpgmail106_url="https://github.com/downloads/GPGTools/GPGMail/";
 gpgmail106_version="GPGMail-1.3.3";
 gpgmail106_fileExt=".dmg";
@@ -233,6 +243,8 @@ echo " * Downloading the binaries in the background...";
 download "$gpgmail106_build" "$gpgmail106_version" "$gpgmail106_fileExt" "$gpgmail106_sigExt" "$gpgmail106_url"
 download "$gpgmail105_build" "$gpgmail105_version" "$gpgmail105_fileExt" "$gpgmail105_sigExt" "$gpgmail105_url" &
 gpgmail105_pid=${!}
+download "$gpgmail107_build" "$gpgmail107_version" "$gpgmail107_fileExt" "$gpgmail107_sigExt" "$gpgmail107_url" &
+gpgmail107_pid=${!}
 #download "$gpgmail104_build" "$gpgmail104_version" "$gpgmail104_fileExt" "$gpgmail104_sigExt" "$gpgmail104_url" &
 #gpgmail104_pid=${!}
 download "$gka_build" "$gka_version" "$gka_fileExt" "$gka_sigExt" "$gka_url" &
@@ -252,7 +264,7 @@ macgpg2_pid=${!}
 ################################################################################
 
 ################################################################################
-echo " * Working on 'GPGMail'...";
+echo " * Working on 'GPGMail' for 10.6...";
 unpack "$gpgmail106_build"\
        "$gpgmail106_version"\
        "$gpgmail106_fileExt"\
@@ -261,6 +273,18 @@ unpack "$gpgmail106_build"\
        "$gpgmail106_target"\
        "$pathDist"\
        "$gpgmail106_package"
+################################################################################
+
+################################################################################
+echo " * Working on 'GPGMail' for 10.7...";
+unpack "$gpgmail107_build"\
+       "$gpgmail107_version"\
+       "$gpgmail107_fileExt"\
+       "$gpgmail107_volume"\
+       "$gpgmail107_installer"\
+       "$gpgmail107_target"\
+       "$pathDist"\
+       "$gpgmail107_package"
 ################################################################################
 
 ################################################################################
