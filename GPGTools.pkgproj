@@ -5710,8 +5710,9 @@
 										<key>LANGUAGE</key>
 										<string>English</string>
 										<key>VALUE</key>
-										<string>The core of all subsequent OpenPGP components. Version 1 is the small portable edition. If uncertain, please install version 2 instead.
-It installs to: /usr/local/MacGPG1 and therefore needs your authentication!</string>
+										<string>OpenPGP core implementation. Version 1 is the small portable edition. If uncertain, please install version 2 instead.
+It installs to: /usr/local/MacGPG1 and therefore needs your authentication!
+Web: http://gpgtools.org/macgpg1.html</string>
 									</dict>
 								</array>
 								<key>OPTIONS</key>
@@ -5741,8 +5742,10 @@ It installs to: /usr/local/MacGPG1 and therefore needs your authentication!</str
 										<key>LANGUAGE</key>
 										<string>English</string>
 										<key>VALUE</key>
-										<string>The core of all subsequent OpenPGP components. Version 2 is the modern edition. If uncertain, please install this version.
-It installs to: /usr/local/MacGPG2 and therefore needs your authentication!</string>
+										<string>OpenPGP core implementation. Version 2 is the modern edition. If uncertain, please install this version.
+Requirement: OS X &gt;= 10.5 (Intel)
+It installs to: /usr/local/MacGPG2 and therefore needs your authentication!
+Web: http://gpgtools.org/macgpg2.html</string>
 									</dict>
 								</array>
 								<key>OPTIONS</key>
@@ -5819,8 +5822,9 @@ It installs to: /usr/local/MacGPG2 and therefore needs your authentication!</str
 										<key>LANGUAGE</key>
 										<string>English</string>
 										<key>VALUE</key>
-										<string>Add the GPGTools Project OpenPGP Key to the keychain.
-Installs to: ~/.gnupg/pubring.gpg</string>
+										<string>OpenPGP key of the GPGTools Project.
+Installs to: ~/.gnupg/pubring.gpg
+Web: http://gpgtools.org/about.html</string>
 									</dict>
 								</array>
 								<key>OPTIONS</key>
@@ -5850,8 +5854,9 @@ Installs to: ~/.gnupg/pubring.gpg</string>
 										<key>LANGUAGE</key>
 										<string>English</string>
 										<key>VALUE</key>
-										<string>It allows the user to manage OpenPGP keys, e.g. creating, adjusting and verifying keys and communication with the key servers.
-Installs to: /Applications</string>
+										<string>OpenPGP key management.
+Installs to: /Applications
+Web: http://gpgtools.org/keychain.html</string>
 									</dict>
 								</array>
 								<key>OPTIONS</key>
@@ -5903,8 +5908,10 @@ Installs to: /Applications</string>
 										<key>LANGUAGE</key>
 										<string>English</string>
 										<key>VALUE</key>
-										<string>GPGServices is a plugin for the global OS X Services menu, which adds the ability to almost any application (e.g. Safari, Finder, or TextEdit) to use OpenPGP functionalities. 
-Installs to: /Library/Services</string>
+										<string>OpenPGP for all applications via OS X Services menu.
+Requirement: OS X &gt;= 10.6 (Intel)
+Installs to: /Library/Services
+Web: http://gpgtools.org/gpgservices.html</string>
 									</dict>
 								</array>
 								<key>OPTIONS</key>
@@ -5963,8 +5970,9 @@ Installs to: /Library/Services</string>
 										<key>LANGUAGE</key>
 										<string>English</string>
 										<key>VALUE</key>
-										<string>The GPGTools preferences pane will replace the old GPGPreferences pane in the future. By now you can fix broken GPG and GPGMail installations.
-Installs to: $HOME/Library/PreferencePanes/</string>
+										<string>OpenPGP system preferences.
+Installs to: ~/Library/PreferencePanes/
+Web: http://gpgtools.org/gpgpreferences.html</string>
 									</dict>
 								</array>
 								<key>OPTIONS</key>
@@ -5994,8 +6002,10 @@ Installs to: $HOME/Library/PreferencePanes/</string>
 										<key>LANGUAGE</key>
 										<string>English</string>
 										<key>VALUE</key>
-										<string>GPGMail is an open source plugin for Apple Mail. It brings the functionality to sign, verify, encrypt and decrypt mails using the OpenPGP standard.
-Installs to: ~/Library/Mail/Bundles</string>
+										<string>OpenPGP for Apple Mail.
+Requirement: OS X 10.7 (Lion)
+Installs to: ~/Library/Mail/Bundles
+Web: http://gpgtools.org/gpgmail.html</string>
 									</dict>
 								</array>
 								<key>OPTIONS</key>
@@ -6070,8 +6080,10 @@ Installs to: ~/Library/Mail/Bundles</string>
 										<key>LANGUAGE</key>
 										<string>English</string>
 										<key>VALUE</key>
-										<string>GPGMail is an open source plugin for Apple Mail. It brings the functionality to sign, verify, encrypt and decrypt mails using the OpenPGP standard.
-Installs to: ~/Library/Mail/Bundles</string>
+										<string>OpenPGP for Apple Mail.
+Requirement: OS X 10.6 (Snow Leopard)
+Installs to: ~/Library/Mail/Bundles
+Web: http://gpgtools.org/gpgmail.html</string>
 									</dict>
 								</array>
 								<key>OPTIONS</key>
@@ -6146,8 +6158,10 @@ Installs to: ~/Library/Mail/Bundles</string>
 										<key>LANGUAGE</key>
 										<string>English</string>
 										<key>VALUE</key>
-										<string>GPGMail is an open source plugin for Apple Mail. It brings the functionality to sign, verify, encrypt and decrypt mails using the OpenPGP standard.
-Installs to: ~/Library/Mail/Bundles</string>
+										<string>OpenPGP for Apple Mail.
+Requirement: OS X 10.5 (Leopard)
+Installs to: ~/Library/Mail/Bundles
+Web: http://gpgtools.org/gpgmail.html</string>
 									</dict>
 								</array>
 								<key>OPTIONS</key>
@@ -6222,7 +6236,8 @@ Installs to: ~/Library/Mail/Bundles</string>
 										<key>LANGUAGE</key>
 										<string>English</string>
 										<key>VALUE</key>
-										<string>GPG Plugin for Mozilla Thunderbird 5. (visit http://enigmail.mozdev.org/ for further information) Thunderbird needs to be installed and set up(!) for this choice to be enabled!</string>
+										<string>OpenPGP for Mozilla Thunderbird 5. Requirement: Thunderbird needs to be installed and set up.
+Web: http://enigmail.mozdev.org</string>
 									</dict>
 								</array>
 								<key>OPTIONS</key>
@@ -6334,7 +6349,8 @@ Installs to: ~/Library/Mail/Bundles</string>
 										<key>LANGUAGE</key>
 										<string>English</string>
 										<key>VALUE</key>
-										<string>GPG Plugin for Mozilla Thunderbird 3. (visit http://enigmail.mozdev.org/ for further information) Thunderbird needs to be installed and set up(!) for this choice to be enabled!</string>
+										<string>OpenPGP for Mozilla Thunderbird 3. Requirement: Thunderbird needs to be installed and set up.
+Web: http://enigmail.mozdev.org</string>
 									</dict>
 								</array>
 								<key>OPTIONS</key>
