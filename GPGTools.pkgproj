@@ -455,7 +455,7 @@
 				<key>IDENTIFIER</key>
 				<string>org.gpgtools.gpgkeychainaccess</string>
 				<key>NAME</key>
-				<string>GPGKeychainAccess</string>
+				<string>GPGKeychainAccess 0.8.13</string>
 				<key>OVERWRITE_PERMISSIONS</key>
 				<false/>
 				<key>VERSION</key>
@@ -991,7 +991,7 @@
 				<key>LOCATION</key>
 				<integer>0</integer>
 				<key>NAME</key>
-				<string>MacGPG2</string>
+				<string>MacGPG 2.0.17-9</string>
 				<key>OVERWRITE_PERMISSIONS</key>
 				<false/>
 				<key>VERSION</key>
@@ -1516,7 +1516,7 @@
 				<key>LOCATION</key>
 				<integer>0</integer>
 				<key>NAME</key>
-				<string>Enigmail for Thunderbird 3</string>
+				<string>Enigmail 1.1.2 (Thunderbird 3)</string>
 				<key>OVERWRITE_PERMISSIONS</key>
 				<false/>
 				<key>VERSION</key>
@@ -2041,7 +2041,7 @@
 				<key>LOCATION</key>
 				<integer>0</integer>
 				<key>NAME</key>
-				<string>GPGMail for Snow Leopard</string>
+				<string>GPGMail 1.3.3 (Snow Leopard)</string>
 				<key>OVERWRITE_PERMISSIONS</key>
 				<false/>
 				<key>VERSION</key>
@@ -2544,7 +2544,7 @@
 				<key>LOCATION</key>
 				<integer>0</integer>
 				<key>NAME</key>
-				<string>GPGServices</string>
+				<string>GPGServices 1.6</string>
 				<key>OVERWRITE_PERMISSIONS</key>
 				<false/>
 				<key>VERSION</key>
@@ -3049,7 +3049,7 @@
 				<key>LOCATION</key>
 				<integer>0</integer>
 				<key>NAME</key>
-				<string>GPGPToolsPreferences</string>
+				<string>GPGPToolsPreferences 0.6</string>
 				<key>OVERWRITE_PERMISSIONS</key>
 				<false/>
 				<key>VERSION</key>
@@ -3553,7 +3553,7 @@
 				<key>LOCATION</key>
 				<integer>0</integer>
 				<key>NAME</key>
-				<string>MacGPG1</string>
+				<string>MacGPG 1.4.11-6</string>
 				<key>OVERWRITE_PERMISSIONS</key>
 				<false/>
 				<key>VERSION</key>
@@ -4078,7 +4078,7 @@
 				<key>LOCATION</key>
 				<integer>0</integer>
 				<key>NAME</key>
-				<string>GPGMail for Leopard</string>
+				<string>GPGMail 1.2.0 (Leopard)</string>
 				<key>OVERWRITE_PERMISSIONS</key>
 				<false/>
 				<key>VERSION</key>
@@ -4603,7 +4603,7 @@
 				<key>LOCATION</key>
 				<integer>0</integer>
 				<key>NAME</key>
-				<string>Enigmail for Thunderbird 5</string>
+				<string>Enigmail 1.2.1 (Thunderbird 5)</string>
 				<key>OVERWRITE_PERMISSIONS</key>
 				<false/>
 				<key>VERSION</key>
@@ -5121,7 +5121,7 @@
 				<key>LOCATION</key>
 				<integer>0</integer>
 				<key>NAME</key>
-				<string>GPGTools Key</string>
+				<string>GPGTools OpenPGP Key</string>
 				<key>OVERWRITE_PERMISSIONS</key>
 				<false/>
 				<key>VERSION</key>
@@ -5646,7 +5646,7 @@
 				<key>LOCATION</key>
 				<integer>0</integer>
 				<key>NAME</key>
-				<string>GPGMail for Lion</string>
+				<string>GPGMail 2.0.a2 (Lion)</string>
 				<key>OVERWRITE_PERMISSIONS</key>
 				<false/>
 				<key>VERSION</key>
@@ -5710,10 +5710,8 @@
 										<key>LANGUAGE</key>
 										<string>English</string>
 										<key>VALUE</key>
-										<string>MacGPG1 is the well known and portable (universal binary) standalone version. But you should use MacGPG2 instead.
-It installs to:
-/usr/local/MacGPG1
-and therefore needs your authentication!</string>
+										<string>The core of all subsequent OpenPGP components. Version 1 is the small portable edition. If uncertain, please install version 2 instead.
+It installs to: /usr/local/MacGPG1 and therefore needs your authentication!</string>
 									</dict>
 								</array>
 								<key>OPTIONS</key>
@@ -5743,10 +5741,8 @@ and therefore needs your authentication!</string>
 										<key>LANGUAGE</key>
 										<string>English</string>
 										<key>VALUE</key>
-										<string>The main program everything relies on and that actually does the crypting, singnig, keychain integration, etc.
-It installs to:
-/usr/local/MacGPG2
-and therefore needs your authentication!</string>
+										<string>The core of all subsequent OpenPGP components. Version 2 is the modern edition. If uncertain, please install this version.
+It installs to: /usr/local/MacGPG2 and therefore needs your authentication!</string>
 									</dict>
 								</array>
 								<key>OPTIONS</key>
@@ -5818,7 +5814,190 @@ and therefore needs your authentication!</string>
 							</dict>
 							<dict>
 								<key>DESCRIPTION</key>
+								<array>
+									<dict>
+										<key>LANGUAGE</key>
+										<string>English</string>
+										<key>VALUE</key>
+										<string>Add the GPGTools Project OpenPGP Key to the keychain.
+Installs to: ~/.gnupg/pubring.gpg</string>
+									</dict>
+								</array>
+								<key>OPTIONS</key>
+								<dict>
+									<key>HIDDEN</key>
+									<false/>
+									<key>STATE</key>
+									<integer>1</integer>
+								</dict>
+								<key>PACKAGE_UUID</key>
+								<string>45261126-8A93-400B-9345-55A2D143DEFE</string>
+								<key>REQUIREMENTS</key>
 								<array/>
+								<key>TITLE</key>
+								<array/>
+								<key>TOOLTIP</key>
+								<array/>
+								<key>TYPE</key>
+								<integer>0</integer>
+								<key>UUID</key>
+								<string>5CF083A3-DA13-41E6-8CAA-F0270E97EF1F</string>
+							</dict>
+							<dict>
+								<key>DESCRIPTION</key>
+								<array>
+									<dict>
+										<key>LANGUAGE</key>
+										<string>English</string>
+										<key>VALUE</key>
+										<string>It allows the user to manage OpenPGP keys, e.g. creating, adjusting and verifying keys and communication with the key servers.
+Installs to: /Applications</string>
+									</dict>
+								</array>
+								<key>OPTIONS</key>
+								<dict>
+									<key>HIDDEN</key>
+									<false/>
+									<key>STATE</key>
+									<integer>1</integer>
+								</dict>
+								<key>PACKAGE_UUID</key>
+								<string>E5494601-62BF-4382-A372-85179E4217FD</string>
+								<key>REQUIREMENTS</key>
+								<array>
+									<dict>
+										<key>BEHAVIOR</key>
+										<integer>1</integer>
+										<key>DICTIONARY</key>
+										<dict>
+											<key>IC_REQUIREMENT_OS_DISK_TYPE</key>
+											<integer>0</integer>
+											<key>IC_REQUIREMENT_OS_DISTRIBUTION_TYPE</key>
+											<integer>0</integer>
+											<key>IC_REQUIREMENT_OS_MINIMUM_VERSION</key>
+											<integer>100500</integer>
+										</dict>
+										<key>IDENTIFIER</key>
+										<string>fr.whitebox.Packages.requirement.os</string>
+										<key>MESSAGE</key>
+										<array/>
+										<key>NAME</key>
+										<string>Operating System</string>
+										<key>STATE</key>
+										<true/>
+									</dict>
+								</array>
+								<key>TITLE</key>
+								<array/>
+								<key>TOOLTIP</key>
+								<array/>
+								<key>TYPE</key>
+								<integer>0</integer>
+								<key>UUID</key>
+								<string>1D6AAAF5-68DF-468E-8216-EAD3BEF551DD</string>
+							</dict>
+							<dict>
+								<key>DESCRIPTION</key>
+								<array>
+									<dict>
+										<key>LANGUAGE</key>
+										<string>English</string>
+										<key>VALUE</key>
+										<string>GPGServices is a plugin for the global OS X Services menu, which adds the ability to almost any application (e.g. Safari, Finder, or TextEdit) to use OpenPGP functionalities. 
+Installs to: /Library/Services</string>
+									</dict>
+								</array>
+								<key>OPTIONS</key>
+								<dict>
+									<key>HIDDEN</key>
+									<false/>
+									<key>STATE</key>
+									<integer>1</integer>
+								</dict>
+								<key>PACKAGE_UUID</key>
+								<string>99813628-B4A7-4FB9-B1C1-5C4B16E5411C</string>
+								<key>REQUIREMENTS</key>
+								<array>
+									<dict>
+										<key>BEHAVIOR</key>
+										<integer>1</integer>
+										<key>DICTIONARY</key>
+										<dict>
+											<key>IC_REQUIREMENT_OS_DISK_TYPE</key>
+											<integer>0</integer>
+											<key>IC_REQUIREMENT_OS_DISTRIBUTION_TYPE</key>
+											<integer>0</integer>
+											<key>IC_REQUIREMENT_OS_MINIMUM_VERSION</key>
+											<integer>100600</integer>
+										</dict>
+										<key>IDENTIFIER</key>
+										<string>fr.whitebox.Packages.requirement.os</string>
+										<key>MESSAGE</key>
+										<array>
+											<dict>
+												<key>LANGUAGE</key>
+												<string>English</string>
+												<key>VALUE</key>
+												<string>Need Snow Leopard.</string>
+											</dict>
+										</array>
+										<key>NAME</key>
+										<string>Operating System</string>
+										<key>STATE</key>
+										<true/>
+									</dict>
+								</array>
+								<key>TITLE</key>
+								<array/>
+								<key>TOOLTIP</key>
+								<array/>
+								<key>TYPE</key>
+								<integer>0</integer>
+								<key>UUID</key>
+								<string>5F30A847-BE29-435A-8D25-F8E6520F85EE</string>
+							</dict>
+							<dict>
+								<key>DESCRIPTION</key>
+								<array>
+									<dict>
+										<key>LANGUAGE</key>
+										<string>English</string>
+										<key>VALUE</key>
+										<string>The GPGTools preferences pane will replace the old GPGPreferences pane in the future. By now you can fix broken GPG and GPGMail installations.
+Installs to: $HOME/Library/PreferencePanes/</string>
+									</dict>
+								</array>
+								<key>OPTIONS</key>
+								<dict>
+									<key>HIDDEN</key>
+									<false/>
+									<key>STATE</key>
+									<integer>1</integer>
+								</dict>
+								<key>PACKAGE_UUID</key>
+								<string>A3E97041-BF0B-442E-A122-EADD5AF558CD</string>
+								<key>REQUIREMENTS</key>
+								<array/>
+								<key>TITLE</key>
+								<array/>
+								<key>TOOLTIP</key>
+								<array/>
+								<key>TYPE</key>
+								<integer>0</integer>
+								<key>UUID</key>
+								<string>C5418EAA-96EC-45B1-9659-5F01604FA9E1</string>
+							</dict>
+							<dict>
+								<key>DESCRIPTION</key>
+								<array>
+									<dict>
+										<key>LANGUAGE</key>
+										<string>English</string>
+										<key>VALUE</key>
+										<string>GPGMail is an open source plugin for Apple Mail. It brings the functionality to sign, verify, encrypt and decrypt mails using the OpenPGP standard.
+Installs to: ~/Library/Mail/Bundles</string>
+									</dict>
+								</array>
 								<key>OPTIONS</key>
 								<dict>
 									<key>HIDDEN</key>
@@ -5891,11 +6070,8 @@ and therefore needs your authentication!</string>
 										<key>LANGUAGE</key>
 										<string>English</string>
 										<key>VALUE</key>
-										<string>For OS X 10.5 Snow Leopard. It installs to:
-$HOME/Library/Mail/Bundles
-or
-/Library /Mail/Bundles (if already installed there)
-and therefore needs your authentication!</string>
+										<string>GPGMail is an open source plugin for Apple Mail. It brings the functionality to sign, verify, encrypt and decrypt mails using the OpenPGP standard.
+Installs to: ~/Library/Mail/Bundles</string>
 									</dict>
 								</array>
 								<key>OPTIONS</key>
@@ -5970,11 +6146,8 @@ and therefore needs your authentication!</string>
 										<key>LANGUAGE</key>
 										<string>English</string>
 										<key>VALUE</key>
-										<string>For OS X 10.5 Leopard. It installs to:
-$HOME/Library/Mail/Bundles
-or
-/Library /Mail/Bundles (if already installed there)
-and therefore needs your authentication!</string>
+										<string>GPGMail is an open source plugin for Apple Mail. It brings the functionality to sign, verify, encrypt and decrypt mails using the OpenPGP standard.
+Installs to: ~/Library/Mail/Bundles</string>
 									</dict>
 								</array>
 								<key>OPTIONS</key>
@@ -6049,266 +6222,7 @@ and therefore needs your authentication!</string>
 										<key>LANGUAGE</key>
 										<string>English</string>
 										<key>VALUE</key>
-										<string>Tool for managing your keys easily.
-installs to:
-/Applications</string>
-									</dict>
-								</array>
-								<key>OPTIONS</key>
-								<dict>
-									<key>HIDDEN</key>
-									<false/>
-									<key>STATE</key>
-									<integer>1</integer>
-								</dict>
-								<key>PACKAGE_UUID</key>
-								<string>E5494601-62BF-4382-A372-85179E4217FD</string>
-								<key>REQUIREMENTS</key>
-								<array>
-									<dict>
-										<key>BEHAVIOR</key>
-										<integer>1</integer>
-										<key>DICTIONARY</key>
-										<dict>
-											<key>IC_REQUIREMENT_OS_DISK_TYPE</key>
-											<integer>0</integer>
-											<key>IC_REQUIREMENT_OS_DISTRIBUTION_TYPE</key>
-											<integer>0</integer>
-											<key>IC_REQUIREMENT_OS_MINIMUM_VERSION</key>
-											<integer>100500</integer>
-										</dict>
-										<key>IDENTIFIER</key>
-										<string>fr.whitebox.Packages.requirement.os</string>
-										<key>MESSAGE</key>
-										<array/>
-										<key>NAME</key>
-										<string>Operating System</string>
-										<key>STATE</key>
-										<true/>
-									</dict>
-								</array>
-								<key>TITLE</key>
-								<array/>
-								<key>TOOLTIP</key>
-								<array/>
-								<key>TYPE</key>
-								<integer>0</integer>
-								<key>UUID</key>
-								<string>1D6AAAF5-68DF-468E-8216-EAD3BEF551DD</string>
-							</dict>
-							<dict>
-								<key>DESCRIPTION</key>
-								<array>
-									<dict>
-										<key>LANGUAGE</key>
-										<string>English</string>
-										<key>VALUE</key>
-										<string>A plugin for the global OS X Services menu, which adds the ability to almost any application to use OpenPGP functionalities.
-installs to:
-/Library/Services</string>
-									</dict>
-								</array>
-								<key>OPTIONS</key>
-								<dict>
-									<key>HIDDEN</key>
-									<false/>
-									<key>STATE</key>
-									<integer>1</integer>
-								</dict>
-								<key>PACKAGE_UUID</key>
-								<string>99813628-B4A7-4FB9-B1C1-5C4B16E5411C</string>
-								<key>REQUIREMENTS</key>
-								<array>
-									<dict>
-										<key>BEHAVIOR</key>
-										<integer>1</integer>
-										<key>DICTIONARY</key>
-										<dict>
-											<key>IC_REQUIREMENT_OS_DISK_TYPE</key>
-											<integer>0</integer>
-											<key>IC_REQUIREMENT_OS_DISTRIBUTION_TYPE</key>
-											<integer>0</integer>
-											<key>IC_REQUIREMENT_OS_MINIMUM_VERSION</key>
-											<integer>100600</integer>
-										</dict>
-										<key>IDENTIFIER</key>
-										<string>fr.whitebox.Packages.requirement.os</string>
-										<key>MESSAGE</key>
-										<array>
-											<dict>
-												<key>LANGUAGE</key>
-												<string>English</string>
-												<key>VALUE</key>
-												<string>Need Snow Leopard.</string>
-											</dict>
-										</array>
-										<key>NAME</key>
-										<string>Operating System</string>
-										<key>STATE</key>
-										<true/>
-									</dict>
-								</array>
-								<key>TITLE</key>
-								<array/>
-								<key>TOOLTIP</key>
-								<array/>
-								<key>TYPE</key>
-								<integer>0</integer>
-								<key>UUID</key>
-								<string>5F30A847-BE29-435A-8D25-F8E6520F85EE</string>
-							</dict>
-							<dict>
-								<key>DESCRIPTION</key>
-								<array>
-									<dict>
-										<key>LANGUAGE</key>
-										<string>English</string>
-										<key>VALUE</key>
-										<string>Fix broken GPG and GPGMail installations.
-installs to:
-$HOME/Library/PreferencePanes/</string>
-									</dict>
-								</array>
-								<key>OPTIONS</key>
-								<dict>
-									<key>HIDDEN</key>
-									<false/>
-									<key>STATE</key>
-									<integer>1</integer>
-								</dict>
-								<key>PACKAGE_UUID</key>
-								<string>A3E97041-BF0B-442E-A122-EADD5AF558CD</string>
-								<key>REQUIREMENTS</key>
-								<array/>
-								<key>TITLE</key>
-								<array/>
-								<key>TOOLTIP</key>
-								<array/>
-								<key>TYPE</key>
-								<integer>0</integer>
-								<key>UUID</key>
-								<string>C5418EAA-96EC-45B1-9659-5F01604FA9E1</string>
-							</dict>
-							<dict>
-								<key>DESCRIPTION</key>
-								<array>
-									<dict>
-										<key>LANGUAGE</key>
-										<string>English</string>
-										<key>VALUE</key>
-										<string>GPG Plugin for Mozilla Thunderbird 3. (visit http://enigmail.mozdev.org/ for further information)  Thunderbird needs to be installed and set up(!) for this choice to be enabled!</string>
-									</dict>
-								</array>
-								<key>OPTIONS</key>
-								<dict>
-									<key>HIDDEN</key>
-									<false/>
-									<key>STATE</key>
-									<integer>1</integer>
-								</dict>
-								<key>PACKAGE_UUID</key>
-								<string>76B8D8BE-BAFF-4C33-8FAE-B176FD99DE6A</string>
-								<key>REQUIREMENTS</key>
-								<array>
-									<dict>
-										<key>BEHAVIOR</key>
-										<integer>1</integer>
-										<key>DICTIONARY</key>
-										<dict>
-											<key>IC_REQUIREMENT_SCRIPT_ARGUMENTS</key>
-											<array/>
-											<key>IC_REQUIREMENT_SCRIPT_COMPARATOR</key>
-											<integer>0</integer>
-											<key>IC_REQUIREMENT_SCRIPT_EMBED</key>
-											<true/>
-											<key>IC_REQUIREMENT_SCRIPT_PATH</key>
-											<dict>
-												<key>PATH</key>
-												<string>Dependencies/GPGTools_Core/scripts/check_for_thunderbird.sh</string>
-												<key>PATH_TYPE</key>
-												<integer>1</integer>
-											</dict>
-											<key>IC_REQUIREMENT_SCRIPT_VALUE</key>
-											<integer>0</integer>
-										</dict>
-										<key>IDENTIFIER</key>
-										<string>fr.whitebox.Packages.requirement.scripts</string>
-										<key>MESSAGE</key>
-										<array>
-											<dict>
-												<key>LANGUAGE</key>
-												<string>English</string>
-												<key>VALUE</key>
-												<string>Could not find a Thunderbird profile</string>
-											</dict>
-										</array>
-										<key>NAME</key>
-										<string>Thunderbird installed</string>
-										<key>STATE</key>
-										<true/>
-									</dict>
-									<dict>
-										<key>BEHAVIOR</key>
-										<integer>1</integer>
-										<key>DICTIONARY</key>
-										<dict>
-											<key>IC_REQUIREMENT_SCRIPT_ARGUMENTS</key>
-											<array>
-												<dict>
-													<key>IC_REQUIREMENT_SCRIPT_ARGUMENT_STATE</key>
-													<true/>
-													<key>IC_REQUIREMENT_SCRIPT_ARGUMENT_VALUE</key>
-													<string>3</string>
-												</dict>
-											</array>
-											<key>IC_REQUIREMENT_SCRIPT_COMPARATOR</key>
-											<integer>0</integer>
-											<key>IC_REQUIREMENT_SCRIPT_EMBED</key>
-											<true/>
-											<key>IC_REQUIREMENT_SCRIPT_PATH</key>
-											<dict>
-												<key>PATH</key>
-												<string>Dependencies/GPGTools_Core/scripts/check_for_thunderbirdver.sh</string>
-												<key>PATH_TYPE</key>
-												<integer>1</integer>
-											</dict>
-											<key>IC_REQUIREMENT_SCRIPT_VALUE</key>
-											<integer>0</integer>
-										</dict>
-										<key>IDENTIFIER</key>
-										<string>fr.whitebox.Packages.requirement.scripts</string>
-										<key>MESSAGE</key>
-										<array>
-											<dict>
-												<key>LANGUAGE</key>
-												<string>English</string>
-												<key>VALUE</key>
-												<string>Only for Thunderbird 3</string>
-											</dict>
-										</array>
-										<key>NAME</key>
-										<string>Thinderbird 3</string>
-										<key>STATE</key>
-										<true/>
-									</dict>
-								</array>
-								<key>TITLE</key>
-								<array/>
-								<key>TOOLTIP</key>
-								<array/>
-								<key>TYPE</key>
-								<integer>0</integer>
-								<key>UUID</key>
-								<string>4D9ADBA4-5612-4497-906D-53A5B8E79CCB</string>
-							</dict>
-							<dict>
-								<key>DESCRIPTION</key>
-								<array>
-									<dict>
-										<key>LANGUAGE</key>
-										<string>English</string>
-										<key>VALUE</key>
-										<string>GPG Plugin for Mozilla Thunderbird 5. (visit http://enigmail.mozdev.org/ for further information)  Thunderbird needs to be installed and set up(!) for this choice to be enabled!</string>
+										<string>GPG Plugin for Mozilla Thunderbird 5. (visit http://enigmail.mozdev.org/ for further information) Thunderbird needs to be installed and set up(!) for this choice to be enabled!</string>
 									</dict>
 								</array>
 								<key>OPTIONS</key>
@@ -6420,7 +6334,7 @@ $HOME/Library/PreferencePanes/</string>
 										<key>LANGUAGE</key>
 										<string>English</string>
 										<key>VALUE</key>
-										<string>Add the GPGTools Project OpenPGP Key to the keychain.</string>
+										<string>GPG Plugin for Mozilla Thunderbird 3. (visit http://enigmail.mozdev.org/ for further information) Thunderbird needs to be installed and set up(!) for this choice to be enabled!</string>
 									</dict>
 								</array>
 								<key>OPTIONS</key>
@@ -6431,9 +6345,91 @@ $HOME/Library/PreferencePanes/</string>
 									<integer>1</integer>
 								</dict>
 								<key>PACKAGE_UUID</key>
-								<string>45261126-8A93-400B-9345-55A2D143DEFE</string>
+								<string>76B8D8BE-BAFF-4C33-8FAE-B176FD99DE6A</string>
 								<key>REQUIREMENTS</key>
-								<array/>
+								<array>
+									<dict>
+										<key>BEHAVIOR</key>
+										<integer>1</integer>
+										<key>DICTIONARY</key>
+										<dict>
+											<key>IC_REQUIREMENT_SCRIPT_ARGUMENTS</key>
+											<array/>
+											<key>IC_REQUIREMENT_SCRIPT_COMPARATOR</key>
+											<integer>0</integer>
+											<key>IC_REQUIREMENT_SCRIPT_EMBED</key>
+											<true/>
+											<key>IC_REQUIREMENT_SCRIPT_PATH</key>
+											<dict>
+												<key>PATH</key>
+												<string>Dependencies/GPGTools_Core/scripts/check_for_thunderbird.sh</string>
+												<key>PATH_TYPE</key>
+												<integer>1</integer>
+											</dict>
+											<key>IC_REQUIREMENT_SCRIPT_VALUE</key>
+											<integer>0</integer>
+										</dict>
+										<key>IDENTIFIER</key>
+										<string>fr.whitebox.Packages.requirement.scripts</string>
+										<key>MESSAGE</key>
+										<array>
+											<dict>
+												<key>LANGUAGE</key>
+												<string>English</string>
+												<key>VALUE</key>
+												<string>Could not find a Thunderbird profile</string>
+											</dict>
+										</array>
+										<key>NAME</key>
+										<string>Thunderbird installed</string>
+										<key>STATE</key>
+										<true/>
+									</dict>
+									<dict>
+										<key>BEHAVIOR</key>
+										<integer>1</integer>
+										<key>DICTIONARY</key>
+										<dict>
+											<key>IC_REQUIREMENT_SCRIPT_ARGUMENTS</key>
+											<array>
+												<dict>
+													<key>IC_REQUIREMENT_SCRIPT_ARGUMENT_STATE</key>
+													<true/>
+													<key>IC_REQUIREMENT_SCRIPT_ARGUMENT_VALUE</key>
+													<string>3</string>
+												</dict>
+											</array>
+											<key>IC_REQUIREMENT_SCRIPT_COMPARATOR</key>
+											<integer>0</integer>
+											<key>IC_REQUIREMENT_SCRIPT_EMBED</key>
+											<true/>
+											<key>IC_REQUIREMENT_SCRIPT_PATH</key>
+											<dict>
+												<key>PATH</key>
+												<string>Dependencies/GPGTools_Core/scripts/check_for_thunderbirdver.sh</string>
+												<key>PATH_TYPE</key>
+												<integer>1</integer>
+											</dict>
+											<key>IC_REQUIREMENT_SCRIPT_VALUE</key>
+											<integer>0</integer>
+										</dict>
+										<key>IDENTIFIER</key>
+										<string>fr.whitebox.Packages.requirement.scripts</string>
+										<key>MESSAGE</key>
+										<array>
+											<dict>
+												<key>LANGUAGE</key>
+												<string>English</string>
+												<key>VALUE</key>
+												<string>Only for Thunderbird 3</string>
+											</dict>
+										</array>
+										<key>NAME</key>
+										<string>Thinderbird 3</string>
+										<key>STATE</key>
+										<true/>
+									</dict>
+								</array>
 								<key>TITLE</key>
 								<array/>
 								<key>TOOLTIP</key>
@@ -6441,7 +6437,7 @@ $HOME/Library/PreferencePanes/</string>
 								<key>TYPE</key>
 								<integer>0</integer>
 								<key>UUID</key>
-								<string>5CF083A3-DA13-41E6-8CAA-F0270E97EF1F</string>
+								<string>4D9ADBA4-5612-4497-906D-53A5B8E79CCB</string>
 							</dict>
 						</array>
 						<key>REMOVED</key>
@@ -6451,7 +6447,7 @@ $HOME/Library/PreferencePanes/</string>
 				<key>INSTALLATION TYPE</key>
 				<integer>0</integer>
 				<key>MODE</key>
-				<integer>0</integer>
+				<integer>2</integer>
 			</dict>
 			<key>INSTALLATION_STEPS</key>
 			<array>
@@ -6522,7 +6518,7 @@ $HOME/Library/PreferencePanes/</string>
 						<key>VALUE</key>
 						<dict>
 							<key>PATH</key>
-							<string>resources/package-introduction-en.txt</string>
+							<string>resources/package-introduction-en.rtf</string>
 							<key>PATH_TYPE</key>
 							<integer>1</integer>
 						</dict>
