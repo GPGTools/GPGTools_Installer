@@ -3049,11 +3049,11 @@
 				<key>LOCATION</key>
 				<integer>0</integer>
 				<key>NAME</key>
-				<string>GPGPToolsPreferences 0.6</string>
+				<string>GPGPToolsPreferences 0.7</string>
 				<key>OVERWRITE_PERMISSIONS</key>
 				<false/>
 				<key>VERSION</key>
-				<string>0.6</string>
+				<string>0.7</string>
 			</dict>
 			<key>TYPE</key>
 			<integer>0</integer>

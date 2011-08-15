@@ -116,7 +116,7 @@ gpgservices_target="gpgservices";
 
 
 gpgpreferences_url="https://github.com/downloads/GPGTools/GPGTools_Preferences/";
-gpgpreferences_version="GPGPreferences-0.6";
+gpgpreferences_version="GPGPreferences-0.7";
 gpgpreferences_fileExt=".dmg";
 gpgpreferences_sigExt=".dmg.sig"
 gpgpreferences_build="$pathDownload/gpgpreferences";
