@@ -104,6 +104,13 @@ enigmail5_sigExt=".xpi.sig"
 enigmail5_build="$pathDownload/enigmail5";
 enigmail5_target="enigmail5";
 
+enigmail6_url="http://addons.mozilla.org/en-US/thunderbird/downloads/file/128958/";
+enigmail6_version="enigmail-1.3-tb+sm-mac";
+enigmail6_fileExt=".xpi";
+enigmail6_sigExt=".xpi.sig"
+enigmail6_build="$pathDownload/enigmail6";
+enigmail6_target="enigmail6";
+
 gpgservices_url="https://github.com/downloads/GPGTools/GPGServices/";
 gpgservices_version="GPGServices-1.6";
 gpgservices_fileExt=".dmg";
@@ -257,6 +264,8 @@ download "$enigmail_build" "$enigmail_version" "$enigmail_fileExt" "$enigmail_si
 enigmail_pid=${!}
 download "$enigmail5_build" "$enigmail5_version" "$enigmail5_fileExt" "$enigmail5_sigExt" "$enigmail5_url" &
 enigmail5_pid=${!}
+download "$enigmail6_build" "$enigmail6_version" "$enigmail6_fileExt" "$enigmail6_sigExt" "$enigmail6_url" &
+enigmail6_pid=${!}
 download "$macgpg1_build" "$macgpg1_version" "$macgpg1_fileExt" "$macgpg1_sigExt" "$macgpg1_url" &
 macgpg1_pid=${!}
 download "$macgpg2_build" "$macgpg2_version" "$macgpg2_fileExt" "$macgpg2_sigExt" "$macgpg2_url" &
@@ -365,6 +374,16 @@ simplecopy "$enigmail5_build"\
            "$enigmail5_version"\
            "$enigmail5_fileExt"\
            "$enigmail5_target"\
+           "$pathDist"
+################################################################################
+
+################################################################################
+echo " * Working on 'Enigmail' for Thunderbird 6...";
+waitfor "Enigmail for Thunderbird 6" "$enigmail6_pid";
+simplecopy "$enigmail6_build"\
+           "$enigmail6_version"\
+           "$enigmail6_fileExt"\
+           "$enigmail6_target"\
            "$pathDist"
 ################################################################################
 
