@@ -6982,7 +6982,15 @@ Web: http://enigmail.mozdev.org</string>
 							</dict>
 							<dict>
 								<key>DESCRIPTION</key>
-								<array/>
+								<array>
+									<dict>
+										<key>LANGUAGE</key>
+										<string>English</string>
+										<key>VALUE</key>
+										<string>OpenPGP for Mozilla Thunderbird 6. Requirement: Thunderbird needs to be installed and set up.
+Web: http://enigmail.mozdev.org</string>
+									</dict>
+								</array>
 								<key>OPTIONS</key>
 								<dict>
 									<key>HIDDEN</key>
