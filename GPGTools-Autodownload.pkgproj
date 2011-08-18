@@ -162,14 +162,96 @@
 								<key>PACKAGE_UUID</key>
 								<string>132421CC-E3AB-4698-80CC-2AF1927DE33A</string>
 								<key>REQUIREMENTS</key>
-								<array/>
+								<array>
+									<dict>
+										<key>BEHAVIOR</key>
+										<integer>1</integer>
+										<key>DICTIONARY</key>
+										<dict>
+											<key>IC_REQUIREMENT_SCRIPT_ARGUMENTS</key>
+											<array>
+												<dict>
+													<key>IC_REQUIREMENT_SCRIPT_ARGUMENT_STATE</key>
+													<true/>
+													<key>IC_REQUIREMENT_SCRIPT_ARGUMENT_VALUE</key>
+													<string>7</string>
+												</dict>
+											</array>
+											<key>IC_REQUIREMENT_SCRIPT_COMPARATOR</key>
+											<integer>0</integer>
+											<key>IC_REQUIREMENT_SCRIPT_EMBED</key>
+											<true/>
+											<key>IC_REQUIREMENT_SCRIPT_PATH</key>
+											<dict>
+												<key>PATH</key>
+												<string>Dependencies/GPGTools_Core/scripts/check_for_osver.sh</string>
+												<key>PATH_TYPE</key>
+												<integer>1</integer>
+											</dict>
+											<key>IC_REQUIREMENT_SCRIPT_VALUE</key>
+											<integer>0</integer>
+										</dict>
+										<key>IDENTIFIER</key>
+										<string>fr.whitebox.Packages.requirement.scripts</string>
+										<key>MESSAGE</key>
+										<array>
+											<dict>
+												<key>LANGUAGE</key>
+												<string>English</string>
+												<key>VALUE</key>
+												<string>This version of GPGMail is for OS X 10.7 (Lion) only.</string>
+											</dict>
+										</array>
+										<key>NAME</key>
+										<string>Operating System</string>
+										<key>STATE</key>
+										<true/>
+									</dict>
+									<dict>
+										<key>BEHAVIOR</key>
+										<integer>1</integer>
+										<key>DICTIONARY</key>
+										<dict>
+											<key>IC_REQUIREMENT_SCRIPT_ARGUMENTS</key>
+											<array/>
+											<key>IC_REQUIREMENT_SCRIPT_COMPARATOR</key>
+											<integer>2</integer>
+											<key>IC_REQUIREMENT_SCRIPT_EMBED</key>
+											<true/>
+											<key>IC_REQUIREMENT_SCRIPT_PATH</key>
+											<dict>
+												<key>PATH</key>
+												<string>Dependencies/GPGTools_Core/scripts/check_for_mail.sh</string>
+												<key>PATH_TYPE</key>
+												<integer>1</integer>
+											</dict>
+											<key>IC_REQUIREMENT_SCRIPT_VALUE</key>
+											<integer>1</integer>
+										</dict>
+										<key>IDENTIFIER</key>
+										<string>fr.whitebox.Packages.requirement.scripts</string>
+										<key>MESSAGE</key>
+										<array>
+											<dict>
+												<key>LANGUAGE</key>
+												<string>English</string>
+												<key>VALUE</key>
+												<string>Mail.app is running. Please close it first.</string>
+											</dict>
+										</array>
+										<key>NAME</key>
+										<string>Mail.app running</string>
+										<key>STATE</key>
+										<true/>
+									</dict>
+								</array>
 								<key>TITLE</key>
 								<array>
 									<dict>
 										<key>LANGUAGE</key>
 										<string>English</string>
 										<key>VALUE</key>
-										<string>Current GPGMail</string>
+										<string>GPGTools GPGMail</string>
 									</dict>
 								</array>
 								<key>TOOLTIP</key>
@@ -199,14 +281,43 @@
 								<key>PACKAGE_UUID</key>
 								<string>72FEC29E-BA51-4EF6-AF43-389BF8A1311F</string>
 								<key>REQUIREMENTS</key>
-								<array/>
+								<array>
+									<dict>
+										<key>BEHAVIOR</key>
+										<integer>1</integer>
+										<key>DICTIONARY</key>
+										<dict>
+											<key>IC_REQUIREMENT_OS_DISK_TYPE</key>
+											<integer>0</integer>
+											<key>IC_REQUIREMENT_OS_DISTRIBUTION_TYPE</key>
+											<integer>0</integer>
+											<key>IC_REQUIREMENT_OS_MINIMUM_VERSION</key>
+											<integer>100600</integer>
+										</dict>
+										<key>IDENTIFIER</key>
+										<string>fr.whitebox.Packages.requirement.os</string>
+										<key>MESSAGE</key>
+										<array>
+											<dict>
+												<key>LANGUAGE</key>
+												<string>English</string>
+												<key>VALUE</key>
+												<string>GPGServices is compatible with OS X &gt;= 10.6 (Snow Leopard) only.</string>
+											</dict>
+										</array>
+										<key>NAME</key>
+										<string>Operating System</string>
+										<key>STATE</key>
+										<true/>
+									</dict>
+								</array>
 								<key>TITLE</key>
 								<array>
 									<dict>
 										<key>LANGUAGE</key>
 										<string>English</string>
 										<key>VALUE</key>
-										<string>Current GPGServices</string>
+										<string>GPGTools GPGServices</string>
 									</dict>
 								</array>
 								<key>TOOLTIP</key>
@@ -223,7 +334,7 @@
 										<key>LANGUAGE</key>
 										<string>English</string>
 										<key>VALUE</key>
-										<string>Installs the current GPGTools OpenPGP Key.</string>
+										<string>Installs the current GPGTools Public OpenPGP Key.</string>
 									</dict>
 								</array>
 								<key>OPTIONS</key>
@@ -243,7 +354,7 @@
 										<key>LANGUAGE</key>
 										<string>English</string>
 										<key>VALUE</key>
-										<string>Current OpenPGP Key</string>
+										<string>GPGTools Public OpenPGP Key</string>
 									</dict>
 								</array>
 								<key>TOOLTIP</key>
@@ -280,7 +391,7 @@
 										<key>LANGUAGE</key>
 										<string>English</string>
 										<key>VALUE</key>
-										<string>Current Autofix</string>
+										<string>GPGTools Autofix</string>
 									</dict>
 								</array>
 								<key>TOOLTIP</key>
@@ -419,7 +530,7 @@
 			<key>RESOURCES</key>
 			<array/>
 			<key>ROOT_VOLUME_ONLY</key>
-			<false/>
+			<true/>
 		</dict>
 		<key>PROJECT_SETTINGS</key>
 		<dict>
@@ -589,6 +700,11 @@
 			<key>NAME</key>
 			<string>GPGTools-Autodownload</string>
 		</dict>
+	</dict>
+	<key>SHARED_GLOBAL_DATA</key>
+	<dict>
+		<key>IC_REQUIREMENT_JAVASCRIPT_SHARED_SOURCE_CODE</key>
+		<string></string>
 	</dict>
 	<key>TYPE</key>
 	<integer>0</integer>
