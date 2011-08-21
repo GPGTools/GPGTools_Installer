@@ -8,15 +8,15 @@
 			<key>PACKAGE_SETTINGS</key>
 			<dict>
 				<key>AUTHENTICATION</key>
-				<integer>0</integer>
+				<true/>
 				<key>CONCLUSION_ACTION</key>
 				<integer>0</integer>
 				<key>IDENTIFIER</key>
-				<string>org.gpgtools.gpgmail.test</string>
+				<string>org.gpgtools.gpgmail.lion</string>
 				<key>LOCATION</key>
 				<integer>2</integer>
 				<key>NAME</key>
-				<string>GPGMail</string>
+				<string>GPGMail-Lion</string>
 				<key>REFERENCE_PATH</key>
 				<string>http://github.com/downloads/GPGTools/GPGTools_Installer/</string>
 				<key>VERSION</key>
@@ -31,7 +31,7 @@
 			<key>PACKAGE_SETTINGS</key>
 			<dict>
 				<key>AUTHENTICATION</key>
-				<integer>0</integer>
+				<true/>
 				<key>CONCLUSION_ACTION</key>
 				<integer>0</integer>
 				<key>IDENTIFIER</key>
@@ -77,11 +77,11 @@
 			<key>PACKAGE_SETTINGS</key>
 			<dict>
 				<key>AUTHENTICATION</key>
-				<integer>0</integer>
+				<true/>
 				<key>CONCLUSION_ACTION</key>
 				<integer>0</integer>
 				<key>IDENTIFIER</key>
-				<string>org.gpgtools.gpgservices.test</string>
+				<string>org.gpgtools.gpgservices</string>
 				<key>LOCATION</key>
 				<integer>2</integer>
 				<key>NAME</key>
@@ -95,6 +95,213 @@
 			<integer>2</integer>
 			<key>UUID</key>
 			<string>72FEC29E-BA51-4EF6-AF43-389BF8A1311F</string>
+		</dict>
+		<dict>
+			<key>PACKAGE_SETTINGS</key>
+			<dict>
+				<key>AUTHENTICATION</key>
+				<integer>0</integer>
+				<key>CONCLUSION_ACTION</key>
+				<integer>0</integer>
+				<key>IDENTIFIER</key>
+				<string>org.gpgtools.gpgkeychainaccess</string>
+				<key>LOCATION</key>
+				<integer>2</integer>
+				<key>NAME</key>
+				<string>GKA</string>
+				<key>REFERENCE_PATH</key>
+				<string>http://github.com/downloads/GPGTools/GPGTools_Installer/</string>
+				<key>VERSION</key>
+				<string>1.0</string>
+			</dict>
+			<key>TYPE</key>
+			<integer>2</integer>
+			<key>UUID</key>
+			<string>104C231B-56C1-41C7-B843-CBE34FFE15A3</string>
+		</dict>
+		<dict>
+			<key>PACKAGE_SETTINGS</key>
+			<dict>
+				<key>AUTHENTICATION</key>
+				<true/>
+				<key>CONCLUSION_ACTION</key>
+				<integer>0</integer>
+				<key>IDENTIFIER</key>
+				<string>org.gpgtools.gpgmail.snowleopard</string>
+				<key>LOCATION</key>
+				<integer>2</integer>
+				<key>NAME</key>
+				<string>GPGMail-SnowLeopard</string>
+				<key>REFERENCE_PATH</key>
+				<string>http://github.com/downloads/GPGTools/GPGTools_Installer/</string>
+				<key>VERSION</key>
+				<string>1.0</string>
+			</dict>
+			<key>TYPE</key>
+			<integer>2</integer>
+			<key>UUID</key>
+			<string>197B1F87-75E2-43B5-959C-E3FBB2717A4C</string>
+		</dict>
+		<dict>
+			<key>PACKAGE_SETTINGS</key>
+			<dict>
+				<key>AUTHENTICATION</key>
+				<true/>
+				<key>CONCLUSION_ACTION</key>
+				<integer>0</integer>
+				<key>IDENTIFIER</key>
+				<string>org.gpgtools.gpgmail.leopard</string>
+				<key>LOCATION</key>
+				<integer>2</integer>
+				<key>NAME</key>
+				<string>GPGMail-Leopard</string>
+				<key>REFERENCE_PATH</key>
+				<string>http://github.com/downloads/GPGTools/GPGTools_Installer/</string>
+				<key>VERSION</key>
+				<string>1.0</string>
+			</dict>
+			<key>TYPE</key>
+			<integer>2</integer>
+			<key>UUID</key>
+			<string>A34C9798-E54C-48E5-86A4-839D1B560372</string>
+		</dict>
+		<dict>
+			<key>PACKAGE_SETTINGS</key>
+			<dict>
+				<key>AUTHENTICATION</key>
+				<integer>0</integer>
+				<key>CONCLUSION_ACTION</key>
+				<integer>0</integer>
+				<key>IDENTIFIER</key>
+				<string>org.mozilla.enigmail.tb3</string>
+				<key>LOCATION</key>
+				<integer>2</integer>
+				<key>NAME</key>
+				<string>Enigmail-TB3</string>
+				<key>REFERENCE_PATH</key>
+				<string>http://github.com/downloads/GPGTools/GPGTools_Installer/</string>
+				<key>VERSION</key>
+				<string>1.0</string>
+			</dict>
+			<key>TYPE</key>
+			<integer>2</integer>
+			<key>UUID</key>
+			<string>EC6E766B-28B7-4CF7-992F-799537AF8ABE</string>
+		</dict>
+		<dict>
+			<key>PACKAGE_SETTINGS</key>
+			<dict>
+				<key>AUTHENTICATION</key>
+				<integer>0</integer>
+				<key>CONCLUSION_ACTION</key>
+				<integer>0</integer>
+				<key>IDENTIFIER</key>
+				<string>org.mozilla.enigmail.tb5</string>
+				<key>LOCATION</key>
+				<integer>2</integer>
+				<key>NAME</key>
+				<string>Enigmail-TB5</string>
+				<key>REFERENCE_PATH</key>
+				<string>http://github.com/downloads/GPGTools/GPGTools_Installer/</string>
+				<key>VERSION</key>
+				<string>1.0</string>
+			</dict>
+			<key>TYPE</key>
+			<integer>2</integer>
+			<key>UUID</key>
+			<string>149DEAB9-B2A1-4894-825F-853B091845BB</string>
+		</dict>
+		<dict>
+			<key>PACKAGE_SETTINGS</key>
+			<dict>
+				<key>AUTHENTICATION</key>
+				<integer>0</integer>
+				<key>CONCLUSION_ACTION</key>
+				<integer>0</integer>
+				<key>IDENTIFIER</key>
+				<string>org.mozilla.enigmail.tb6</string>
+				<key>LOCATION</key>
+				<integer>2</integer>
+				<key>NAME</key>
+				<string>Enigmail-TB6</string>
+				<key>REFERENCE_PATH</key>
+				<string>http://github.com/downloads/GPGTools/GPGTools_Installer/</string>
+				<key>VERSION</key>
+				<string>1.0</string>
+			</dict>
+			<key>TYPE</key>
+			<integer>2</integer>
+			<key>UUID</key>
+			<string>1CA6C5B0-A6A6-4353-AD63-4666AC181716</string>
+		</dict>
+		<dict>
+			<key>PACKAGE_SETTINGS</key>
+			<dict>
+				<key>AUTHENTICATION</key>
+				<true/>
+				<key>CONCLUSION_ACTION</key>
+				<integer>0</integer>
+				<key>IDENTIFIER</key>
+				<string>org.gpgtools.macgpg1</string>
+				<key>LOCATION</key>
+				<integer>2</integer>
+				<key>NAME</key>
+				<string>MacGPG1</string>
+				<key>REFERENCE_PATH</key>
+				<string>http://github.com/downloads/GPGTools/GPGTools_Installer/</string>
+				<key>VERSION</key>
+				<string>1.0</string>
+			</dict>
+			<key>TYPE</key>
+			<integer>2</integer>
+			<key>UUID</key>
+			<string>3FFC9720-71A9-4D9B-BED4-AE210D5F658A</string>
+		</dict>
+		<dict>
+			<key>PACKAGE_SETTINGS</key>
+			<dict>
+				<key>AUTHENTICATION</key>
+				<true/>
+				<key>CONCLUSION_ACTION</key>
+				<integer>0</integer>
+				<key>IDENTIFIER</key>
+				<string>org.gpgtools.macgpg2</string>
+				<key>LOCATION</key>
+				<integer>2</integer>
+				<key>NAME</key>
+				<string>MacGPG2</string>
+				<key>REFERENCE_PATH</key>
+				<string>http://github.com/downloads/GPGTools/GPGTools_Installer/</string>
+				<key>VERSION</key>
+				<string>1.0</string>
+			</dict>
+			<key>TYPE</key>
+			<integer>2</integer>
+			<key>UUID</key>
+			<string>AB273842-4021-42C5-85A3-CB167230D150</string>
+		</dict>
+		<dict>
+			<key>PACKAGE_SETTINGS</key>
+			<dict>
+				<key>AUTHENTICATION</key>
+				<integer>0</integer>
+				<key>CONCLUSION_ACTION</key>
+				<integer>0</integer>
+				<key>IDENTIFIER</key>
+				<string>org.gpgtools.gpgpreferences</string>
+				<key>LOCATION</key>
+				<integer>2</integer>
+				<key>NAME</key>
+				<string>GPGToolsPreferences</string>
+				<key>REFERENCE_PATH</key>
+				<string>http://github.com/downloads/GPGTools/GPGTools_Installer/</string>
+				<key>VERSION</key>
+				<string>1.0</string>
+			</dict>
+			<key>TYPE</key>
+			<integer>2</integer>
+			<key>UUID</key>
+			<string>841E87CF-59AE-456D-94FB-DCD036DE20C8</string>
 		</dict>
 	</array>
 	<key>PROJECT</key>
@@ -149,7 +356,52 @@
 										<key>LANGUAGE</key>
 										<string>English</string>
 										<key>VALUE</key>
-										<string>Installs the current OpenPGP Mail plugin.</string>
+										<string>Version: current
+Web: http://gpgtools.org/macgpg1.html
+Requirements: OS X &gt;= 10.4
+It installs to: /usr/local/MacGPG1
+Description: OpenPGP core implementation. Version 1 is the small portable edition. If uncertain, please install version 2 instead.</string>
+									</dict>
+								</array>
+								<key>OPTIONS</key>
+								<dict>
+									<key>HIDDEN</key>
+									<false/>
+									<key>STATE</key>
+									<integer>2</integer>
+								</dict>
+								<key>PACKAGE_UUID</key>
+								<string>3FFC9720-71A9-4D9B-BED4-AE210D5F658A</string>
+								<key>REQUIREMENTS</key>
+								<array/>
+								<key>TITLE</key>
+								<array>
+									<dict>
+										<key>LANGUAGE</key>
+										<string>English</string>
+										<key>VALUE</key>
+										<string>GPGTools MacGPG1</string>
+									</dict>
+								</array>
+								<key>TOOLTIP</key>
+								<array/>
+								<key>TYPE</key>
+								<integer>0</integer>
+								<key>UUID</key>
+								<string>2D29FBC5-D9F1-4758-9A44-FECB4B0E77B4</string>
+							</dict>
+							<dict>
+								<key>DESCRIPTION</key>
+								<array>
+									<dict>
+										<key>LANGUAGE</key>
+										<string>English</string>
+										<key>VALUE</key>
+										<string>Version: current
+Web: http://gpgtools.org/macgpg1.html
+Requirements: OS X &gt;= 10.4
+It installs to: /usr/local/MacGPG1
+Description: OpenPGP core implementation. Version 1 is the small portable edition. If uncertain, please install version 2 instead.</string>
 									</dict>
 								</array>
 								<key>OPTIONS</key>
@@ -160,98 +412,16 @@
 									<integer>1</integer>
 								</dict>
 								<key>PACKAGE_UUID</key>
-								<string>132421CC-E3AB-4698-80CC-2AF1927DE33A</string>
+								<string>AB273842-4021-42C5-85A3-CB167230D150</string>
 								<key>REQUIREMENTS</key>
-								<array>
-									<dict>
-										<key>BEHAVIOR</key>
-										<integer>1</integer>
-										<key>DICTIONARY</key>
-										<dict>
-											<key>IC_REQUIREMENT_SCRIPT_ARGUMENTS</key>
-											<array>
-												<dict>
-													<key>IC_REQUIREMENT_SCRIPT_ARGUMENT_STATE</key>
-													<true/>
-													<key>IC_REQUIREMENT_SCRIPT_ARGUMENT_VALUE</key>
-													<string>7</string>
-												</dict>
-											</array>
-											<key>IC_REQUIREMENT_SCRIPT_COMPARATOR</key>
-											<integer>0</integer>
-											<key>IC_REQUIREMENT_SCRIPT_EMBED</key>
-											<true/>
-											<key>IC_REQUIREMENT_SCRIPT_PATH</key>
-											<dict>
-												<key>PATH</key>
-												<string>Dependencies/GPGTools_Core/scripts/check_for_osver.sh</string>
-												<key>PATH_TYPE</key>
-												<integer>1</integer>
-											</dict>
-											<key>IC_REQUIREMENT_SCRIPT_VALUE</key>
-											<integer>0</integer>
-										</dict>
-										<key>IDENTIFIER</key>
-										<string>fr.whitebox.Packages.requirement.scripts</string>
-										<key>MESSAGE</key>
-										<array>
-											<dict>
-												<key>LANGUAGE</key>
-												<string>English</string>
-												<key>VALUE</key>
-												<string>This version of GPGMail is for OS X 10.7 (Lion) only.</string>
-											</dict>
-										</array>
-										<key>NAME</key>
-										<string>Operating System</string>
-										<key>STATE</key>
-										<true/>
-									</dict>
-									<dict>
-										<key>BEHAVIOR</key>
-										<integer>1</integer>
-										<key>DICTIONARY</key>
-										<dict>
-											<key>IC_REQUIREMENT_SCRIPT_ARGUMENTS</key>
-											<array/>
-											<key>IC_REQUIREMENT_SCRIPT_COMPARATOR</key>
-											<integer>2</integer>
-											<key>IC_REQUIREMENT_SCRIPT_EMBED</key>
-											<true/>
-											<key>IC_REQUIREMENT_SCRIPT_PATH</key>
-											<dict>
-												<key>PATH</key>
-												<string>Dependencies/GPGTools_Core/scripts/check_for_mail.sh</string>
-												<key>PATH_TYPE</key>
-												<integer>1</integer>
-											</dict>
-											<key>IC_REQUIREMENT_SCRIPT_VALUE</key>
-											<integer>1</integer>
-										</dict>
-										<key>IDENTIFIER</key>
-										<string>fr.whitebox.Packages.requirement.scripts</string>
-										<key>MESSAGE</key>
-										<array>
-											<dict>
-												<key>LANGUAGE</key>
-												<string>English</string>
-												<key>VALUE</key>
-												<string>Mail.app is running. Please close it first.</string>
-											</dict>
-										</array>
-										<key>NAME</key>
-										<string>Mail.app running</string>
-										<key>STATE</key>
-										<true/>
-									</dict>
-								</array>
+								<array/>
 								<key>TITLE</key>
 								<array>
 									<dict>
 										<key>LANGUAGE</key>
 										<string>English</string>
 										<key>VALUE</key>
-										<string>GPGTools GPGMail</string>
+										<string>GPGTools MacGPG2</string>
 									</dict>
 								</array>
 								<key>TOOLTIP</key>
@@ -259,7 +429,7 @@
 								<key>TYPE</key>
 								<integer>0</integer>
 								<key>UUID</key>
-								<string>DF1A99FA-6AF2-418A-A3BA-C7C74753FFFD</string>
+								<string>2E328376-A38B-4A86-B838-1D725B980173</string>
 							</dict>
 							<dict>
 								<key>DESCRIPTION</key>
@@ -268,7 +438,53 @@
 										<key>LANGUAGE</key>
 										<string>English</string>
 										<key>VALUE</key>
-										<string>Installs the current OpenPGP services menu.</string>
+										<string>Version: current
+Web: http://gpgtools.org/keychain.html
+Requirements: OS X &gt;= 10.5
+Installs to: /Applications
+Description: OpenPGP key management.</string>
+									</dict>
+								</array>
+								<key>OPTIONS</key>
+								<dict>
+									<key>HIDDEN</key>
+									<false/>
+									<key>STATE</key>
+									<integer>1</integer>
+								</dict>
+								<key>PACKAGE_UUID</key>
+								<string>104C231B-56C1-41C7-B843-CBE34FFE15A3</string>
+								<key>REQUIREMENTS</key>
+								<array/>
+								<key>TITLE</key>
+								<array>
+									<dict>
+										<key>LANGUAGE</key>
+										<string>English</string>
+										<key>VALUE</key>
+										<string>GPGTools GPG Keychain Access</string>
+									</dict>
+								</array>
+								<key>TOOLTIP</key>
+								<array/>
+								<key>TYPE</key>
+								<integer>0</integer>
+								<key>UUID</key>
+								<string>95BE9EBD-8449-4E5F-8F08-EAA5A7F784CC</string>
+							</dict>
+							<dict>
+								<key>DESCRIPTION</key>
+								<array>
+									<dict>
+										<key>LANGUAGE</key>
+										<string>English</string>
+										<key>VALUE</key>
+										<string>Version: current
+Web: http://gpgtools.org/gpgservices.html
+Requirements: OS X &gt;= 10.6 (Intel)
+Installs to: /Library/Services
+Description: OpenPGP for all applications via OS X Services menu.
+</string>
 									</dict>
 								</array>
 								<key>OPTIONS</key>
@@ -334,7 +550,11 @@
 										<key>LANGUAGE</key>
 										<string>English</string>
 										<key>VALUE</key>
-										<string>Installs the current GPGTools Public OpenPGP Key.</string>
+										<string>Version: current
+Web: http://gpgtools.org/gpgpreferences.html
+Requirements: OS X &gt;= 10.5, Intel
+Installs to: ~/Library/PreferencePanes/
+Description: OpenPGP system preferences.</string>
 									</dict>
 								</array>
 								<key>OPTIONS</key>
@@ -345,16 +565,49 @@
 									<integer>1</integer>
 								</dict>
 								<key>PACKAGE_UUID</key>
-								<string>F5AADB7F-8CD2-414E-A0BC-D8F9BA0307EC</string>
+								<string>841E87CF-59AE-456D-94FB-DCD036DE20C8</string>
 								<key>REQUIREMENTS</key>
-								<array/>
+								<array>
+									<dict>
+										<key>BEHAVIOR</key>
+										<integer>1</integer>
+										<key>DICTIONARY</key>
+										<dict>
+											<key>IC_REQUIREMENT_CPU_ARCHITECTURE_FAMILY</key>
+											<integer>2</integer>
+											<key>IC_REQUIREMENT_CPU_INTEL_ARCHITECTURE_TYPE</key>
+											<integer>0</integer>
+											<key>IC_REQUIREMENT_CPU_MINIMUM_CPU_CORES_COUNT</key>
+											<integer>1</integer>
+											<key>IC_REQUIREMENT_CPU_MINIMUM_FREQUENCY</key>
+											<integer>866666</integer>
+											<key>IC_REQUIREMENT_CPU_POWERPC_ARCHITECTURE_TYPE</key>
+											<integer>0</integer>
+										</dict>
+										<key>IDENTIFIER</key>
+										<string>fr.whitebox.Packages.requirement.cpu</string>
+										<key>MESSAGE</key>
+										<array>
+											<dict>
+												<key>LANGUAGE</key>
+												<string>English</string>
+												<key>VALUE</key>
+												<string>Needs an Intel CPU</string>
+											</dict>
+										</array>
+										<key>NAME</key>
+										<string>Processor</string>
+										<key>STATE</key>
+										<true/>
+									</dict>
+								</array>
 								<key>TITLE</key>
 								<array>
 									<dict>
 										<key>LANGUAGE</key>
 										<string>English</string>
 										<key>VALUE</key>
-										<string>GPGTools Public OpenPGP Key</string>
+										<string>GPGTools GPGPreferences</string>
 									</dict>
 								</array>
 								<key>TOOLTIP</key>
@@ -362,7 +615,7 @@
 								<key>TYPE</key>
 								<integer>0</integer>
 								<key>UUID</key>
-								<string>8E45B2D9-FC0E-4DF4-925C-2EF889EB014D</string>
+								<string>9C76D2BD-72FA-4A7B-BBD6-1DC521EACC27</string>
 							</dict>
 							<dict>
 								<key>DESCRIPTION</key>
@@ -371,7 +624,523 @@
 										<key>LANGUAGE</key>
 										<string>English</string>
 										<key>VALUE</key>
-										<string>Automatically fixes possible GPGTools issues.</string>
+										<string>Version: current
+Web: http://gpgtools.org/gpgmail.html
+Requirements: OS X 10.7 (Lion)
+Installs to: ~/Library/Mail/Bundles
+Description: OpenPGP for Apple Mail.</string>
+									</dict>
+								</array>
+								<key>OPTIONS</key>
+								<dict>
+									<key>HIDDEN</key>
+									<false/>
+									<key>STATE</key>
+									<integer>1</integer>
+								</dict>
+								<key>PACKAGE_UUID</key>
+								<string>132421CC-E3AB-4698-80CC-2AF1927DE33A</string>
+								<key>REQUIREMENTS</key>
+								<array>
+									<dict>
+										<key>BEHAVIOR</key>
+										<integer>1</integer>
+										<key>DICTIONARY</key>
+										<dict>
+											<key>IC_REQUIREMENT_SCRIPT_ARGUMENTS</key>
+											<array>
+												<dict>
+													<key>IC_REQUIREMENT_SCRIPT_ARGUMENT_STATE</key>
+													<true/>
+													<key>IC_REQUIREMENT_SCRIPT_ARGUMENT_VALUE</key>
+													<string>7</string>
+												</dict>
+											</array>
+											<key>IC_REQUIREMENT_SCRIPT_COMPARATOR</key>
+											<integer>0</integer>
+											<key>IC_REQUIREMENT_SCRIPT_EMBED</key>
+											<true/>
+											<key>IC_REQUIREMENT_SCRIPT_PATH</key>
+											<dict>
+												<key>PATH</key>
+												<string>Dependencies/GPGTools_Core/scripts/check_for_osver.sh</string>
+												<key>PATH_TYPE</key>
+												<integer>1</integer>
+											</dict>
+											<key>IC_REQUIREMENT_SCRIPT_VALUE</key>
+											<integer>0</integer>
+										</dict>
+										<key>IDENTIFIER</key>
+										<string>fr.whitebox.Packages.requirement.scripts</string>
+										<key>MESSAGE</key>
+										<array>
+											<dict>
+												<key>LANGUAGE</key>
+												<string>English</string>
+												<key>VALUE</key>
+												<string>This version of GPGMail is for OS X 10.7 (Lion) only.</string>
+											</dict>
+										</array>
+										<key>NAME</key>
+										<string>Operating System</string>
+										<key>STATE</key>
+										<true/>
+									</dict>
+								</array>
+								<key>TITLE</key>
+								<array>
+									<dict>
+										<key>LANGUAGE</key>
+										<string>English</string>
+										<key>VALUE</key>
+										<string>GPGTools GPGMail (Lion)</string>
+									</dict>
+								</array>
+								<key>TOOLTIP</key>
+								<array/>
+								<key>TYPE</key>
+								<integer>0</integer>
+								<key>UUID</key>
+								<string>DF1A99FA-6AF2-418A-A3BA-C7C74753FFFD</string>
+							</dict>
+							<dict>
+								<key>DESCRIPTION</key>
+								<array>
+									<dict>
+										<key>LANGUAGE</key>
+										<string>English</string>
+										<key>VALUE</key>
+										<string>Version: current
+Web: http://gpgtools.org/gpgmail.html
+Requirements: OS X 10.6 (Snow Leopard)
+Installs to: ~/Library/Mail/Bundles
+Description: OpenPGP for Apple Mail.</string>
+									</dict>
+								</array>
+								<key>OPTIONS</key>
+								<dict>
+									<key>HIDDEN</key>
+									<false/>
+									<key>STATE</key>
+									<integer>1</integer>
+								</dict>
+								<key>PACKAGE_UUID</key>
+								<string>197B1F87-75E2-43B5-959C-E3FBB2717A4C</string>
+								<key>REQUIREMENTS</key>
+								<array>
+									<dict>
+										<key>BEHAVIOR</key>
+										<integer>1</integer>
+										<key>DICTIONARY</key>
+										<dict>
+											<key>IC_REQUIREMENT_SCRIPT_ARGUMENTS</key>
+											<array>
+												<dict>
+													<key>IC_REQUIREMENT_SCRIPT_ARGUMENT_STATE</key>
+													<true/>
+													<key>IC_REQUIREMENT_SCRIPT_ARGUMENT_VALUE</key>
+													<string>6</string>
+												</dict>
+											</array>
+											<key>IC_REQUIREMENT_SCRIPT_COMPARATOR</key>
+											<integer>0</integer>
+											<key>IC_REQUIREMENT_SCRIPT_EMBED</key>
+											<true/>
+											<key>IC_REQUIREMENT_SCRIPT_PATH</key>
+											<dict>
+												<key>PATH</key>
+												<string>Dependencies/GPGTools_Core/scripts/check_for_osver.sh</string>
+												<key>PATH_TYPE</key>
+												<integer>1</integer>
+											</dict>
+											<key>IC_REQUIREMENT_SCRIPT_VALUE</key>
+											<integer>0</integer>
+										</dict>
+										<key>IDENTIFIER</key>
+										<string>fr.whitebox.Packages.requirement.scripts</string>
+										<key>MESSAGE</key>
+										<array>
+											<dict>
+												<key>LANGUAGE</key>
+												<string>English</string>
+												<key>VALUE</key>
+												<string>Snow Leopard only</string>
+											</dict>
+										</array>
+										<key>NAME</key>
+										<string>OS</string>
+										<key>STATE</key>
+										<true/>
+									</dict>
+								</array>
+								<key>TITLE</key>
+								<array>
+									<dict>
+										<key>LANGUAGE</key>
+										<string>English</string>
+										<key>VALUE</key>
+										<string>GPGTools GPGMail (Snow Leopard)</string>
+									</dict>
+								</array>
+								<key>TOOLTIP</key>
+								<array/>
+								<key>TYPE</key>
+								<integer>0</integer>
+								<key>UUID</key>
+								<string>BD78789B-CA0A-43C6-9DEA-B60834CF9A28</string>
+							</dict>
+							<dict>
+								<key>DESCRIPTION</key>
+								<array>
+									<dict>
+										<key>LANGUAGE</key>
+										<string>English</string>
+										<key>VALUE</key>
+										<string>Version: current
+Web: http://gpgtools.org/gpgmail.html
+Requirements: OS X 10.5 (Leopard)
+Installs to: ~/Library/Mail/Bundles
+Description: OpenPGP for Apple Mail.</string>
+									</dict>
+								</array>
+								<key>OPTIONS</key>
+								<dict>
+									<key>HIDDEN</key>
+									<false/>
+									<key>STATE</key>
+									<integer>1</integer>
+								</dict>
+								<key>PACKAGE_UUID</key>
+								<string>A34C9798-E54C-48E5-86A4-839D1B560372</string>
+								<key>REQUIREMENTS</key>
+								<array>
+									<dict>
+										<key>BEHAVIOR</key>
+										<integer>1</integer>
+										<key>DICTIONARY</key>
+										<dict>
+											<key>IC_REQUIREMENT_SCRIPT_ARGUMENTS</key>
+											<array>
+												<dict>
+													<key>IC_REQUIREMENT_SCRIPT_ARGUMENT_STATE</key>
+													<true/>
+													<key>IC_REQUIREMENT_SCRIPT_ARGUMENT_VALUE</key>
+													<string>5</string>
+												</dict>
+											</array>
+											<key>IC_REQUIREMENT_SCRIPT_COMPARATOR</key>
+											<integer>0</integer>
+											<key>IC_REQUIREMENT_SCRIPT_EMBED</key>
+											<true/>
+											<key>IC_REQUIREMENT_SCRIPT_PATH</key>
+											<dict>
+												<key>PATH</key>
+												<string>Dependencies/GPGTools_Core/scripts/check_for_osver.sh</string>
+												<key>PATH_TYPE</key>
+												<integer>1</integer>
+											</dict>
+											<key>IC_REQUIREMENT_SCRIPT_VALUE</key>
+											<integer>0</integer>
+										</dict>
+										<key>IDENTIFIER</key>
+										<string>fr.whitebox.Packages.requirement.scripts</string>
+										<key>MESSAGE</key>
+										<array>
+											<dict>
+												<key>LANGUAGE</key>
+												<string>English</string>
+												<key>VALUE</key>
+												<string>Leopard only</string>
+											</dict>
+										</array>
+										<key>NAME</key>
+										<string>Result of External Script</string>
+										<key>STATE</key>
+										<true/>
+									</dict>
+								</array>
+								<key>TITLE</key>
+								<array>
+									<dict>
+										<key>LANGUAGE</key>
+										<string>English</string>
+										<key>VALUE</key>
+										<string>GPGTools GPGMail (Leopard)</string>
+									</dict>
+								</array>
+								<key>TOOLTIP</key>
+								<array/>
+								<key>TYPE</key>
+								<integer>0</integer>
+								<key>UUID</key>
+								<string>0E23A929-1088-49FD-BC28-29E4E36CD86F</string>
+							</dict>
+							<dict>
+								<key>DESCRIPTION</key>
+								<array>
+									<dict>
+										<key>LANGUAGE</key>
+										<string>English</string>
+										<key>VALUE</key>
+										<string>Version: current
+Web: http://enigmail.mozdev.org
+Requirements: Mozilla Thunderbird 3
+Installs to: ~/Library/Thunderbird/Profiles/...
+Description: OpenPGP for Mozilla Thunderbird 3.</string>
+									</dict>
+								</array>
+								<key>OPTIONS</key>
+								<dict>
+									<key>HIDDEN</key>
+									<false/>
+									<key>STATE</key>
+									<integer>1</integer>
+								</dict>
+								<key>PACKAGE_UUID</key>
+								<string>EC6E766B-28B7-4CF7-992F-799537AF8ABE</string>
+								<key>REQUIREMENTS</key>
+								<array>
+									<dict>
+										<key>BEHAVIOR</key>
+										<integer>1</integer>
+										<key>DICTIONARY</key>
+										<dict>
+											<key>IC_REQUIREMENT_SCRIPT_ARGUMENTS</key>
+											<array>
+												<dict>
+													<key>IC_REQUIREMENT_SCRIPT_ARGUMENT_STATE</key>
+													<true/>
+													<key>IC_REQUIREMENT_SCRIPT_ARGUMENT_VALUE</key>
+													<string>3</string>
+												</dict>
+											</array>
+											<key>IC_REQUIREMENT_SCRIPT_COMPARATOR</key>
+											<integer>0</integer>
+											<key>IC_REQUIREMENT_SCRIPT_EMBED</key>
+											<true/>
+											<key>IC_REQUIREMENT_SCRIPT_PATH</key>
+											<dict>
+												<key>PATH</key>
+												<string>Dependencies/GPGTools_Core/scripts/check_for_thunderbirdver.sh</string>
+												<key>PATH_TYPE</key>
+												<integer>1</integer>
+											</dict>
+											<key>IC_REQUIREMENT_SCRIPT_VALUE</key>
+											<integer>0</integer>
+										</dict>
+										<key>IDENTIFIER</key>
+										<string>fr.whitebox.Packages.requirement.scripts</string>
+										<key>MESSAGE</key>
+										<array>
+											<dict>
+												<key>LANGUAGE</key>
+												<string>English</string>
+												<key>VALUE</key>
+												<string>Thunderbird 3 only.</string>
+											</dict>
+										</array>
+										<key>NAME</key>
+										<string>Result of External Script</string>
+										<key>STATE</key>
+										<true/>
+									</dict>
+								</array>
+								<key>TITLE</key>
+								<array>
+									<dict>
+										<key>LANGUAGE</key>
+										<string>English</string>
+										<key>VALUE</key>
+										<string>Enigmail (Thunderbird 3)</string>
+									</dict>
+								</array>
+								<key>TOOLTIP</key>
+								<array/>
+								<key>TYPE</key>
+								<integer>0</integer>
+								<key>UUID</key>
+								<string>5BE657BE-F78C-4A56-8950-AF1256D64132</string>
+							</dict>
+							<dict>
+								<key>DESCRIPTION</key>
+								<array>
+									<dict>
+										<key>LANGUAGE</key>
+										<string>English</string>
+										<key>VALUE</key>
+										<string>Version: current
+Web: http://enigmail.mozdev.org
+Requirements: Mozilla Thunderbird 5
+Installs to: ~/Library/Thunderbird/Profiles/...
+Description: OpenPGP for Mozilla Thunderbird 3.</string>
+									</dict>
+								</array>
+								<key>OPTIONS</key>
+								<dict>
+									<key>HIDDEN</key>
+									<false/>
+									<key>STATE</key>
+									<integer>1</integer>
+								</dict>
+								<key>PACKAGE_UUID</key>
+								<string>149DEAB9-B2A1-4894-825F-853B091845BB</string>
+								<key>REQUIREMENTS</key>
+								<array>
+									<dict>
+										<key>BEHAVIOR</key>
+										<integer>1</integer>
+										<key>DICTIONARY</key>
+										<dict>
+											<key>IC_REQUIREMENT_SCRIPT_ARGUMENTS</key>
+											<array>
+												<dict>
+													<key>IC_REQUIREMENT_SCRIPT_ARGUMENT_STATE</key>
+													<true/>
+													<key>IC_REQUIREMENT_SCRIPT_ARGUMENT_VALUE</key>
+													<string>5</string>
+												</dict>
+											</array>
+											<key>IC_REQUIREMENT_SCRIPT_COMPARATOR</key>
+											<integer>0</integer>
+											<key>IC_REQUIREMENT_SCRIPT_EMBED</key>
+											<true/>
+											<key>IC_REQUIREMENT_SCRIPT_PATH</key>
+											<dict>
+												<key>PATH</key>
+												<string>Dependencies/GPGTools_Core/scripts/check_for_thunderbirdver.sh</string>
+												<key>PATH_TYPE</key>
+												<integer>1</integer>
+											</dict>
+											<key>IC_REQUIREMENT_SCRIPT_VALUE</key>
+											<integer>0</integer>
+										</dict>
+										<key>IDENTIFIER</key>
+										<string>fr.whitebox.Packages.requirement.scripts</string>
+										<key>MESSAGE</key>
+										<array>
+											<dict>
+												<key>LANGUAGE</key>
+												<string>English</string>
+												<key>VALUE</key>
+												<string>Thunderbird 5 only.</string>
+											</dict>
+										</array>
+										<key>NAME</key>
+										<string>Result of External Script</string>
+										<key>STATE</key>
+										<true/>
+									</dict>
+								</array>
+								<key>TITLE</key>
+								<array>
+									<dict>
+										<key>LANGUAGE</key>
+										<string>English</string>
+										<key>VALUE</key>
+										<string>Enigmail (Thunderbird 5)</string>
+									</dict>
+								</array>
+								<key>TOOLTIP</key>
+								<array/>
+								<key>TYPE</key>
+								<integer>0</integer>
+								<key>UUID</key>
+								<string>86004EE7-D393-4433-9019-E1FA7287837A</string>
+							</dict>
+							<dict>
+								<key>DESCRIPTION</key>
+								<array>
+									<dict>
+										<key>LANGUAGE</key>
+										<string>English</string>
+										<key>VALUE</key>
+										<string>Version: current
+Web: http://enigmail.mozdev.org
+Requirements: Mozilla Thunderbird 6
+Installs to: ~/Library/Thunderbird/Profiles/...
+Description: OpenPGP for Mozilla Thunderbird 3.</string>
+									</dict>
+								</array>
+								<key>OPTIONS</key>
+								<dict>
+									<key>HIDDEN</key>
+									<false/>
+									<key>STATE</key>
+									<integer>1</integer>
+								</dict>
+								<key>PACKAGE_UUID</key>
+								<string>1CA6C5B0-A6A6-4353-AD63-4666AC181716</string>
+								<key>REQUIREMENTS</key>
+								<array>
+									<dict>
+										<key>BEHAVIOR</key>
+										<integer>1</integer>
+										<key>DICTIONARY</key>
+										<dict>
+											<key>IC_REQUIREMENT_SCRIPT_ARGUMENTS</key>
+											<array>
+												<dict>
+													<key>IC_REQUIREMENT_SCRIPT_ARGUMENT_STATE</key>
+													<true/>
+													<key>IC_REQUIREMENT_SCRIPT_ARGUMENT_VALUE</key>
+													<string>6</string>
+												</dict>
+											</array>
+											<key>IC_REQUIREMENT_SCRIPT_COMPARATOR</key>
+											<integer>0</integer>
+											<key>IC_REQUIREMENT_SCRIPT_EMBED</key>
+											<true/>
+											<key>IC_REQUIREMENT_SCRIPT_PATH</key>
+											<dict>
+												<key>PATH</key>
+												<string>Dependencies/GPGTools_Core/scripts/check_for_thunderbirdver.sh</string>
+												<key>PATH_TYPE</key>
+												<integer>1</integer>
+											</dict>
+											<key>IC_REQUIREMENT_SCRIPT_VALUE</key>
+											<integer>0</integer>
+										</dict>
+										<key>IDENTIFIER</key>
+										<string>fr.whitebox.Packages.requirement.scripts</string>
+										<key>MESSAGE</key>
+										<array>
+											<dict>
+												<key>LANGUAGE</key>
+												<string>English</string>
+												<key>VALUE</key>
+												<string>Thunderbird 6 only</string>
+											</dict>
+										</array>
+										<key>NAME</key>
+										<string>Result of External Script</string>
+										<key>STATE</key>
+										<true/>
+									</dict>
+								</array>
+								<key>TITLE</key>
+								<array>
+									<dict>
+										<key>LANGUAGE</key>
+										<string>English</string>
+										<key>VALUE</key>
+										<string>Enigmail (Thunderbird 6)</string>
+									</dict>
+								</array>
+								<key>TOOLTIP</key>
+								<array/>
+								<key>TYPE</key>
+								<integer>0</integer>
+								<key>UUID</key>
+								<string>6A6F5ECB-9756-4E23-BB71-D15424A2E735</string>
+							</dict>
+							<dict>
+								<key>DESCRIPTION</key>
+								<array>
+									<dict>
+										<key>LANGUAGE</key>
+										<string>English</string>
+										<key>VALUE</key>
+										<string>Automatically fixes issues you might have with your GPGTools installation.</string>
 									</dict>
 								</array>
 								<key>OPTIONS</key>
@@ -400,6 +1169,43 @@
 								<integer>0</integer>
 								<key>UUID</key>
 								<string>BE4373B8-ED8D-4A98-A582-05FC051CDD8B</string>
+							</dict>
+							<dict>
+								<key>DESCRIPTION</key>
+								<array>
+									<dict>
+										<key>LANGUAGE</key>
+										<string>English</string>
+										<key>VALUE</key>
+										<string>Adds the GPGTolls public OpenPGP key to the keychain.</string>
+									</dict>
+								</array>
+								<key>OPTIONS</key>
+								<dict>
+									<key>HIDDEN</key>
+									<false/>
+									<key>STATE</key>
+									<integer>1</integer>
+								</dict>
+								<key>PACKAGE_UUID</key>
+								<string>F5AADB7F-8CD2-414E-A0BC-D8F9BA0307EC</string>
+								<key>REQUIREMENTS</key>
+								<array/>
+								<key>TITLE</key>
+								<array>
+									<dict>
+										<key>LANGUAGE</key>
+										<string>English</string>
+										<key>VALUE</key>
+										<string>GPGTools Public OpenPGP Key</string>
+									</dict>
+								</array>
+								<key>TOOLTIP</key>
+								<array/>
+								<key>TYPE</key>
+								<integer>0</integer>
+								<key>UUID</key>
+								<string>8E45B2D9-FC0E-4DF4-925C-2EF889EB014D</string>
 							</dict>
 						</array>
 						<key>REMOVED</key>
@@ -522,7 +1328,49 @@
 		<key>PROJECT_REQUIREMENTS</key>
 		<dict>
 			<key>LIST</key>
-			<array/>
+			<array>
+				<dict>
+					<key>BEHAVIOR</key>
+					<integer>2</integer>
+					<key>DICTIONARY</key>
+					<dict>
+						<key>IC_REQUIREMENT_SCRIPT_ARGUMENTS</key>
+						<array/>
+						<key>IC_REQUIREMENT_SCRIPT_COMPARATOR</key>
+						<integer>0</integer>
+						<key>IC_REQUIREMENT_SCRIPT_EMBED</key>
+						<true/>
+						<key>IC_REQUIREMENT_SCRIPT_PATH</key>
+						<dict>
+							<key>PATH</key>
+							<string>Dependencies/GPGTools_Core/scripts/check_for_mail.sh</string>
+							<key>PATH_TYPE</key>
+							<integer>1</integer>
+						</dict>
+						<key>IC_REQUIREMENT_SCRIPT_VALUE</key>
+						<integer>0</integer>
+					</dict>
+					<key>IC_REQUIREMENT_CHECK_TYPE</key>
+					<integer>0</integer>
+					<key>IDENTIFIER</key>
+					<string>fr.whitebox.Packages.requirement.scripts</string>
+					<key>MESSAGE</key>
+					<array>
+						<dict>
+							<key>LANGUAGE</key>
+							<string>English</string>
+							<key>SECONDARY_VALUE</key>
+							<string>Please close Mail.app first.</string>
+							<key>VALUE</key>
+							<string>Mail.app running</string>
+						</dict>
+					</array>
+					<key>NAME</key>
+					<string>Mail running</string>
+					<key>STATE</key>
+					<true/>
+				</dict>
+			</array>
 			<key>POSTINSTALL_PATH</key>
 			<dict/>
 			<key>PREINSTALL_PATH</key>
