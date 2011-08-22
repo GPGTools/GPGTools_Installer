@@ -414,7 +414,33 @@ Description: OpenPGP core implementation. Version 1 is the small portable editio
 								<key>PACKAGE_UUID</key>
 								<string>AB273842-4021-42C5-85A3-CB167230D150</string>
 								<key>REQUIREMENTS</key>
-								<array/>
+								<array>
+									<dict>
+										<key>BEHAVIOR</key>
+										<integer>0</integer>
+										<key>DICTIONARY</key>
+										<dict>
+											<key>IC_REQUIREMENT_CPU_ARCHITECTURE_FAMILY</key>
+											<integer>2</integer>
+											<key>IC_REQUIREMENT_CPU_INTEL_ARCHITECTURE_TYPE</key>
+											<integer>0</integer>
+											<key>IC_REQUIREMENT_CPU_MINIMUM_CPU_CORES_COUNT</key>
+											<integer>1</integer>
+											<key>IC_REQUIREMENT_CPU_MINIMUM_FREQUENCY</key>
+											<integer>866666</integer>
+											<key>IC_REQUIREMENT_CPU_POWERPC_ARCHITECTURE_TYPE</key>
+											<integer>0</integer>
+										</dict>
+										<key>IDENTIFIER</key>
+										<string>fr.whitebox.Packages.requirement.cpu</string>
+										<key>MESSAGE</key>
+										<array/>
+										<key>NAME</key>
+										<string>Processor</string>
+										<key>STATE</key>
+										<true/>
+									</dict>
+								</array>
 								<key>TITLE</key>
 								<array>
 									<dict>
@@ -500,7 +526,7 @@ Description: OpenPGP for all applications via OS X Services menu.
 								<array>
 									<dict>
 										<key>BEHAVIOR</key>
-										<integer>1</integer>
+										<integer>0</integer>
 										<key>DICTIONARY</key>
 										<dict>
 											<key>IC_REQUIREMENT_OS_DISK_TYPE</key>
@@ -570,7 +596,7 @@ Description: OpenPGP system preferences.</string>
 								<array>
 									<dict>
 										<key>BEHAVIOR</key>
-										<integer>1</integer>
+										<integer>0</integer>
 										<key>DICTIONARY</key>
 										<dict>
 											<key>IC_REQUIREMENT_CPU_ARCHITECTURE_FAMILY</key>
@@ -644,7 +670,7 @@ Description: OpenPGP for Apple Mail.</string>
 								<array>
 									<dict>
 										<key>BEHAVIOR</key>
-										<integer>1</integer>
+										<integer>0</integer>
 										<key>DICTIONARY</key>
 										<dict>
 											<key>IC_REQUIREMENT_SCRIPT_ARGUMENTS</key>
@@ -730,7 +756,7 @@ Description: OpenPGP for Apple Mail.</string>
 								<array>
 									<dict>
 										<key>BEHAVIOR</key>
-										<integer>1</integer>
+										<integer>0</integer>
 										<key>DICTIONARY</key>
 										<dict>
 											<key>IC_REQUIREMENT_SCRIPT_ARGUMENTS</key>
@@ -816,7 +842,7 @@ Description: OpenPGP for Apple Mail.</string>
 								<array>
 									<dict>
 										<key>BEHAVIOR</key>
-										<integer>1</integer>
+										<integer>0</integer>
 										<key>DICTIONARY</key>
 										<dict>
 											<key>IC_REQUIREMENT_SCRIPT_ARGUMENTS</key>
@@ -902,7 +928,7 @@ Description: OpenPGP for Mozilla Thunderbird 3.</string>
 								<array>
 									<dict>
 										<key>BEHAVIOR</key>
-										<integer>1</integer>
+										<integer>0</integer>
 										<key>DICTIONARY</key>
 										<dict>
 											<key>IC_REQUIREMENT_SCRIPT_ARGUMENTS</key>
@@ -988,7 +1014,7 @@ Description: OpenPGP for Mozilla Thunderbird 3.</string>
 								<array>
 									<dict>
 										<key>BEHAVIOR</key>
-										<integer>1</integer>
+										<integer>0</integer>
 										<key>DICTIONARY</key>
 										<dict>
 											<key>IC_REQUIREMENT_SCRIPT_ARGUMENTS</key>
@@ -1074,7 +1100,7 @@ Description: OpenPGP for Mozilla Thunderbird 3.</string>
 								<array>
 									<dict>
 										<key>BEHAVIOR</key>
-										<integer>1</integer>
+										<integer>0</integer>
 										<key>DICTIONARY</key>
 										<dict>
 											<key>IC_REQUIREMENT_SCRIPT_ARGUMENTS</key>
