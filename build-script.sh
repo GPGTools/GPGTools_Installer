@@ -32,13 +32,13 @@ gka_installer="GPG Keychain Access.app";
 gka_target="keychain_access";
 
 gpgmail107_url="https://github.com/downloads/GPGTools/GPGMail/";
-gpgmail107_version="GPGMail-2.0a2";
+gpgmail107_version="GPGMail-2.0a3";
 gpgmail107_fileExt=".dmg";
 gpgmail107_sigExt=".dmg.sig"
 gpgmail107_build="$pathDownload/gpgmail107";
 gpgmail107_volume="GPGMail";
-gpgmail107_installer="GPGMail.pkg";
-gpgmail107_package="GPGMail.pkg"
+gpgmail107_installer="GPGMail.mpkg/Contents/Packages/GPGMail.pkg";
+gpgmail107_package="."
 gpgmail107_target="gpgmail107";
 
 gpgmail106_url="https://github.com/downloads/GPGTools/GPGMail/";
@@ -179,6 +179,26 @@ function download {
     exec 1>&3 2>&4
 }
 
+function subinstaller {
+    cd "$1";
+    echo -n "   * [`date '+%H:%M:%S'`] Getting subinstaller '$2'...";
+    if [ -e '.installed' ]; then echo "skipped"; return 0; else echo ""; fi
+    exec 3>&1 4>&2 >> $fileLog 2>&1
+    hdiutil attach -quiet $2$3
+    rm -rf "tmp";  mkdir "tmp"; cd "tmp";
+    mkdir -p "$7/$6"; cd "$7/$6";
+    cp "/Volumes/$4/$5" "$7/$6";
+    if [ "$?" != "0" ]; then
+        exec 1>&3 2>&4
+        echo "Could get the subinstaller for '$1'! (2)";
+        exit 1;
+    fi
+    touch "$1/.installed"
+    hdiutil detach "/Volumes/$4";
+    exec 1>&3 2>&4
+}
+
+
 function unpack {
     cd "$1";
     echo -n "   * [`date '+%H:%M:%S'`] Unpacking '$2'...";
@@ -286,7 +306,7 @@ unpack "$gpgmail106_build"\
 
 ################################################################################
 echo " * Working on 'GPGMail' for 10.7...";
-unpack "$gpgmail107_build"\
+subinstaller "$gpgmail107_build"\
        "$gpgmail107_version"\
        "$gpgmail107_fileExt"\
        "$gpgmail107_volume"\
