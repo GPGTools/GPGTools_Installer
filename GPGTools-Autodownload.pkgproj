@@ -1100,7 +1100,7 @@ Description: OpenPGP for Mozilla Thunderbird 3.</string>
 								<array>
 									<dict>
 										<key>BEHAVIOR</key>
-										<integer>0</integer>
+										<integer>1</integer>
 										<key>DICTIONARY</key>
 										<dict>
 											<key>IC_REQUIREMENT_SCRIPT_ARGUMENTS</key>

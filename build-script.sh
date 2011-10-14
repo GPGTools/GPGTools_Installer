@@ -32,7 +32,7 @@ gka_installer="GPG Keychain Access.app";
 gka_target="keychain_access";
 
 gpgmail107_url="https://github.com/downloads/GPGTools/GPGMail/";
-gpgmail107_version="GPGMail-2.0a3";
+gpgmail107_version="GPGMail-2.0a4";
 gpgmail107_fileExt=".dmg";
 gpgmail107_sigExt=".dmg.sig"
 gpgmail107_build="$pathDownload/gpgmail107";
@@ -104,8 +104,8 @@ enigmail5_sigExt=".xpi.sig"
 enigmail5_build="$pathDownload/enigmail5";
 enigmail5_target="enigmail5";
 
-enigmail6_url="http://addons.mozilla.org/en-US/thunderbird/downloads/file/128958/";
-enigmail6_version="enigmail-1.3-tb+sm-mac";
+enigmail6_url="http://addons.mozilla.org/en-US/thunderbird/downloads/file/131060/";
+enigmail6_version="enigmail-1.3.2-sm+tb-mac";
 enigmail6_fileExt=".xpi";
 enigmail6_sigExt=".xpi.sig"
 enigmail6_build="$pathDownload/enigmail6";
@@ -306,6 +306,7 @@ unpack "$gpgmail106_build"\
 
 ################################################################################
 echo " * Working on 'GPGMail' for 10.7...";
+waitfor "GPGMail 10.7" "$gpgmail107_pid";
 subinstaller "$gpgmail107_build"\
        "$gpgmail107_version"\
        "$gpgmail107_fileExt"\
@@ -378,7 +379,7 @@ unpack "$gpgservices_build"\
 ################################################################################
 
 ################################################################################
-echo " * Working on 'Enigmail'...";
+echo " * Working on 'Enigmail' for Thunderbird 3...";
 waitfor "Enigmail" "$enigmail_pid";
 simplecopy "$enigmail_build"\
            "$enigmail_version"\
@@ -398,7 +399,7 @@ simplecopy "$enigmail5_build"\
 ################################################################################
 
 ################################################################################
-echo " * Working on 'Enigmail' for Thunderbird 6...";
+echo " * Working on 'Enigmail' for Thunderbird 6 and 7...";
 waitfor "Enigmail for Thunderbird 6" "$enigmail6_pid";
 simplecopy "$enigmail6_build"\
            "$enigmail6_version"\
