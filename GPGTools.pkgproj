@@ -3053,7 +3053,7 @@
 				<key>OVERWRITE_PERMISSIONS</key>
 				<false/>
 				<key>VERSION</key>
-				<string>0.7</string>
+				<string>0.8</string>
 			</dict>
 			<key>TYPE</key>
 			<integer>0</integer>
