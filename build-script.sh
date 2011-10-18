@@ -123,11 +123,11 @@ gpgservices_target="gpgservices";
 
 
 gpgpreferences_url="https://github.com/downloads/GPGTools/GPGTools_Preferences/";
-gpgpreferences_version="GPGPreferences-0.8";
+gpgpreferences_version="GPGTools_Preferences-0.8";
 gpgpreferences_fileExt=".dmg";
 gpgpreferences_sigExt=".dmg.sig"
 gpgpreferences_build="$pathDownload/gpgpreferences";
-gpgpreferences_volume="gpgpreferences";
+gpgpreferences_volume="GPGTools_Preferences";
 gpgpreferences_installer="GPGTools.prefPane";
 gpgpreferences_target="gpgtoolspreferences";
 ################################################################################
