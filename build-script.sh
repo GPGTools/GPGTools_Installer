@@ -112,7 +112,7 @@ enigmail6_build="$pathDownload/enigmail6";
 enigmail6_target="enigmail6";
 
 gpgservices_url="https://github.com/downloads/GPGTools/GPGServices/";
-gpgservices_version="GPGServices-1.6";
+gpgservices_version="GPGServices-1.7a1";
 gpgservices_fileExt=".dmg";
 gpgservices_sigExt=".dmg.sig"
 gpgservices_build="$pathDownload/gpgservices";
