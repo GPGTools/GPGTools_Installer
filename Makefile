@@ -10,9 +10,14 @@ dmg:
 	@./build-script.sh
 	@./Dependencies/GPGTools_Core/scripts/create_dmg.sh
 
-test:
+test: autobuild upload
+
+autobuild:
 	@./build-script.sh
 	@./Dependencies/GPGTools_Core/scripts/create_dmg.sh auto
+
+upload:
+	@./Dependencies/GPGTools_Core/scripts/upload.sh
 
 clean:
 	rm -rf build
