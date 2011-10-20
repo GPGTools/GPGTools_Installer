@@ -162,7 +162,7 @@ function waitfor {
 function download {
     mkdir -p "$1"; cd "$1"
     if [ -e "$2$3" ]; then return 0; fi
-    rm ".installed";
+    if [ -e ".installed"]; then rm ".installed"; fi
     #echo -n "   * Downloading...";
     #if [ -e "$2$3" ]; then echo "skipped"; return 0; else echo ""; fi
     exec 3>&1 4>&2 >> $fileLog 2>&1
