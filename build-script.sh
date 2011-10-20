@@ -112,7 +112,7 @@ enigmail6_build="$pathDownload/enigmail6";
 enigmail6_target="enigmail6";
 
 gpgservices_url="https://github.com/downloads/GPGTools/GPGServices/";
-gpgservices_version="GPGServices-1.7a1";
+gpgservices_version="GPGServices-1.7a2";
 gpgservices_fileExt=".dmg";
 gpgservices_sigExt=".dmg.sig"
 gpgservices_build="$pathDownload/gpgservices";
@@ -162,6 +162,7 @@ function waitfor {
 function download {
     mkdir -p "$1"; cd "$1"
     if [ -e "$2$3" ]; then return 0; fi
+    rm ".installed";
     #echo -n "   * Downloading...";
     #if [ -e "$2$3" ]; then echo "skipped"; return 0; else echo ""; fi
     exec 3>&1 4>&2 >> $fileLog 2>&1
