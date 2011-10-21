@@ -1,13 +1,15 @@
+include Dependencies/GPGTools_Core/make/default
+
 all: dmg
 
 update:
 	@git submodule foreach git pull origin master
 	@git pull
 
-compile: dmg
-
-dmg:
+compile:
 	@./build-script.sh
+
+dmg: compile
 	@./Dependencies/GPGTools_Core/scripts/create_dmg.sh
 
 test: autobuild upload
