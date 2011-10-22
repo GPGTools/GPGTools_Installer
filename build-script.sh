@@ -23,7 +23,7 @@ export fileLog="$pathDownload/build.log";
 
 # the releases #################################################################
 gka_url="https://github.com/downloads/GPGTools/GPGKeychainAccess/";
-gka_version="GPG%20Keychain%20Access-1.0a3";
+gka_version="GPG%20Keychain%20Access-1.0a4";
 gka_fileExt=".dmg";
 gka_sigExt=".dmg.sig"
 gka_build="$pathDownload/gka";
