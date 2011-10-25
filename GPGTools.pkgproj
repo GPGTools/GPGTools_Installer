@@ -515,7 +515,7 @@
 				<key>OVERWRITE_PERMISSIONS</key>
 				<false/>
 				<key>VERSION</key>
-				<string>0.8.13</string>
+				<string>1.0.a4</string>
 			</dict>
 			<key>UUID</key>
 			<string>E5494601-62BF-4382-A372-85179E4217FD</string>
@@ -2604,7 +2604,7 @@
 				<key>OVERWRITE_PERMISSIONS</key>
 				<false/>
 				<key>VERSION</key>
-				<string>1.6</string>
+				<string>1.7a2</string>
 			</dict>
 			<key>TYPE</key>
 			<integer>0</integer>
@@ -5416,7 +5416,7 @@ Description: OpenPGP core implementation. Version 2 is the modern edition. If un
 										<key>LANGUAGE</key>
 										<string>English</string>
 										<key>VALUE</key>
-										<string>Version: 0.8.13
+										<string>Version: 1.0a4
 Web: http://gpgtools.org/keychain.html
 Requirements: OS X &gt;= 10.5
 Installs to: /Applications
@@ -5457,7 +5457,7 @@ Description: OpenPGP key management.</string>
 										<key>LANGUAGE</key>
 										<string>English</string>
 										<key>VALUE</key>
-										<string>Version: 1.6
+										<string>Version: 1.7a2
 Web: http://gpgtools.org/gpgservices.html
 Requirements: OS X &gt;= 10.6 (Intel)
 Installs to: /Library/Services
