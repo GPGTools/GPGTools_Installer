@@ -6052,9 +6052,9 @@ Description: OpenPGP for all applications via OS X Services menu.</string>
 										<key>LANGUAGE</key>
 										<string>English</string>
 										<key>VALUE</key>
-										<string>Version: 0.7
+										<string>Version: 0.8
 Web: http://gpgtools.org/gpgpreferences.html
-Requirements: OS X &gt;= 10.5, Intel
+Requirements: OS X &gt;= 10.6, Intel
 Installs to: ~/Library/PreferencePanes/
 Description: OpenPGP system preferences.</string>
 									</dict>
