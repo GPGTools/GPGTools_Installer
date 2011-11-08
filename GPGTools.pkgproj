@@ -5000,7 +5000,7 @@
 													<key>GID</key>
 													<integer>80</integer>
 													<key>PATH</key>
-													<string>build/payload/enigmail6/enigmail-1.3.2-sm+tb-mac.xpi</string>
+													<string>build/payload/enigmail6/enigmail-1.3.3-sm+tb-mac.xpi</string>
 													<key>PATH_TYPE</key>
 													<integer>1</integer>
 													<key>PERMISSIONS</key>
@@ -5188,7 +5188,7 @@
 				<key>OVERWRITE_PERMISSIONS</key>
 				<false/>
 				<key>VERSION</key>
-				<string>1.3.2</string>
+				<string>1.3.3</string>
 			</dict>
 			<key>TYPE</key>
 			<integer>0</integer>
@@ -5461,8 +5461,7 @@ Description: OpenPGP key management.</string>
 Web: http://gpgtools.org/gpgservices.html
 Requirements: OS X &gt;= 10.6 (Intel)
 Installs to: /Library/Services
-Description: OpenPGP for all applications via OS X Services menu.
-</string>
+Description: OpenPGP for all applications via OS X Services menu.</string>
 									</dict>
 								</array>
 								<key>OPTIONS</key>
@@ -5864,7 +5863,7 @@ Description: OpenPGP for Apple Mail.</string>
 Web: http://enigmail.mozdev.org
 Requirements: Mozilla Thunderbird 3
 Installs to: ~/Library/Thunderbird/Profiles/...
-Description: OpenPGP for Mozilla Thunderbird 3.</string>
+Description: OpenPGP for Mozilla Thunderbird.</string>
 									</dict>
 								</array>
 								<key>OPTIONS</key>
@@ -5950,7 +5949,7 @@ Description: OpenPGP for Mozilla Thunderbird 3.</string>
 Web: http://enigmail.mozdev.org
 Requirements: Mozilla Thunderbird 5
 Installs to: ~/Library/Thunderbird/Profiles/...
-Description: OpenPGP for Mozilla Thunderbird 3.</string>
+Description: OpenPGP for Mozilla Thunderbird.</string>
 									</dict>
 								</array>
 								<key>OPTIONS</key>
@@ -6032,11 +6031,11 @@ Description: OpenPGP for Mozilla Thunderbird 3.</string>
 										<key>LANGUAGE</key>
 										<string>English</string>
 										<key>VALUE</key>
-										<string>Version: 1.3.2
+										<string>Version: 1.3.3
 Web: http://enigmail.mozdev.org
-Requirements: Mozilla Thunderbird 6 to 7
+Requirements: Mozilla Thunderbird 6 to 8
 Installs to: ~/Library/Thunderbird/Profiles/...
-Description: OpenPGP for Mozilla Thunderbird 3.</string>
+Description: OpenPGP for Mozilla Thunderbird.</string>
 									</dict>
 								</array>
 								<key>OPTIONS</key>

@@ -9,17 +9,7 @@ update:
 compile:
 	@./build-script.sh
 
-dmg: compile
-	@./Dependencies/GPGTools_Core/scripts/create_dmg.sh
-
-test: autobuild upload
-
-autobuild:
-	@./build-script.sh
-	@./Dependencies/GPGTools_Core/scripts/create_dmg.sh auto
-
-upload:
-	@./Dependencies/GPGTools_Core/scripts/upload.sh
+test: deploy
 
 clean:
 	rm -rf build

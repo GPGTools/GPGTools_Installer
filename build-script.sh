@@ -4,10 +4,8 @@
 #
 # @usage    make
 # @author   Alexander Willner <alex@gpgtools.org>
-# @version  2011-06-20
+# @version  2011-11-08
 # @see      https://github.com/GPGTools/GPGTools_Installer
-#
-# @todo     tbd
 ##
 
 # configuration ################################################################
@@ -19,118 +17,9 @@ export pathDownload="$pathRoot/build";
 export pathDist="$pathDownload/payload/";
 ## logging
 export fileLog="$pathDownload/build.log";
+source "$0.config"
 ################################################################################
 
-# the releases #################################################################
-gka_url="https://github.com/downloads/GPGTools/GPGKeychainAccess/";
-gka_version="GPG%20Keychain%20Access-1.0a4";
-gka_fileExt=".dmg";
-gka_sigExt=".dmg.sig"
-gka_build="$pathDownload/gka";
-gka_volume="GPG Keychain Access.localized";
-gka_installer="GPG Keychain Access.app";
-gka_target="keychain_access";
-
-gpgmail107_url="https://github.com/downloads/GPGTools/GPGMail/";
-gpgmail107_version="GPGMail-2.0a4";
-gpgmail107_fileExt=".dmg";
-gpgmail107_sigExt=".dmg.sig"
-gpgmail107_build="$pathDownload/gpgmail107";
-gpgmail107_volume="GPGMail";
-gpgmail107_installer="GPGMail.mpkg/Contents/Packages/GPGMail.pkg";
-gpgmail107_package="."
-gpgmail107_target="gpgmail107";
-
-gpgmail106_url="https://github.com/downloads/GPGTools/GPGMail/";
-gpgmail106_version="GPGMail-1.3.3";
-gpgmail106_fileExt=".dmg";
-gpgmail106_sigExt=".dmg.sig"
-gpgmail106_build="$pathDownload/gpgmail106";
-gpgmail106_volume="GPGMail";
-gpgmail106_installer="GPGMail.pkg";
-gpgmail106_package="GPGMail.pkg"
-gpgmail106_target="gpgmail106";
-
-gpgmail105_url="https://github.com/downloads/GPGTools/GPGMail/";
-gpgmail105_version="GPGMail-1.2.0-10.5";
-gpgmail105_fileExt=".dmg";
-gpgmail105_sigExt=".dmg.sig"
-gpgmail105_build="$pathDownload/gpgmail105";
-gpgmail105_volume="GPGMail 1.2.0";
-gpgmail105_installer="GPGMail.mailbundle";
-gpgmail105_target="gpgmail105";
-
-#gpgmail104_url="https://github.com/downloads/GPGTools/GPGMail/";
-#gpgmail104_version="GPGMail-1.1.2-10.4";
-#gpgmail104_fileExt=".dmg";
-#gpgmail104_sigExt=".dmg.sig"
-#gpgmail104_build="$pathDownload/gpgmail104";
-#gpgmail104_volume="GPGMail-1.1.2-10.4";
-#gpgmail104_installer="GPGMail.mailbundle";
-#gpgmail104_target="gpgmail104";
-
-macgpg2_url="https://github.com/downloads/GPGTools/MacGPG2/";
-macgpg2_version="MacGPG2-2.0.17-9";
-macgpg2_fileExt=".dmg";
-macgpg2_sigExt=".dmg.sig"
-macgpg2_build="$pathDownload/macgpg2";
-macgpg2_volume="MacGPG2";
-macgpg2_installer="$macgpg2_version.pkg";
-macgpg2_package="macgpg2.pkg";
-macgpg2_package2="gnupg2.pkg";
-macgpg2_target="MacGPG2";
-
-macgpg1_url="https://github.com/downloads/GPGTools/MacGPG1/";
-macgpg1_version="MacGPG1-1.4.11-6";
-macgpg1_fileExt=".dmg";
-macgpg1_sigExt=".dmg.sig"
-macgpg1_build="$pathDownload/macgpg1";
-macgpg1_volume="MacGPG1";
-macgpg1_installer="MacGPG1.pkg";
-macgpg1_package="MacGPG1.pkg";
-macgpg1_target="MacGPG1";
-
-enigmail_url="http://addons.mozilla.org/en-US/thunderbird/downloads/file/127743/";
-enigmail_version="enigmail-1.1.2-tb-macosx";
-enigmail_fileExt=".xpi";
-enigmail_sigExt=".xpi.sig"
-enigmail_build="$pathDownload/enigmail";
-enigmail_target="enigmail";
-
-enigmail5_url="http://addons.mozilla.org/en-US/thunderbird/downloads/file/127743/";
-enigmail5_version="enigmail-1.2.1-tb+sm-mac";
-enigmail5_fileExt=".xpi";
-enigmail5_sigExt=".xpi.sig"
-enigmail5_build="$pathDownload/enigmail5";
-enigmail5_target="enigmail5";
-
-enigmail6_url="http://addons.mozilla.org/en-US/thunderbird/downloads/file/131060/";
-enigmail6_version="enigmail-1.3.2-sm+tb-mac";
-enigmail6_fileExt=".xpi";
-enigmail6_sigExt=".xpi.sig"
-enigmail6_build="$pathDownload/enigmail6";
-enigmail6_target="enigmail6";
-
-gpgservices_url="https://github.com/downloads/GPGTools/GPGServices/";
-gpgservices_version="GPGServices-1.7a2";
-gpgservices_fileExt=".dmg";
-gpgservices_sigExt=".dmg.sig"
-gpgservices_build="$pathDownload/gpgservices";
-gpgservices_volume="GPGServices";
-gpgservices_installer="GPGServices.mpkg/Contents/Packages/GPGServices.pkg";
-gpgservices_package="."
-gpgservices_target="gpgservices";
-
-
-gpgpreferences_url="https://github.com/downloads/GPGTools/GPGTools_Preferences/";
-gpgpreferences_version="GPGTools_Preferences-0.8";
-gpgpreferences_fileExt=".dmg";
-gpgpreferences_sigExt=".dmg.sig"
-gpgpreferences_build="$pathDownload/gpgpreferences";
-gpgpreferences_volume="GPGTools_Preferences";
-gpgpreferences_installer="GPGTools.prefPane";
-gpgpreferences_target="gpgtoolspreferences";
-################################################################################
 
 # init #########################################################################
 if [ "`which curl`" == "" ]; then
@@ -400,7 +289,7 @@ simplecopy "$enigmail5_build"\
 ################################################################################
 
 ################################################################################
-echo " * Working on 'Enigmail' for Thunderbird 6 and 7...";
+echo " * Working on 'Enigmail' for Thunderbird 6 to 8...";
 waitfor "Enigmail for Thunderbird 6" "$enigmail6_pid";
 simplecopy "$enigmail6_build"\
            "$enigmail6_version"\
