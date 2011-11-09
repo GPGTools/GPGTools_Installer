@@ -5943,7 +5943,7 @@ Description: OpenPGP core implementation. Version 2 is the modern edition. If un
 										<key>VALUE</key>
 										<string>Version: 1.0a4
 Web: http://gpgtools.org/keychain.html
-Requirements: OS X &gt;= 10.5
+Requirements: OS X &gt;= 10.6
 Installs to: /Applications
 Description: OpenPGP key management.</string>
 									</dict>
@@ -5958,7 +5958,29 @@ Description: OpenPGP key management.</string>
 								<key>PACKAGE_UUID</key>
 								<string>E5494601-62BF-4382-A372-85179E4217FD</string>
 								<key>REQUIREMENTS</key>
-								<array/>
+								<array>
+									<dict>
+										<key>BEHAVIOR</key>
+										<integer>0</integer>
+										<key>DICTIONARY</key>
+										<dict>
+											<key>IC_REQUIREMENT_OS_DISK_TYPE</key>
+											<integer>0</integer>
+											<key>IC_REQUIREMENT_OS_DISTRIBUTION_TYPE</key>
+											<integer>0</integer>
+											<key>IC_REQUIREMENT_OS_MINIMUM_VERSION</key>
+											<integer>100600</integer>
+										</dict>
+										<key>IDENTIFIER</key>
+										<string>fr.whitebox.Packages.requirement.os</string>
+										<key>MESSAGE</key>
+										<array/>
+										<key>NAME</key>
+										<string>Operating System</string>
+										<key>STATE</key>
+										<true/>
+									</dict>
+								</array>
 								<key>TITLE</key>
 								<array>
 									<dict>
