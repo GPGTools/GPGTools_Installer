@@ -2938,7 +2938,7 @@
 											<key>GID</key>
 											<integer>80</integer>
 											<key>PATH</key>
-											<string>build/payload/gpgtoolspreferences/GPGTools.prefPane</string>
+											<string>build/payload/gpgtoolspreferences/GPGPreferences.prefPane</string>
 											<key>PATH_TYPE</key>
 											<integer>1</integer>
 											<key>PERMISSIONS</key>
@@ -2946,7 +2946,7 @@
 											<key>TYPE</key>
 											<integer>3</integer>
 											<key>UID</key>
-											<integer>0</integer>
+											<integer>501</integer>
 										</dict>
 									</array>
 									<key>GID</key>
@@ -3109,7 +3109,7 @@
 				<key>OVERWRITE_PERMISSIONS</key>
 				<false/>
 				<key>VERSION</key>
-				<string>0.8</string>
+				<string>0.9a1</string>
 			</dict>
 			<key>TYPE</key>
 			<integer>0</integer>
@@ -6006,7 +6006,7 @@ Description: OpenPGP key management.</string>
 										<key>VALUE</key>
 										<string>Version: 1.7a2
 Web: http://gpgtools.org/gpgservices.html
-Requirements: OS X &gt;= 10.6 (Intel)
+Requirements: OS X &gt;= 10.6
 Installs to: /Library/Services
 Description: OpenPGP for all applications via OS X Services menu.</string>
 									</dict>
@@ -6074,9 +6074,9 @@ Description: OpenPGP for all applications via OS X Services menu.</string>
 										<key>LANGUAGE</key>
 										<string>English</string>
 										<key>VALUE</key>
-										<string>Version: 0.8
+										<string>Version: 0.9a1
 Web: http://gpgtools.org/gpgpreferences.html
-Requirements: OS X &gt;= 10.6, Intel
+Requirements: OS X &gt;= 10.6
 Installs to: ~/Library/PreferencePanes/
 Description: OpenPGP system preferences.</string>
 									</dict>
