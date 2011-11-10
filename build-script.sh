@@ -56,7 +56,13 @@ function download {
     #if [ -e "$2$3" ]; then echo "skipped"; return 0; else echo ""; fi
     exec 3>&1 4>&2 >> $fileLog 2>&1
     echo " ############### Download: $5$2$3"
-    curl -s -C - -L -O "$5$2$3"
+    result=`curl --write-out %{http_code} -s -L --output /dev/null "$5$2$3"`;
+    if [ "$result" != "200" ]; then
+        exec 1>&3 2>&4
+        echo "Error $result for '$5$2$3'! (2)";
+        exit 2;
+    fi
+    curl -s -L -O "$5$2$3"
     #if [ "$4" != "" ] && [ "" != "`which gpg2`" ] ; then
     #    curl -s -O "$5$2$4"
     #     gpg2 --verify "$2$4"
