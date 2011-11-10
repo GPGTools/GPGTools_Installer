@@ -6684,7 +6684,7 @@ Description: OpenPGP for Mozilla Thunderbird.</string>
 								<array>
 									<dict>
 										<key>BEHAVIOR</key>
-										<integer>1</integer>
+										<integer>0</integer>
 										<key>DICTIONARY</key>
 										<dict>
 											<key>IC_REQUIREMENT_SCRIPT_ARGUMENTS</key>
