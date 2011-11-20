@@ -172,6 +172,8 @@ gpgmail107_pid=${!}
 #gpgmail104_pid=${!}
 download "$gka_build" "$gka_version" "$gka_fileExt" "$gka_sigExt" "$gka_url" &
 gka_pid=${!}
+download "$gka105_build" "$gka105_version" "$gka105_fileExt" "$gka105_sigExt" "$gka105_url" &
+gka105_pid=${!}
 download "$gpgservices_build" "$gpgservices_version" "$gpgservices_fileExt" "$gpgservices_sigExt" "$gpgservices_url" &
 gpgservices_pid=${!}
 download "$gpgpreferences_build" "$gpgpreferences_version" "$gpgpreferences_fileExt" "$gpgpreferences_sigExt" "$gpgpreferences_url" &
@@ -248,6 +250,18 @@ copy "$gka_build"\
       "$gka_volume"\
       "$gka_installer"\
       "$gka_target"\
+      "$pathDist"
+################################################################################
+
+################################################################################
+echo " * Working on 'GPG Keychain Access' for 10.5...";
+waitfor "GPG Keychain Access for 10.5" "$gka105_pid";
+copy "$gka105_build"\
+      "$gka105_version"\
+      "$gka105_fileExt"\
+      "$gka105_volume"\
+      "$gka105_installer"\
+      "$gka105_target"\
       "$pathDist"
 ################################################################################
 
