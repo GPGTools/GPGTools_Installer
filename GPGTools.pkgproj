@@ -6811,10 +6811,47 @@ Description: OpenPGP core implementation. Version 1 is the small portable editio
 								</array>
 								<key>OPTIONS</key>
 								<dict>
+									<key>DEPENDENCY</key>
+									<dict>
+										<key>ENABLED_DEPENDENCY</key>
+										<dict>
+											<key>COMPARATOR</key>
+											<integer>0</integer>
+											<key>OBJECT</key>
+											<integer>0</integer>
+											<key>UUID</key>
+											<string>4983DC2C-1184-4F4D-B981-410B5117FEAD</string>
+										</dict>
+										<key>ENABLED_MODE</key>
+										<integer>0</integer>
+										<key>SELECTED_DEPENDENCY</key>
+										<dict>
+											<key>BOTTOM</key>
+											<dict>
+												<key>COMPARATOR</key>
+												<integer>1</integer>
+												<key>OBJECT</key>
+												<integer>0</integer>
+												<key>UUID</key>
+												<string>4983DC2C-1184-4F4D-B981-410B5117FEAD</string>
+											</dict>
+											<key>OPERATOR</key>
+											<integer>1</integer>
+											<key>TOP</key>
+											<dict>
+												<key>COMPARATOR</key>
+												<integer>1</integer>
+												<key>OBJECT</key>
+												<integer>1</integer>
+												<key>UUID</key>
+												<string>4983DC2C-1184-4F4D-B981-410B5117FEAD</string>
+											</dict>
+										</dict>
+									</dict>
 									<key>HIDDEN</key>
 									<false/>
 									<key>STATE</key>
-									<integer>2</integer>
+									<integer>3</integer>
 								</dict>
 								<key>PACKAGE_UUID</key>
 								<string>7FE9BFF7-A571-4B12-97E5-3E613E027437</string>
