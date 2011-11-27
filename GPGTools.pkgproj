@@ -515,7 +515,7 @@
 				<key>OVERWRITE_PERMISSIONS</key>
 				<false/>
 				<key>VERSION</key>
-				<string>1.0b3</string>
+				<string>1.0b5</string>
 			</dict>
 			<key>UUID</key>
 			<string>E5494601-62BF-4382-A372-85179E4217FD</string>
@@ -6989,7 +6989,7 @@ Description: OpenPGP key management.</string>
 										<key>LANGUAGE</key>
 										<string>English</string>
 										<key>VALUE</key>
-										<string>Version: 1.0b3
+										<string>Version: 1.0b5
 Web: http://gpgtools.org/keychain.html
 Requirements: OS X &gt;= 10.6
 Installs to: /Applications
