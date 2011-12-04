@@ -5060,7 +5060,7 @@
 													<key>GID</key>
 													<integer>80</integer>
 													<key>PATH</key>
-													<string>build/payload/enigmail7/enigmail-1.3.3-sm+tb-mac.xpi</string>
+													<string>build/payload/enigmail7/enigmail-1.3.4-sm+tb-mac.xpi</string>
 													<key>PATH_TYPE</key>
 													<integer>1</integer>
 													<key>PERMISSIONS</key>
@@ -5248,7 +5248,7 @@
 				<key>OVERWRITE_PERMISSIONS</key>
 				<false/>
 				<key>VERSION</key>
-				<string>1.3.3</string>
+				<string>1.3.4</string>
 			</dict>
 			<key>TYPE</key>
 			<integer>0</integer>
@@ -7738,7 +7738,7 @@ Description: OpenPGP for Mozilla Thunderbird.</string>
 										<key>LANGUAGE</key>
 										<string>English</string>
 										<key>VALUE</key>
-										<string>Version: 1.3.3
+										<string>Version: 1.3.4
 Web: http://enigmail.mozdev.org
 Requirements: Mozilla Thunderbird 7 to 8
 Installs to: ~/Library/Thunderbird/Profiles/...
