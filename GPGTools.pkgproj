@@ -6856,7 +6856,33 @@ Description: OpenPGP core implementation. Version 1 is the small portable editio
 								<key>PACKAGE_UUID</key>
 								<string>7FE9BFF7-A571-4B12-97E5-3E613E027437</string>
 								<key>REQUIREMENTS</key>
-								<array/>
+								<array>
+									<dict>
+										<key>BEHAVIOR</key>
+										<integer>0</integer>
+										<key>DICTIONARY</key>
+										<dict>
+											<key>IC_REQUIREMENT_CPU_ARCHITECTURE_FAMILY</key>
+											<integer>1</integer>
+											<key>IC_REQUIREMENT_CPU_INTEL_ARCHITECTURE_TYPE</key>
+											<integer>0</integer>
+											<key>IC_REQUIREMENT_CPU_MINIMUM_CPU_CORES_COUNT</key>
+											<integer>1</integer>
+											<key>IC_REQUIREMENT_CPU_MINIMUM_FREQUENCY</key>
+											<integer>866666</integer>
+											<key>IC_REQUIREMENT_CPU_POWERPC_ARCHITECTURE_TYPE</key>
+											<integer>0</integer>
+										</dict>
+										<key>IDENTIFIER</key>
+										<string>fr.whitebox.Packages.requirement.cpu</string>
+										<key>MESSAGE</key>
+										<array/>
+										<key>NAME</key>
+										<string>PPC only</string>
+										<key>STATE</key>
+										<true/>
+									</dict>
+								</array>
 								<key>TITLE</key>
 								<array>
 									<dict>
