@@ -6730,7 +6730,7 @@
 			<key>PACKAGE_SETTINGS</key>
 			<dict>
 				<key>AUTHENTICATION</key>
-				<false/>
+				<true/>
 				<key>CONCLUSION_ACTION</key>
 				<integer>0</integer>
 				<key>IDENTIFIER</key>
@@ -8037,7 +8037,7 @@ Description: OpenPGP for Mozilla Thunderbird.</string>
 						<key>VALUE</key>
 						<dict>
 							<key>PATH</key>
-							<string>resources/package-end.rtfd</string>
+							<string>Dependencies/GPGTools_Core/installer/package-end.rtfd</string>
 							<key>PATH_TYPE</key>
 							<integer>1</integer>
 						</dict>
