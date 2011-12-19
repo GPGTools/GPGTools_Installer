@@ -3109,7 +3109,7 @@
 				<key>OVERWRITE_PERMISSIONS</key>
 				<false/>
 				<key>VERSION</key>
-				<string>0.9.1</string>
+				<string>0.9.2</string>
 			</dict>
 			<key>TYPE</key>
 			<integer>0</integer>
@@ -7185,7 +7185,7 @@ Description: OpenPGP for all applications via OS X Services menu.</string>
 										<key>LANGUAGE</key>
 										<string>English</string>
 										<key>VALUE</key>
-										<string>Version: 0.9.1
+										<string>Version: 0.9.2
 Web: http://gpgtools.org/gpgpreferences.html
 Requirements: OS X &gt;= 10.6
 Installs to: ~/Library/PreferencePanes/
