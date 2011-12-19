@@ -515,7 +515,7 @@
 				<key>OVERWRITE_PERMISSIONS</key>
 				<false/>
 				<key>VERSION</key>
-				<string>1.0b5</string>
+				<string>1.0b6</string>
 			</dict>
 			<key>UUID</key>
 			<string>E5494601-62BF-4382-A372-85179E4217FD</string>
@@ -3109,7 +3109,7 @@
 				<key>OVERWRITE_PERMISSIONS</key>
 				<false/>
 				<key>VERSION</key>
-				<string>0.9.1</string>
+				<string>0.9.2</string>
 			</dict>
 			<key>TYPE</key>
 			<integer>0</integer>
@@ -6742,7 +6742,7 @@
 				<key>OVERWRITE_PERMISSIONS</key>
 				<false/>
 				<key>VERSION</key>
-				<string>1.0</string>
+				<string>1.1</string>
 			</dict>
 			<key>TYPE</key>
 			<integer>0</integer>
@@ -7052,7 +7052,7 @@ Description: OpenPGP key management.</string>
 										<key>LANGUAGE</key>
 										<string>English</string>
 										<key>VALUE</key>
-										<string>Version: 1.0b5
+										<string>Version: 1.0b6
 Web: http://gpgtools.org/keychain.html
 Requirements: OS X &gt;= 10.6
 Installs to: /Applications
@@ -7185,7 +7185,7 @@ Description: OpenPGP for all applications via OS X Services menu.</string>
 										<key>LANGUAGE</key>
 										<string>English</string>
 										<key>VALUE</key>
-										<string>Version: 0.9.1
+										<string>Version: 0.9.2
 Web: http://gpgtools.org/gpgpreferences.html
 Requirements: OS X &gt;= 10.6
 Installs to: ~/Library/PreferencePanes/
@@ -8125,6 +8125,47 @@ Description: OpenPGP for Mozilla Thunderbird.</string>
 					</array>
 					<key>NAME</key>
 					<string>Mail.app running?</string>
+					<key>STATE</key>
+					<true/>
+				</dict>
+				<dict>
+					<key>BEHAVIOR</key>
+					<integer>2</integer>
+					<key>DICTIONARY</key>
+					<dict>
+						<key>IC_REQUIREMENT_SCRIPT_ARGUMENTS</key>
+						<array/>
+						<key>IC_REQUIREMENT_SCRIPT_COMPARATOR</key>
+						<integer>0</integer>
+						<key>IC_REQUIREMENT_SCRIPT_EMBED</key>
+						<true/>
+						<key>IC_REQUIREMENT_SCRIPT_PATH</key>
+						<dict>
+							<key>PATH</key>
+							<string>Dependencies/GPGTools_Core/scripts/fix_installer_105.sh</string>
+							<key>PATH_TYPE</key>
+							<integer>1</integer>
+						</dict>
+						<key>IC_REQUIREMENT_SCRIPT_VALUE</key>
+						<integer>0</integer>
+					</dict>
+					<key>IC_REQUIREMENT_CHECK_TYPE</key>
+					<integer>0</integer>
+					<key>IDENTIFIER</key>
+					<string>fr.whitebox.Packages.requirement.scripts</string>
+					<key>MESSAGE</key>
+					<array>
+						<dict>
+							<key>LANGUAGE</key>
+							<string>English</string>
+							<key>SECONDARY_VALUE</key>
+							<string></string>
+							<key>VALUE</key>
+							<string>This should not happen.</string>
+						</dict>
+					</array>
+					<key>NAME</key>
+					<string>Leopard fix</string>
 					<key>STATE</key>
 					<true/>
 				</dict>
