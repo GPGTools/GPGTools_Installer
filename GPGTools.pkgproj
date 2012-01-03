@@ -5337,7 +5337,7 @@
 										<key>LANGUAGE</key>
 										<string>English</string>
 										<key>VALUE</key>
-										<string>Version: 2.0.18-2
+										<string>Version: 2.0.18-3
 Web: http://gpgtools.org/macgpg2.html
 Requirements: OS X &gt;= 10.5 (Universal)
 Installs to: /usr/local/MacGPG2
