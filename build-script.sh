@@ -186,8 +186,8 @@ download "$enigmail6_build" "$enigmail6_version" "$enigmail6_fileExt" "$enigmail
 enigmail6_pid=${!}
 download "$enigmail7_build" "$enigmail7_version" "$enigmail7_fileExt" "$enigmail7_sigExt" "$enigmail7_url" &
 enigmail7_pid=${!}
-download "$macgpg1_build" "$macgpg1_version" "$macgpg1_fileExt" "$macgpg1_sigExt" "$macgpg1_url" &
-macgpg1_pid=${!}
+#download "$macgpg1_build" "$macgpg1_version" "$macgpg1_fileExt" "$macgpg1_sigExt" "$macgpg1_url" &
+#macgpg1_pid=${!}
 download "$macgpg2_build" "$macgpg2_version" "$macgpg2_fileExt" "$macgpg2_sigExt" "$macgpg2_url" &
 macgpg2_pid=${!}
 ################################################################################
@@ -280,7 +280,7 @@ copy "$gpgpreferences_build"\
 ################################################################################
 echo " * Working on 'GPGServices'...";
 waitfor "GPGServices" "$gpgservices_pid";
-unpack "$gpgservices_build"\
+subinstaller "$gpgservices_build"\
        "$gpgservices_version"\
        "$gpgservices_fileExt"\
        "$gpgservices_volume"\
@@ -331,31 +331,65 @@ simplecopy "$enigmail7_build"\
 ################################################################################
 
 ################################################################################
-echo " * Working on 'MacGPG1'...";
-waitfor "$macgpg1_target" "$macgpg1_pid";
-unpack "$macgpg1_build"\
-       "$macgpg1_version"\
-       "$macgpg1_fileExt"\
-       "$macgpg1_volume"\
-       "$macgpg1_installer"\
-       "$macgpg1_target"\
-       "$pathDist"\
-       "$macgpg1_package"
+#echo " * Working on 'MacGPG1'...";
+#waitfor "$macgpg1_target" "$macgpg1_pid";
+#unpack "$macgpg1_build"\
+#       "$macgpg1_version"\
+#       "$macgpg1_fileExt"\
+#       "$macgpg1_volume"\
+#       "$macgpg1_installer"\
+#       "$macgpg1_target"\
+#       "$pathDist"\
+#       "$macgpg1_package"
 ################################################################################
 
 ################################################################################
-echo " * Working on 'MacGPG2'...";
+#echo " * Working on 'MacGPG2'...";
+#waitfor "MacGPG2" "$macgpg2_pid";
+#unpack "$macgpg2_build"\
+#       "$macgpg2_version"\
+#       "$macgpg2_fileExt"\
+#       "$macgpg2_volume"\
+#       "$macgpg2_installer"\
+#       "$macgpg2_target"\
+#       "$pathDist"\
+#       "$macgpg2_package"\
+#       "$macgpg2_package2"
+################################################################################
+
+################################################################################
+echo " * Working on 'MacGPG2 (Step 1/3)'...";
 waitfor "MacGPG2" "$macgpg2_pid";
-unpack "$macgpg2_build"\
+subinstaller "$macgpg2_build"\
        "$macgpg2_version"\
        "$macgpg2_fileExt"\
        "$macgpg2_volume"\
        "$macgpg2_installer"\
        "$macgpg2_target"\
        "$pathDist"\
-       "$macgpg2_package"\
-       "$macgpg2_package2"
+       "$macgpg2_package"
+echo " * Working on 'MacGPG2 (Step 2/3)'...";
+rm "$macgpg2_build/.installed"
+subinstaller "$macgpg2_build"\
+       "$macgpg2_version"\
+       "$macgpg2_fileExt"\
+       "$macgpg2_volume"\
+       "$macgpg2_installer2"\
+       "$macgpg2_target"\
+       "$pathDist"\
+       "$macgpg2_package"
+echo " * Working on 'MacGPG2 (Step 3/3)'...";
+rm "$macgpg2_build/.installed"
+subinstaller "$macgpg2_build"\
+       "$macgpg2_version"\
+       "$macgpg2_fileExt"\
+       "$macgpg2_volume"\
+       "$macgpg2_installer3"\
+       "$macgpg2_target"\
+       "$pathDist"\
+       "$macgpg2_package"
 ################################################################################
+
 
 exit
 
