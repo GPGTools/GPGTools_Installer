@@ -12,6 +12,6 @@ compile:
 test: deploy
 
 clean:
-	@chmod -R o+w build
+	@chmod -R +w build
 	@rm -rf build
 
