@@ -358,7 +358,7 @@ simplecopy "$enigmail7_build"\
 ################################################################################
 
 ################################################################################
-echo " * Working on 'MacGPG2 (Step 1/3)'...";
+echo " * Working on 'MacGPG2 (Core)'...";
 waitfor "MacGPG2" "$macgpg2_pid";
 subinstaller "$macgpg2_build"\
        "$macgpg2_version"\
@@ -368,23 +368,13 @@ subinstaller "$macgpg2_build"\
        "$macgpg2_target"\
        "$pathDist"\
        "$macgpg2_package"
-echo " * Working on 'MacGPG2 (Step 2/3)'...";
+echo " * Working on 'MacGPG2 (Pinentry)'...";
 rm "$macgpg2_build/.installed"
 subinstaller "$macgpg2_build"\
        "$macgpg2_version"\
        "$macgpg2_fileExt"\
        "$macgpg2_volume"\
        "$macgpg2_installer2"\
-       "$macgpg2_target"\
-       "$pathDist"\
-       "$macgpg2_package"
-echo " * Working on 'MacGPG2 (Step 3/3)'...";
-rm "$macgpg2_build/.installed"
-subinstaller "$macgpg2_build"\
-       "$macgpg2_version"\
-       "$macgpg2_fileExt"\
-       "$macgpg2_volume"\
-       "$macgpg2_installer3"\
        "$macgpg2_target"\
        "$pathDist"\
        "$macgpg2_package"
