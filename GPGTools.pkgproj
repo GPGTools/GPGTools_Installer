@@ -5250,26 +5250,6 @@
 				<key>LOCATION</key>
 				<integer>0</integer>
 				<key>NAME</key>
-				<string>Other</string>
-			</dict>
-			<key>PATH</key>
-			<dict>
-				<key>PATH</key>
-				<string>build/payload/MacGPG2/Other.pkg</string>
-				<key>PATH_TYPE</key>
-				<integer>1</integer>
-			</dict>
-			<key>TYPE</key>
-			<integer>1</integer>
-			<key>UUID</key>
-			<string>2C14D398-03FA-457A-9BFC-D5763E9B6622</string>
-		</dict>
-		<dict>
-			<key>PACKAGE_SETTINGS</key>
-			<dict>
-				<key>LOCATION</key>
-				<integer>0</integer>
-				<key>NAME</key>
 				<string>GPGServices</string>
 			</dict>
 			<key>PATH</key>
@@ -6396,43 +6376,6 @@ Description: OpenPGP for Mozilla Thunderbird.</string>
 								<integer>0</integer>
 								<key>UUID</key>
 								<string>87E86CB6-A82B-443D-AA4B-738B06C6D61E</string>
-							</dict>
-							<dict>
-								<key>DESCRIPTION</key>
-								<array/>
-								<key>OPTIONS</key>
-								<dict>
-									<key>DEPENDENCY</key>
-									<dict>
-										<key>ENABLED_MODE</key>
-										<integer>0</integer>
-										<key>SELECTED_DEPENDENCY</key>
-										<dict>
-											<key>COMPARATOR</key>
-											<integer>0</integer>
-											<key>OBJECT</key>
-											<integer>0</integer>
-											<key>UUID</key>
-											<string>9AA5EB28-B817-4349-96D4-643EB27834CD</string>
-										</dict>
-									</dict>
-									<key>HIDDEN</key>
-									<true/>
-									<key>STATE</key>
-									<integer>3</integer>
-								</dict>
-								<key>PACKAGE_UUID</key>
-								<string>2C14D398-03FA-457A-9BFC-D5763E9B6622</string>
-								<key>REQUIREMENTS</key>
-								<array/>
-								<key>TITLE</key>
-								<array/>
-								<key>TOOLTIP</key>
-								<array/>
-								<key>TYPE</key>
-								<integer>0</integer>
-								<key>UUID</key>
-								<string>BDC567C6-1C12-430A-BB97-E3C67E86A06C</string>
 							</dict>
 						</array>
 						<key>REMOVED</key>
