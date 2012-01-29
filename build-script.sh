@@ -388,9 +388,9 @@ read -p "Compile sources [y/n]? " input
 
 if [ "x$input" == "xy" -o "x$input" == "xY" ] ;then
     back="`pwd`";
-    echo "Compiling GPGTools_Preferences...";
+    echo "Compiling GPGPreferences...";
     mkdir -p payload/gpgtoolspreferences
-    (cd ../GPGTools_Preferences && git pull && git submodule foreach git pull origin master && make && cd "$back" && rm -rf payload/gpgtoolspreferences/GPGTools.prefPane && cp -R ../GPGTools_Preferences/build/Release/GPGTools.prefPane payload/gpgtoolspreferences/) > build.log 2>&1
+    (cd ../GPGPreferences && git pull && git submodule foreach git pull origin master && make && cd "$back" && rm -rf payload/gpgtoolspreferences/GPGTools.prefPane && cp -R ../GPGPreferences/build/Release/GPGTools.prefPane payload/gpgtoolspreferences/) > build.log 2>&1
     if [ ! "$?" == "0" ]; then echo "ERROR. Look at build.log"; exit 1; fi
     echo "Compiling GPGServices...";
     mkdir -p payload/gpgservices
