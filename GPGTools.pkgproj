@@ -5633,7 +5633,7 @@ Description: OpenPGP system preferences.</string>
 										<key>LANGUAGE</key>
 										<string>English</string>
 										<key>VALUE</key>
-										<string>Version: 2.0 ALPHA21
+										<string>Version: 2.0 ALPHA30
 Web: http://gpgtools.org/gpgmail.html
 Requirements: OS X 10.7
 Installs to: ~/Library/Mail/Bundles
