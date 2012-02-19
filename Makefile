@@ -15,5 +15,5 @@ clean:
 	@chmod -R +w build
 	@rm -rf build
 
-
-
+nightly:
+	@cp build-script.sh.nightly.config build-script.sh.config
