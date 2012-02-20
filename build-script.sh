@@ -83,10 +83,10 @@ function subinstaller {
     hdiutil attach -quiet $2$3
     rm -rf "tmp";  mkdir "tmp"; cd "tmp";
     mkdir -p "$7/$6"; cd "$7/$6";
-    cp "/Volumes/$4/$5" "$7/$6";
+    cp -R "/Volumes/$4/$5" "$7/$6";
     if [ "$?" != "0" ]; then
         exec 1>&3 2>&4
-        echo "Could get the subinstaller for '$1'! (2)";
+        echo "Could not get the subinstaller for '$1'! (2)";
         exit 1;
     fi
     touch "$1/.installed"
