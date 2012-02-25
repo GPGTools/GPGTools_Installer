@@ -1,0 +1,8 @@
+gka_url="http://nightly.gpgtools.org/";
+gka_version="GPG%20Keychain%20Access-trunk";
+gpgmail107_url="http://nightly.gpgtools.org/";
+gpgmail107_version="GPGMail-trunk";
+gpgservices_url="http://nightly.gpgtools.org/";
+gpgservices_version="GPGServices-trunk";
+gpgpreferences_url="http://nightly.gpgtools.org/";
+gpgpreferences_version="GPGPreferences-trunk";

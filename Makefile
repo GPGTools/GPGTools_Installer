@@ -16,4 +16,4 @@ clean:
 	@rm -rf build
 
 nightly:
-	@cp build-script.sh.nightly.config build-script.sh.config
+	@cat build-script.sh.config.nightlyDiff >> build-script.sh.config
