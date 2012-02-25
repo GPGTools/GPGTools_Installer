@@ -17,3 +17,4 @@ clean:
 
 nightly:
 	@cp build-script.sh.nightly.config build-script.sh.config
+	@cp Makefile.nightly.config Makefile.config
