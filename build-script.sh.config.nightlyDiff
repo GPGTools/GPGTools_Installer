@@ -1,11 +1,11 @@
 gka_url="http://nightly.gpgtools.org/";
-gka_version="GPG%20Keychain%20Access-trunk";
+gka_version="GPG%20Keychain%20Access-latest";
 gpgmail107_url="http://nightly.gpgtools.org/";
-gpgmail107_version="GPGMail-trunk";
+gpgmail107_version="GPGMail-latest";
 gpgservices_url="http://nightly.gpgtools.org/";
-gpgservices_version="GPGServices-trunk";
+gpgservices_version="GPGServices-latest";
 gpgpreferences_url="http://nightly.gpgtools.org/";
-gpgpreferences_version="GPGPreferences-trunk";
+gpgpreferences_version="GPGPreferences-latest";
 enigmail_url="http://nightly.gpgtools.org/";
 enigmail5_url="http://nightly.gpgtools.org/";
 enigmail6_url="http://nightly.gpgtools.org/";
