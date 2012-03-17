@@ -7012,7 +7012,7 @@ Description: OpenPGP key management.</string>
 										<key>LANGUAGE</key>
 										<string>English</string>
 										<key>VALUE</key>
-										<string>Version: 1.0b6
+										<string>Version: 1.0b7
 Web: http://gpgtools.org/keychain.html
 Requirements: OS X &gt;= 10.6
 Installs to: /Applications
@@ -7211,7 +7211,7 @@ Description: OpenPGP system preferences.</string>
 										<string>Version: 2.0 ALPHA30
 Web: http://gpgtools.org/gpgmail.html
 Requirements: OS X 10.7
-Installs to: ~/Library/Mail/Bundles
+Installs to: /Library/Mail/Bundles
 Description: OpenPGP for Apple Mail.</string>
 									</dict>
 								</array>
@@ -7297,7 +7297,7 @@ Description: OpenPGP for Apple Mail.</string>
 										<string>Version: 1.3.3
 Web: http://gpgtools.org/gpgmail.html
 Requirements: OS X 10.6
-Installs to: ~/Library/Mail/Bundles
+Installs to: /Library/Mail/Bundles
 Description: OpenPGP for Apple Mail.</string>
 									</dict>
 								</array>
@@ -7383,7 +7383,7 @@ Description: OpenPGP for Apple Mail.</string>
 										<string>Version: 1.2.0
 Web: http://gpgtools.org/gpgmail.html
 Requirements: OS X 10.5
-Installs to: ~/Library/Mail/Bundles
+Installs to: /Library/Mail/Bundles
 Description: OpenPGP for Apple Mail.</string>
 									</dict>
 								</array>
