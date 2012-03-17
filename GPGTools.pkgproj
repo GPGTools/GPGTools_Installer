@@ -7075,7 +7075,7 @@ Description: OpenPGP key management.</string>
 										<key>LANGUAGE</key>
 										<string>English</string>
 										<key>VALUE</key>
-										<string>Version: 1.6
+										<string>Version: 1.7a4
 Web: http://gpgtools.org/gpgservices.html
 Requirements: OS X &gt;= 10.6
 Installs to: /Library/Services
