@@ -178,20 +178,20 @@ download "$gpgservices_build" "$gpgservices_version" "$gpgservices_fileExt" "$gp
 gpgservices_pid=${!}
 download "$gpgpreferences_build" "$gpgpreferences_version" "$gpgpreferences_fileExt" "$gpgpreferences_sigExt" "$gpgpreferences_url" &
 gpgpreferences_pid=${!}
-download "$enigmail_build" "$enigmail_version" "$enigmail_fileExt" "$enigmail_sigExt" "$enigmail_url" &
-enigmail_pid=${!}
-download "$enigmail5_build" "$enigmail5_version" "$enigmail5_fileExt" "$enigmail5_sigExt" "$enigmail5_url" &
-enigmail5_pid=${!}
-download "$enigmail6_build" "$enigmail6_version" "$enigmail6_fileExt" "$enigmail6_sigExt" "$enigmail6_url" &
-enigmail6_pid=${!}
-download "$enigmail7_build" "$enigmail7_version" "$enigmail7_fileExt" "$enigmail7_sigExt" "$enigmail7_url" &
-enigmail7_pid=${!}
-download "$enigmail8_build" "$enigmail8_version" "$enigmail8_fileExt" "$enigmail8_sigExt" "$enigmail8_url" &
-enigmail8_pid=${!}
-download "$enigmail9_build" "$enigmail9_version" "$enigmail9_fileExt" "$enigmail9_sigExt" "$enigmail9_url" &
-enigmail9_pid=${!}
-download "$enigmail10_build" "$enigmail10_version" "$enigmail10_fileExt" "$enigmail10_sigExt" "$enigmail10_url" &
-enigmail10_pid=${!}
+#download "$enigmail_build" "$enigmail_version" "$enigmail_fileExt" "$enigmail_sigExt" "$enigmail_url" &
+#enigmail_pid=${!}
+#download "$enigmail5_build" "$enigmail5_version" "$enigmail5_fileExt" "$enigmail5_sigExt" "$enigmail5_url" &
+#enigmail5_pid=${!}
+#download "$enigmail6_build" "$enigmail6_version" "$enigmail6_fileExt" "$enigmail6_sigExt" "$enigmail6_url" &
+#enigmail6_pid=${!}
+#download "$enigmail7_build" "$enigmail7_version" "$enigmail7_fileExt" "$enigmail7_sigExt" "$enigmail7_url" &
+#enigmail7_pid=${!}
+#download "$enigmail8_build" "$enigmail8_version" "$enigmail8_fileExt" "$enigmail8_sigExt" "$enigmail8_url" &
+#enigmail8_pid=${!}
+#download "$enigmail9_build" "$enigmail9_version" "$enigmail9_fileExt" "$enigmail9_sigExt" "$enigmail9_url" &
+#enigmail9_pid=${!}
+download "$enigmail_latest_build" "$enigmail_latest_version" "$enigmail_latest_fileExt" "$enigmail_latest_sigExt" "$enigmail_latest_url" &
+enigmail_latest_pid=${!}
 
 #download "$macgpg1_build" "$macgpg1_version" "$macgpg1_fileExt" "$macgpg1_sigExt" "$macgpg1_url" &
 #macgpg1_pid=${!}
@@ -298,72 +298,72 @@ subinstaller "$gpgservices_build"\
 ################################################################################
 
 ################################################################################
-echo " * Working on 'Enigmail' for Thunderbird 3...";
-waitfor "Enigmail" "$enigmail_pid";
-simplecopy "$enigmail_build"\
-           "$enigmail_version"\
-           "$enigmail_fileExt"\
-           "$enigmail_target"\
-           "$pathDist"
+#echo " * Working on 'Enigmail' for Thunderbird 3...";
+#waitfor "Enigmail" "$enigmail_pid";
+#simplecopy "$enigmail_build"\
+#           "$enigmail_version"\
+#           "$enigmail_fileExt"\
+#           "$enigmail_target"\
+#           "$pathDist"
 ################################################################################
 
 ################################################################################
-echo " * Working on 'Enigmail' for Thunderbird 5...";
-waitfor "Enigmail for Thunderbird 5" "$enigmail5_pid";
-simplecopy "$enigmail5_build"\
-           "$enigmail5_version"\
-           "$enigmail5_fileExt"\
-           "$enigmail5_target"\
-           "$pathDist"
+#echo " * Working on 'Enigmail' for Thunderbird 5...";
+#waitfor "Enigmail for Thunderbird 5" "$enigmail5_pid";
+#simplecopy "$enigmail5_build"\
+#           "$enigmail5_version"\
+#           "$enigmail5_fileExt"\
+#           "$enigmail5_target"\
+#           "$pathDist"
 ################################################################################
 
 ################################################################################
-echo " * Working on 'Enigmail' for Thunderbird 6...";
-waitfor "Enigmail for Thunderbird 6" "$enigmail6_pid";
-simplecopy "$enigmail6_build"\
-           "$enigmail6_version"\
-           "$enigmail6_fileExt"\
-           "$enigmail6_target"\
-           "$pathDist"
+#echo " * Working on 'Enigmail' for Thunderbird 6...";
+#waitfor "Enigmail for Thunderbird 6" "$enigmail6_pid";
+#simplecopy "$enigmail6_build"\
+#           "$enigmail6_version"\
+#           "$enigmail6_fileExt"\
+#           "$enigmail6_target"\
+#           "$pathDist"
 ################################################################################
 
 ################################################################################
-echo " * Working on 'Enigmail' for Thunderbird 7...";
-waitfor "Enigmail for Thunderbird 7" "$enigmail7_pid";
-simplecopy "$enigmail7_build"\
-           "$enigmail7_version"\
-           "$enigmail7_fileExt"\
-           "$enigmail7_target"\
-           "$pathDist"
+#echo " * Working on 'Enigmail' for Thunderbird 7...";
+#waitfor "Enigmail for Thunderbird 7" "$enigmail7_pid";
+#simplecopy "$enigmail7_build"\
+#           "$enigmail7_version"\
+#           "$enigmail7_fileExt"\
+#           "$enigmail7_target"\
+#           "$pathDist"
 ################################################################################
 
 ################################################################################
-echo " * Working on 'Enigmail' for Thunderbird 8...";
-waitfor "Enigmail for Thunderbird 8" "$enigmail8_pid";
-simplecopy "$enigmail8_build"\
-           "$enigmail8_version"\
-           "$enigmail8_fileExt"\
-           "$enigmail8_target"\
-           "$pathDist"
+#echo " * Working on 'Enigmail' for Thunderbird 8...";
+#waitfor "Enigmail for Thunderbird 8" "$enigmail8_pid";
+#simplecopy "$enigmail8_build"\
+#           "$enigmail8_version"\
+#           "$enigmail8_fileExt"\
+#           "$enigmail8_target"\
+#           "$pathDist"
 ################################################################################
 
 ################################################################################
-echo " * Working on 'Enigmail' for Thunderbird 9...";
-waitfor "Enigmail for Thunderbird 9" "$enigmail9_pid";
-simplecopy "$enigmail9_build"\
-           "$enigmail9_version"\
-           "$enigmail9_fileExt"\
-           "$enigmail9_target"\
-           "$pathDist"
+#echo " * Working on 'Enigmail' for Thunderbird 9...";
+#waitfor "Enigmail for Thunderbird 9" "$enigmail9_pid";
+#simplecopy "$enigmail9_build"\
+#           "$enigmail9_version"\
+#           "$enigmail9_fileExt"\
+#           "$enigmail9_target"\
+#           "$pathDist"
 ################################################################################
 
 ################################################################################
-echo " * Working on 'Enigmail' for Thunderbird 10...";
-waitfor "Enigmail for Thunderbird 10" "$enigmail10_pid";
-simplecopy "$enigmail10_build"\
-           "$enigmail10_version"\
-           "$enigmail10_fileExt"\
-           "$enigmail10_target"\
+echo " * Working on 'Enigmail' for latest Thunderbird...";
+waitfor "Enigmail for latest Thunderbird" "$enigmail_latest_pid";
+simplecopy "$enigmail_latest_build"\
+           "$enigmail_latest_version"\
+           "$enigmail_latest_fileExt"\
+           "$enigmail_latest_target"\
            "$pathDist"
 ################################################################################
 
