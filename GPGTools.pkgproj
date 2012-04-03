@@ -3130,26 +3130,6 @@
 				<key>LOCATION</key>
 				<integer>0</integer>
 				<key>NAME</key>
-				<string>pinentry-mac</string>
-			</dict>
-			<key>PATH</key>
-			<dict>
-				<key>PATH</key>
-				<string>build/payload/MacGPG2/pinentry-mac.pkg</string>
-				<key>PATH_TYPE</key>
-				<integer>1</integer>
-			</dict>
-			<key>TYPE</key>
-			<integer>1</integer>
-			<key>UUID</key>
-			<string>C1702E9B-4087-4BBB-89B0-7374F137F803</string>
-		</dict>
-		<dict>
-			<key>PACKAGE_SETTINGS</key>
-			<dict>
-				<key>LOCATION</key>
-				<integer>0</integer>
-				<key>NAME</key>
 				<string>GPGServices</string>
 			</dict>
 			<key>PATH</key>
@@ -4412,52 +4392,6 @@ Description: OpenPGP for Apple Mail.</string>
 								<integer>0</integer>
 								<key>UUID</key>
 								<string>AFEBF20A-B6EF-4140-9FBC-A683263707B2</string>
-							</dict>
-							<dict>
-								<key>DESCRIPTION</key>
-								<array/>
-								<key>OPTIONS</key>
-								<dict>
-									<key>DEPENDENCY</key>
-									<dict>
-										<key>ENABLED_DEPENDENCY</key>
-										<dict>
-											<key>COMPARATOR</key>
-											<integer>0</integer>
-											<key>OBJECT</key>
-											<integer>0</integer>
-											<key>UUID</key>
-											<string>FF500055-27E3-480A-8A03-45BEB9487A6B</string>
-										</dict>
-										<key>ENABLED_MODE</key>
-										<integer>0</integer>
-										<key>SELECTED_DEPENDENCY</key>
-										<dict>
-											<key>COMPARATOR</key>
-											<integer>0</integer>
-											<key>OBJECT</key>
-											<integer>0</integer>
-											<key>UUID</key>
-											<string>9AA5EB28-B817-4349-96D4-643EB27834CD</string>
-										</dict>
-									</dict>
-									<key>HIDDEN</key>
-									<true/>
-									<key>STATE</key>
-									<integer>3</integer>
-								</dict>
-								<key>PACKAGE_UUID</key>
-								<string>C1702E9B-4087-4BBB-89B0-7374F137F803</string>
-								<key>REQUIREMENTS</key>
-								<array/>
-								<key>TITLE</key>
-								<array/>
-								<key>TOOLTIP</key>
-								<array/>
-								<key>TYPE</key>
-								<integer>0</integer>
-								<key>UUID</key>
-								<string>87E86CB6-A82B-443D-AA4B-738B06C6D61E</string>
 							</dict>
 							<dict>
 								<key>DESCRIPTION</key>
