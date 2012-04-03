@@ -405,16 +405,16 @@ subinstaller "$macgpg2_build"\
        "$macgpg2_target"\
        "$pathDist"\
        "$macgpg2_package"
-echo " * Working on 'MacGPG2 (Pinentry)'...";
-rm "$macgpg2_build/.installed"
-subinstaller "$macgpg2_build"\
-       "$macgpg2_version"\
-       "$macgpg2_fileExt"\
-       "$macgpg2_volume"\
-       "$macgpg2_installer2"\
-       "$macgpg2_target"\
-       "$pathDist"\
-       "$macgpg2_package"
+#echo " * Working on 'MacGPG2 (Pinentry)'...";
+#rm "$macgpg2_build/.installed"
+#subinstaller "$macgpg2_build"\
+#       "$macgpg2_version"\
+#       "$macgpg2_fileExt"\
+#       "$macgpg2_volume"\
+#       "$macgpg2_installer2"\
+#       "$macgpg2_target"\
+#       "$pathDist"\
+#       "$macgpg2_package"
 ################################################################################
 
 
