@@ -54,11 +54,11 @@ function download {
     if [ -e ".installed" ]; then rm ".installed"; fi
     #echo -n "   * Downloading...";
     #if [ -e "$2$3" ]; then echo "skipped"; return 0; else echo ""; fi
-    exec 3>&1 4>&2 >> $fileLog 2>&1
+    exec 10>&1 11>&2 >> $fileLog 2>&1
     echo " ############### Download: $5$2$3"
     result=`curl --write-out %{http_code} -s -L --output /dev/null "$5$2$3"`;
     if [ "$result" != "200" ]; then
-        exec 1>&3 2>&4
+        exec 1>&10 2>&11
         echo "Error $result for '$5$2$3'! (2)";
         exit 2;
     fi
@@ -68,30 +68,30 @@ function download {
     #     gpg2 --verify "$2$4"
     #fi
     if [ "$?" != "0" ]; then
-        exec 1>&3 2>&4
+        exec 1>&10 2>&11
         echo "Could not get the binaries for '$5$2$3'! (1)";
         exit 1;
     fi
-    exec 1>&3 2>&4
+    exec 1>&10 2>&11
 }
 
 function subinstaller {
     cd "$1";
     echo -n "   * [`date '+%H:%M:%S'`] Getting subinstaller '$2'...";
     if [ -e '.installed' ]; then echo "skipped"; return 0; else echo ""; fi
-    exec 3>&1 4>&2 >> $fileLog 2>&1
+    exec 10>&1 11>&2 >> $fileLog 2>&1
     hdiutil attach -quiet $2$3
     rm -rf "tmp";  mkdir "tmp"; cd "tmp";
     mkdir -p "$7/$6"; cd "$7/$6";
     cp -R "/Volumes/$4/$5" "$7/$6";
     if [ "$?" != "0" ]; then
-        exec 1>&3 2>&4
+        exec 1>&10 2>&11
         echo "Could not get the subinstaller for '$1'! (2)";
         exit 1;
     fi
     touch "$1/.installed"
     hdiutil detach "/Volumes/$4";
-    exec 1>&3 2>&4
+    exec 1>&10 2>&11
 }
 
 
@@ -99,7 +99,7 @@ function unpack {
     cd "$1";
     echo -n "   * [`date '+%H:%M:%S'`] Unpacking '$2'...";
     if [ -e '.installed' ]; then echo "skipped"; return 0; else echo ""; fi
-    exec 3>&1 4>&2 >> $fileLog 2>&1
+    exec 10>&1 11>&2 >> $fileLog 2>&1
     hdiutil attach -quiet $2$3
     rm -rf "tmp";  mkdir "tmp"; cd "tmp";
     xar -xf "/Volumes/$4/$5"
@@ -109,20 +109,20 @@ function unpack {
       cpio -i --quiet < "$1/tmp/$9/Payload"
     fi
     if [ "$?" != "0" ]; then
-        exec 1>&3 2>&4
+        exec 1>&10 2>&11
         echo "Could not install the binaries for '$1'! (2)";
         exit 1;
     fi
     touch "$1/.installed"
     hdiutil detach "/Volumes/$4";
-    exec 1>&3 2>&4
+    exec 1>&10 2>&11
 }
 
 function copy {
     cd "$1";
     echo -n "   * [`date '+%H:%M:%S'`] Unpacking '$2'...";
     if [ -e '.installed' ]; then echo "skipped"; return 0; else echo ""; fi
-    exec 3>&1 4>&2 >> $fileLog 2>&1
+    exec 10>&1 11>&2 >> $fileLog 2>&1
     hdiutil attach -quiet $2$3
     if [ -e "$7/$6/$5/Contents" ]; then
       rm -rf "$7/$6";
@@ -131,31 +131,31 @@ function copy {
     rm -f "$7/$6/$5"
     cp -Rn "/Volumes/$4/$5" "$7/$6"
     if [ "$?" != "0" ]; then
-        exec 1>&3 2>&4
+        exec 1>&10 2>&11
         echo "Could not install the binaries for '$1'! (3)";
         exit 1;
     fi
     touch "$1/.installed"
     hdiutil detach "/Volumes/$4";
-    exec 1>&3 2>&4
+    exec 1>&10 2>&11
 }
 
 function simplecopy {
     cd "$1";
     echo -n "   * [`date '+%H:%M:%S'`] Unpacking '$2'...";
     if [ -e '.installed' ]; then echo "skipped"; return 0; else echo ""; fi
-    exec 3>&1 4>&2 >> $fileLog 2>&1
+    exec 10>&1 11>&2 >> $fileLog 2>&1
     mkdir -p "$5/$4";
     echo "Copy: $1/$2$3 to $5/$4";
     rm -f "$5/$4/$2$3"
     cp -Rn "$1/$2$3" "$5/$4"
     if [ "$?" != "0" ]; then
-        exec 1>&3 2>&4
+        exec 1>&10 2>&11
         echo "Could not install the binaries for '$1'! (4)";
         exit 1;
     fi
     touch "$1/.installed"
-    exec 1>&3 2>&4
+    exec 1>&10 2>&11
 }
 
 ################################################################################
