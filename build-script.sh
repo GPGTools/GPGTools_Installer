@@ -21,6 +21,12 @@ export redirectCheck="REDIRECT"
 source "$0.config"
 ################################################################################
 
+
+# As default, should redirect.
+if [[ ! ${!redirectCheck} && ${!redirectCheck-unset} ]]; then
+	declare $redirectCheck="1"
+fi
+
 # init #########################################################################
 if [ "`which curl`" == "" ]; then
     echo " * ERROR: Please install 'curl' first :/";
@@ -47,18 +53,18 @@ function waitfor {
     wait "$2";
 }
 
-function jenkinsBuild() {
+function shouldRedirect() {
 	echo ${!redirectCheck}
 }
 
 function start_redirect_output {
-	if [ "$(jenkinsBuild)" == "1" ]; then
+	if [ "$(shouldRedirect)" == "1" ]; then
 		exec 10>&1 11>&2 >> $1 2>&1
 	fi
 }
 
 function end_redirect_output {
-	if [ "$(jenkinsBuild)" == "1" ]; then
+	if [ "$(shouldRedirect)" == "1" ]; then
 		exec 1>&10 2>&11
 	fi
 }
