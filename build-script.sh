@@ -52,13 +52,13 @@ function jenkinsBuild() {
 }
 
 function start_redirect_output {
-	if [ $(jenkinsBuild) == "1" ]; then
+	if [ "$(jenkinsBuild)" == "1" ]; then
 		exec 10>&1 11>&2 >> $1 2>&1
 	fi
 }
 
 function end_redirect_output {
-	if [ $(jenkinsBuild) == "1" ]; then
+	if [ "$(jenkinsBuild)" == "1" ]; then
 		exec 1>&10 2>&11
 	fi
 }
