@@ -2446,7 +2446,7 @@ Description: OpenPGP for Apple Mail.</string>
 										<key>LANGUAGE</key>
 										<string>English</string>
 										<key>VALUE</key>
-										<string>GPGTools GPGMail (10.7+)</string>
+										<string>GPGTools GPGMail (10.7)</string>
 									</dict>
 								</array>
 								<key>TOOLTIP</key>
