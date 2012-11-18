@@ -2416,22 +2416,38 @@ Description: OpenPGP for Apple Mail.</string>
 										<integer>0</integer>
 										<key>DICTIONARY</key>
 										<dict>
-											<key>IC_REQUIREMENT_OS_DISK_TYPE</key>
+											<key>IC_REQUIREMENT_SCRIPT_ARGUMENTS</key>
+											<array>
+												<dict>
+													<key>IC_REQUIREMENT_SCRIPT_ARGUMENT_STATE</key>
+													<true/>
+													<key>IC_REQUIREMENT_SCRIPT_ARGUMENT_VALUE</key>
+													<string>7</string>
+												</dict>
+											</array>
+											<key>IC_REQUIREMENT_SCRIPT_COMPARATOR</key>
 											<integer>0</integer>
-											<key>IC_REQUIREMENT_OS_DISTRIBUTION_TYPE</key>
+											<key>IC_REQUIREMENT_SCRIPT_EMBED</key>
+											<true/>
+											<key>IC_REQUIREMENT_SCRIPT_PATH</key>
+											<dict>
+												<key>PATH</key>
+												<string>Dependencies/GPGTools_Core/scripts/check_for_osver.sh</string>
+												<key>PATH_TYPE</key>
+												<integer>1</integer>
+											</dict>
+											<key>IC_REQUIREMENT_SCRIPT_VALUE</key>
 											<integer>0</integer>
-											<key>IC_REQUIREMENT_OS_MINIMUM_VERSION</key>
-											<integer>100700</integer>
 										</dict>
 										<key>IDENTIFIER</key>
-										<string>fr.whitebox.Packages.requirement.os</string>
+										<string>fr.whitebox.Packages.requirement.scripts</string>
 										<key>MESSAGE</key>
 										<array>
 											<dict>
 												<key>LANGUAGE</key>
 												<string>English</string>
 												<key>VALUE</key>
-												<string>Needs OS X Lion.</string>
+												<string>For OS X 10.7 (Leopard) only.</string>
 											</dict>
 										</array>
 										<key>NAME</key>
