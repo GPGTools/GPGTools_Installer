@@ -83,7 +83,7 @@ function download {
         echo "Error $result for '$5$2$3'! (2)";
         exit 2;
     fi
-    curl -s -L -O "$5$2$3"
+    curl -s -k -L -O "$5$2$3"
     #if [ "$4" != "" ] && [ "" != "`which gpg2`" ] ; then
     #    curl -s -O "$5$2$4"
     #     gpg2 --verify "$2$4"
