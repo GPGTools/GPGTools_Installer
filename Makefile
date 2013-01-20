@@ -7,7 +7,7 @@ update:
 	@git pull
 
 compile:
-	@./build-script.sh
+	@#./build-script.sh
 
 test: deploy
 
