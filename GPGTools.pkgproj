@@ -2074,7 +2074,7 @@
 			<key>PATH</key>
 			<dict>
 				<key>PATH</key>
-				<string>build/payload/MacGPG2/MacGPG2.pkg</string>
+				<string>build/payload/MacGPG2/MacGPG2_Core.pkg</string>
 				<key>PATH_TYPE</key>
 				<integer>1</integer>
 			</dict>
