@@ -1,19 +1,12 @@
-include Dependencies/GPGTools_Core/make/default
+PROJECT = GPGTools
+TARGET = GPGTools
+PRODUCT = GPGTools
+ifndef PACKAGE_DEPS
+PACKAGE_DEPS = GPGMail:GPGMail:GPGMail_10.7 GPGKeychainAccess GPGPreferences GPGMailSnowLeopard:GPGMail:GPGMail_10.6 Libmacgpg Libmacgpg:LibmacgpgXPC MacGPG2 GPGServices
+endif
+NO_CORE_PKG = 1
 
-all: dmg
+include Dependencies/GPGTools_Core/newBuildSystem/Makefile.default
 
-update:
-	@git submodule foreach git pull origin master
-	@git pull
-
-compile:
-	@#./build-script.sh
-
-test: deploy
-
-clean:
-	@chmod -R +w build
-	@rm -rf build
-
-nightly:
-	@cat build-script.sh.config.nightlyDiff >> build-script.sh.config
+$(PRODUCT):
+	@./prepare-packages.sh $(PACKAGE_DEPS)
