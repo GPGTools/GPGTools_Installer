@@ -13,7 +13,7 @@ if [ "$1" == "" ]; then
 	errExit "Specify at least one package to prepare."
 fi
 
-mkdir -p $BUILDDIR || errExit "Failed to create $BUILDDIR. Abort!"
+mkdir -p "$BUILDDIR" || errExit "Failed to create $BUILDDIR. Abort!"
 
 echoBold "Collecting core packages"
 # Copy each package into the build dir.
