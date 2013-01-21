@@ -2,35 +2,47 @@
 
 PWD="$(pwd)"
 BUILDDIR="$PWD/build"
-# The directory which contains a subdir for each package where
-# the build _core.pkg is to be found.
-BASEDIR=${BASEDIR:-$PWD/..}
+PKGPROJ="GPGTools.pkgproj"
+PKGPROJ_PATH="$PWD/Installer/$PKGPROJ"
 
 # Include some core helper methods.
 source "$(dirname "${BASH_SOURCE[0]}")/Dependencies/GPGTools_Core/newBuildSystem/core.sh"
 
+# The directory which contains a subdir for each package where
+# the build _core.pkg is to be found.
 if [ "$1" == "" ]; then
-	errExit "Specify at least one package to prepare."
+	errExit "You have to specify the location of the core packages."
 fi
+if [ ! -d "$1" ]; then
+	errExit "Location of core packages doesn't exist: $1"
+fi
+
+BASEDIR="$1"
 
 mkdir -p "$BUILDDIR" || errExit "Failed to create $BUILDDIR. Abort!"
 
-echoBold "Collecting core packages"
+REQUIRED_PACKAGES=$(grep '>\./' "$PKGPROJ_PATH" | sed "s/<string>//" | sed "s/<\/string>//" | sed 's/.\///' | sed 's/\n//')
+CLEAN_REQUIRED_PACKAGES=""
+# I hate those whitespaces.
+echoBold "Required core packages:"
+for package in $REQUIRED_PACKAGES; do
+	CLEAN_REQUIRED_PACKAGES="$package $CLEAN_REQUIRED_PACKAGES"
+	echo " * $package"
+done
+
+echoBold "Copying core packages to build folder."
+
 # Copy each package into the build dir.
-for package in "$@"; do
-	IFS=':' read -ra parts <<< "$package"
-	toolName="${parts[0]}"
-	packageName=${parts[1]:-${parts[0]}}
-    packageCopyName="${parts[2]:-$packageName}"
-	
-	corePackagePath="$BASEDIR/$toolName/build/${packageName}_Core.pkg"
-	corePackageDestPath="$BUILDDIR/${packageCopyName}_Core.pkg"
+for package in $CLEAN_REQUIRED_PACKAGES; do
+	corePackagePath="$BASEDIR/$package"
+	corePackageDestPath="$BUILDDIR/$package"
 	
 	if [ ! -f "$corePackagePath" ]; then
 		echo "No such file: $corePackagePath"
-		errExit "Core package of $package not available: you might have to build $package first."
+		errExit "Core package $package not available: you might have to build it first."
 	fi
 	
-	echo " * Copy $packageCopyName to build dir."
+	echo " * Copy $package to build dir."
 	cp "$corePackagePath" "$corePackageDestPath" || errExit "Failed to copy $corePackagePath to destination. Abort!"
 done
+echoBold "Done!"
