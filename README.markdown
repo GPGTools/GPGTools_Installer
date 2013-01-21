@@ -1,14 +1,23 @@
-# GPGTools Installer
+GPGTools Installer
+==================
+The all-in-one installer for the tools part of the GPGTools project.
 
-The source code of the GPGTools Installer. That is an open source installer for
-Apple OS X. It installs all related OpenPGP applications, plugins and
-dependencies.
+Requirements
+------------
+Before you can build the GPGTools Installer you need to build all tools that are
+part of GPGTools first. These are:
+* GPG Keychain Access
+* GPGMail (10.6, 10.7, 10.8)
+* GPGServices
+* GPGPreferences
+* MacGPG2
+* Libmacgpg
 
-It contains the following Applications:
+How to build the GPGTools Installer
+-----------------------------------
+The GPGTools Installer requires all other packages of GPGTools to be already
+available as packages. So build them first and follow these steps afterwards:
 
-* GPGMail - Plugin for Apple Mail to sign/encrypt/verify/decrypt emails
-* GPG Keychain Access - manage and create GPG keys
-* GPGServices - OS X text services menu for GPG
-* MacGPG 2 - GnuPG application including gpg-agent and gpg-pinentry
-* MacGPG 1 - GnuPG application including a simple OpenPGP implementation
-* Enigmail - Plugin for Mozilla Thunderbird to sign/encrypt/verify/decrypt emails
+1. Run `make pkg` to build the intaller package.
+2. Run `make dmg` to create a disk image including the installer package.
+
