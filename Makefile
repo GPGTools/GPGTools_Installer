@@ -6,6 +6,6 @@ include Dependencies/GPGTools_Core/newBuildSystem/Makefile.default
 
 $(PRODUCT):
 ifeq ("$(CORE_PKG_DIR)","")
-	@./prepare-packages.sh .
+	@./prepare-packages.sh build
 endif
 	@./prepare-packages.sh $(CORE_PKG_DIR)
