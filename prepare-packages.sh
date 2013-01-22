@@ -23,7 +23,7 @@ if [ ! -d "$1" ]; then
 	errExit "Location of core packages doesn't exist: $1"
 fi
 
-ANY_CORE_PACKAGES=$(ls -l "$BASEDIR"/*_Core.pkg 1>&2 2>/dev/null; test "$?" -eq "1" && echo "0" || echo "1")
+ANY_CORE_PACKAGES=$(ls -l "$BASEDIR"/*_Core.pkg &>/dev/null; test "$?" -eq "1" && echo "0" || echo "1")
 
 if [ "$ANY_CORE_PACKAGES" != "1" ]; then
 	errExit "No core packages found."
