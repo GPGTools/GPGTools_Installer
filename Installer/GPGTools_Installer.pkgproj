@@ -50,12 +50,12 @@
 				<key>LOCATION</key>
 				<integer>0</integer>
 				<key>NAME</key>
-				<string>GPGMail</string>
+				<string>GPGMail_10.7</string>
 			</dict>
 			<key>PATH</key>
 			<dict>
 				<key>PATH</key>
-				<string>./GPGMail_10.7_Core.pkg</string>
+				<string>../build/GPGMail_10.7_Core.pkg</string>
 				<key>PATH_TYPE</key>
 				<integer>1</integer>
 			</dict>
@@ -75,7 +75,7 @@
 			<key>PATH</key>
 			<dict>
 				<key>PATH</key>
-				<string>./MacGPG2_Core.pkg</string>
+				<string>../build/MacGPG2_Core.pkg</string>
 				<key>PATH_TYPE</key>
 				<integer>1</integer>
 			</dict>
@@ -95,7 +95,7 @@
 			<key>PATH</key>
 			<dict>
 				<key>PATH</key>
-				<string>./GPGServices_Core.pkg</string>
+				<string>../build/GPGServices_Core.pkg</string>
 				<key>PATH_TYPE</key>
 				<integer>1</integer>
 			</dict>
@@ -110,12 +110,12 @@
 				<key>LOCATION</key>
 				<integer>0</integer>
 				<key>NAME</key>
-				<string>GPGPreferences_Core</string>
+				<string>GPGPreferences</string>
 			</dict>
 			<key>PATH</key>
 			<dict>
 				<key>PATH</key>
-				<string>./GPGPreferences_Core.pkg</string>
+				<string>../build/GPGPreferences_Core.pkg</string>
 				<key>PATH_TYPE</key>
 				<integer>1</integer>
 			</dict>
@@ -130,12 +130,12 @@
 				<key>LOCATION</key>
 				<integer>0</integer>
 				<key>NAME</key>
-				<string>GPGMail_Core</string>
+				<string>GPGMail_10.6</string>
 			</dict>
 			<key>PATH</key>
 			<dict>
 				<key>PATH</key>
-				<string>./GPGMail_10.6_Core.pkg</string>
+				<string>../build/GPGMail_10.6_Core.pkg</string>
 				<key>PATH_TYPE</key>
 				<integer>1</integer>
 			</dict>
@@ -150,12 +150,12 @@
 				<key>LOCATION</key>
 				<integer>0</integer>
 				<key>NAME</key>
-				<string>GPGKeychainAccess_Core</string>
+				<string>GPGKeychainAccess</string>
 			</dict>
 			<key>PATH</key>
 			<dict>
 				<key>PATH</key>
-				<string>./GPGKeychainAccess_Core.pkg</string>
+				<string>../build/GPGKeychainAccess_Core.pkg</string>
 				<key>PATH_TYPE</key>
 				<integer>1</integer>
 			</dict>
@@ -170,12 +170,12 @@
 				<key>LOCATION</key>
 				<integer>0</integer>
 				<key>NAME</key>
-				<string>Libmacgpg_core</string>
+				<string>Libmacgpg</string>
 			</dict>
 			<key>PATH</key>
 			<dict>
 				<key>PATH</key>
-				<string>./Libmacgpg_core.pkg</string>
+				<string>../build/Libmacgpg_Core.pkg</string>
 				<key>PATH_TYPE</key>
 				<integer>1</integer>
 			</dict>
@@ -190,12 +190,12 @@
 				<key>LOCATION</key>
 				<integer>0</integer>
 				<key>NAME</key>
-				<string>LibmacgpgXPC_core</string>
+				<string>LibmacgpgXPC</string>
 			</dict>
 			<key>PATH</key>
 			<dict>
 				<key>PATH</key>
-				<string>./LibmacgpgXPC_core.pkg</string>
+				<string>../build/LibmacgpgXPC_Core.pkg</string>
 				<key>PATH_TYPE</key>
 				<integer>1</integer>
 			</dict>
@@ -301,7 +301,7 @@ Description: OpenPGP core implementation.</string>
 										<key>LANGUAGE</key>
 										<string>English</string>
 										<key>VALUE</key>
-										<string>GPGTools MacGPG2</string>
+										<string>MacGPG2</string>
 									</dict>
 								</array>
 								<key>TOOLTIP</key>
@@ -364,7 +364,7 @@ Description: OpenPGP for all applications via OS X Services menu.</string>
 										<key>LANGUAGE</key>
 										<string>English</string>
 										<key>VALUE</key>
-										<string>GPGTools GPGServices</string>
+										<string>GPGServices</string>
 									</dict>
 								</array>
 								<key>TOOLTIP</key>
@@ -450,7 +450,7 @@ Description: OpenPGP for Apple Mail.</string>
 										<key>LANGUAGE</key>
 										<string>English</string>
 										<key>VALUE</key>
-										<string>GPGTools GPGMail (10.7)</string>
+										<string>GPGMail (10.7)</string>
 									</dict>
 								</array>
 								<key>TOOLTIP</key>
@@ -473,9 +473,9 @@ Description: OpenPGP for Apple Mail.</string>
 								<key>OPTIONS</key>
 								<dict>
 									<key>HIDDEN</key>
-									<false/>
+									<true/>
 									<key>STATE</key>
-									<integer>1</integer>
+									<integer>0</integer>
 								</dict>
 								<key>PACKAGE_UUID</key>
 								<string>CA2D3B63-9966-47F1-B643-630BF15D160D</string>
@@ -510,9 +510,9 @@ Description: OpenPGP for Apple Mail.</string>
 								<key>OPTIONS</key>
 								<dict>
 									<key>HIDDEN</key>
-									<false/>
+									<true/>
 									<key>STATE</key>
-									<integer>1</integer>
+									<integer>0</integer>
 								</dict>
 								<key>PACKAGE_UUID</key>
 								<string>1B17C771-2A6B-417A-92E8-AEBB5364616A</string>
@@ -567,6 +567,8 @@ Description: OpenPGP for Apple Mail.</string>
 								</dict>
 								<key>PACKAGE_UUID</key>
 								<string>077ACCFA-E83E-43B4-A4CE-ADAE2818D733</string>
+								<key>REQUIREMENTS</key>
+								<array/>
 								<key>TITLE</key>
 								<array/>
 								<key>TOOLTIP</key>
@@ -588,6 +590,8 @@ Description: OpenPGP for Apple Mail.</string>
 								</dict>
 								<key>PACKAGE_UUID</key>
 								<string>F3760600-2486-4634-9625-FD51B59E7411</string>
+								<key>REQUIREMENTS</key>
+								<array/>
 								<key>TITLE</key>
 								<array/>
 								<key>TOOLTIP</key>
@@ -603,12 +607,14 @@ Description: OpenPGP for Apple Mail.</string>
 								<key>OPTIONS</key>
 								<dict>
 									<key>HIDDEN</key>
-									<false/>
+									<true/>
 									<key>STATE</key>
 									<integer>1</integer>
 								</dict>
 								<key>PACKAGE_UUID</key>
 								<string>9F9BD08A-747E-40CF-9F52-C069BF0F3EF8</string>
+								<key>REQUIREMENTS</key>
+								<array/>
 								<key>TITLE</key>
 								<array/>
 								<key>TOOLTIP</key>
@@ -624,12 +630,14 @@ Description: OpenPGP for Apple Mail.</string>
 								<key>OPTIONS</key>
 								<dict>
 									<key>HIDDEN</key>
-									<false/>
+									<true/>
 									<key>STATE</key>
 									<integer>1</integer>
 								</dict>
 								<key>PACKAGE_UUID</key>
 								<string>08E63095-E8E2-4428-BBC9-2508A185D14F</string>
+								<key>REQUIREMENTS</key>
+								<array/>
 								<key>TITLE</key>
 								<array/>
 								<key>TOOLTIP</key>
@@ -645,12 +653,14 @@ Description: OpenPGP for Apple Mail.</string>
 								<key>OPTIONS</key>
 								<dict>
 									<key>HIDDEN</key>
-									<false/>
+									<true/>
 									<key>STATE</key>
 									<integer>1</integer>
 								</dict>
 								<key>PACKAGE_UUID</key>
 								<string>06AAE995-A5AE-475F-AB70-C6E387D8B072</string>
+								<key>REQUIREMENTS</key>
+								<array/>
 								<key>TITLE</key>
 								<array/>
 								<key>TOOLTIP</key>
@@ -668,7 +678,7 @@ Description: OpenPGP for Apple Mail.</string>
 				<key>INSTALLATION TYPE</key>
 				<integer>0</integer>
 				<key>MODE</key>
-				<integer>2</integer>
+				<integer>0</integer>
 			</dict>
 			<key>INSTALLATION_STEPS</key>
 			<array>
@@ -1052,7 +1062,7 @@ Description: OpenPGP for Apple Mail.</string>
 				</dict>
 			</array>
 			<key>NAME</key>
-			<string>GPGTools</string>
+			<string>GPGTools_Installer</string>
 		</dict>
 	</dict>
 	<key>SHARED_GLOBAL_DATA</key>

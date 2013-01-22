@@ -1,6 +1,6 @@
-PROJECT = GPGTools
-TARGET = GPGTools
-PRODUCT = GPGTools
+PROJECT = GPGTools_Installer
+TARGET = GPGTools_Installer
+PRODUCT = GPGTools_Installer
 
 include Dependencies/GPGTools_Core/newBuildSystem/Makefile.default
 
