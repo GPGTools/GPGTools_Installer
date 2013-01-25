@@ -277,8 +277,8 @@
 										<key>LANGUAGE</key>
 										<string>English</string>
 										<key>VALUE</key>
-										<string>Version: nightly
-Web: http://gpgtools.org/macgpg2.html
+										<string>Version: nightly build
+Web: https://gpgtools.org/macgpg2.html
 Requirements: OS X &gt;= 10.5 (Universal)
 Installs to: /usr/local/MacGPG2
 Description: OpenPGP core implementation.</string>
@@ -318,8 +318,8 @@ Description: OpenPGP core implementation.</string>
 										<key>LANGUAGE</key>
 										<string>English</string>
 										<key>VALUE</key>
-										<string>Version: nightly
-Web: http://gpgtools.org/gpgservices.html
+										<string>Version: nightly build
+Web: https://gpgtools.org/gpgservices.html
 Requirements: OS X &gt;= 10.6
 Installs to: /Library/Services
 Description: OpenPGP for all applications via OS X Services menu.</string>
@@ -381,8 +381,8 @@ Description: OpenPGP for all applications via OS X Services menu.</string>
 										<key>LANGUAGE</key>
 										<string>English</string>
 										<key>VALUE</key>
-										<string>Version: nihglty
-Web: http://gpgtools.org/gpgmail.html
+										<string>Version: nightly build
+Web: https://gpgtools.org/gpgmail.html
 Requirements: OS X 10.7
 Installs to: /Library/Mail/Bundles
 Description: OpenPGP for Apple Mail.</string>
@@ -541,8 +541,8 @@ Description: OpenPGP for Apple Mail.</string>
 										<key>LANGUAGE</key>
 										<string>English</string>
 										<key>VALUE</key>
-										<string>Version: nightly
-Web: https://gpgtools.org/gpgpreferences/index.html
+										<string>Version: nightly build
+Web: https://gpgtools.org/gpgpreferences.html
 Requirements: OS X &gt;= 10.6
 Installs to: ~/Library/PreferencePanes/GPGPreferences.prefPane/
 Description: The GPGPreferences pane allows you to set basic GPG options and to fix broken GPG and GPGMail installations (e.g. after an OS X update).
@@ -577,7 +577,7 @@ Description: The GPGPreferences pane allows you to set basic GPG options and to 
 										<string>English</string>
 										<key>VALUE</key>
 										<string>Version: nightly build
-Web: http://gpgtools.org/gpgmail.html
+Web: https://gpgtools.org/gpgmail.html
 Requirements: OS X 10.6
 Installs to: /Library/Mail/Bundles
 Description: OpenPGP for Apple Mail.</string>
@@ -649,7 +649,7 @@ Description: OpenPGP for Apple Mail.</string>
 										<string>English</string>
 										<key>VALUE</key>
 										<string>Version: nightly build
-Web: https://gpgtools.org/keychain/index.html
+Web: https://gpgtools.org/keychain.html
 Requirements: OS X &gt;= 10.6
 Installs to: /Applications/GPG Keychain Access.app
 Description: GPG Keychain Access is an open source application for Mac OS X. It allows the user to manage OpenPGP keys, e.g. creating, adjusting and verifying keys and communication with the key servers.</string>
