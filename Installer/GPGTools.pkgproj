@@ -1136,7 +1136,7 @@ Description: GPG Keychain Access is an open source application for Mac OS X. It 
 				</dict>
 			</array>
 			<key>NAME</key>
-			<string>GPGTools_Installer</string>
+			<string>GPGTools</string>
 		</dict>
 	</dict>
 	<key>SHARED_GLOBAL_DATA</key>
