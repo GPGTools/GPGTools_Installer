@@ -335,29 +335,7 @@ Description: OpenPGP for all applications via OS X Services menu.</string>
 								<key>PACKAGE_UUID</key>
 								<string>660B1418-29AA-47B6-8B2C-7B3BE069BA41</string>
 								<key>REQUIREMENTS</key>
-								<array>
-									<dict>
-										<key>BEHAVIOR</key>
-										<integer>0</integer>
-										<key>DICTIONARY</key>
-										<dict>
-											<key>IC_REQUIREMENT_OS_DISK_TYPE</key>
-											<integer>0</integer>
-											<key>IC_REQUIREMENT_OS_DISTRIBUTION_TYPE</key>
-											<integer>0</integer>
-											<key>IC_REQUIREMENT_OS_MINIMUM_VERSION</key>
-											<integer>100600</integer>
-										</dict>
-										<key>IDENTIFIER</key>
-										<string>fr.whitebox.Packages.requirement.os</string>
-										<key>MESSAGE</key>
-										<array/>
-										<key>NAME</key>
-										<string>Operating System</string>
-										<key>STATE</key>
-										<true/>
-									</dict>
-								</array>
+								<array/>
 								<key>TITLE</key>
 								<array>
 									<dict>
@@ -373,6 +351,62 @@ Description: OpenPGP for all applications via OS X Services menu.</string>
 								<integer>0</integer>
 								<key>UUID</key>
 								<string>2FD1E4C7-2EA3-4119-8C6D-2C0268E0EE14</string>
+							</dict>
+							<dict>
+								<key>DESCRIPTION</key>
+								<array>
+									<dict>
+										<key>LANGUAGE</key>
+										<string>English</string>
+										<key>VALUE</key>
+										<string>Version: nightly build
+Web: https://gpgtools.org/gpgmail.html
+Requirements: OS X 10.6
+Installs to: /Library/Mail/Bundles
+Description: OpenPGP for Apple Mail.</string>
+									</dict>
+								</array>
+								<key>OPTIONS</key>
+								<dict>
+									<key>HIDDEN</key>
+									<false/>
+									<key>STATE</key>
+									<integer>1</integer>
+								</dict>
+								<key>PACKAGE_UUID</key>
+								<string>077ACCFA-E83E-43B4-A4CE-ADAE2818D733</string>
+								<key>REQUIREMENTS</key>
+								<array>
+									<dict>
+										<key>BEHAVIOR</key>
+										<integer>0</integer>
+										<key>DICTIONARY</key>
+										<dict>
+											<key>IC_REQUIREMENT_JAVASCRIPT_FUNCTION</key>
+											<string>checkOS</string>
+											<key>IC_REQUIREMENT_JAVASCRIPT_PARAMETERS</key>
+											<array>
+												<string>6</string>
+											</array>
+										</dict>
+										<key>IDENTIFIER</key>
+										<string>fr.whitebox.Packages.requirement.javascript</string>
+										<key>MESSAGE</key>
+										<array/>
+										<key>NAME</key>
+										<string>OS X 10.6</string>
+										<key>STATE</key>
+										<true/>
+									</dict>
+								</array>
+								<key>TITLE</key>
+								<array/>
+								<key>TOOLTIP</key>
+								<array/>
+								<key>TYPE</key>
+								<integer>0</integer>
+								<key>UUID</key>
+								<string>01464999-8C17-4CD5-8425-2E853577109D</string>
 							</dict>
 							<dict>
 								<key>DESCRIPTION</key>
@@ -404,42 +438,19 @@ Description: OpenPGP for Apple Mail.</string>
 										<integer>0</integer>
 										<key>DICTIONARY</key>
 										<dict>
-											<key>IC_REQUIREMENT_SCRIPT_ARGUMENTS</key>
+											<key>IC_REQUIREMENT_JAVASCRIPT_FUNCTION</key>
+											<string>checkOS</string>
+											<key>IC_REQUIREMENT_JAVASCRIPT_PARAMETERS</key>
 											<array>
-												<dict>
-													<key>IC_REQUIREMENT_SCRIPT_ARGUMENT_STATE</key>
-													<true/>
-													<key>IC_REQUIREMENT_SCRIPT_ARGUMENT_VALUE</key>
-													<string>7</string>
-												</dict>
+												<string>7</string>
 											</array>
-											<key>IC_REQUIREMENT_SCRIPT_COMPARATOR</key>
-											<integer>0</integer>
-											<key>IC_REQUIREMENT_SCRIPT_EMBED</key>
-											<true/>
-											<key>IC_REQUIREMENT_SCRIPT_PATH</key>
-											<dict>
-												<key>PATH</key>
-												<string>../Dependencies/GPGTools_Core/scripts/check_for_osver.sh</string>
-												<key>PATH_TYPE</key>
-												<integer>1</integer>
-											</dict>
-											<key>IC_REQUIREMENT_SCRIPT_VALUE</key>
-											<integer>0</integer>
 										</dict>
 										<key>IDENTIFIER</key>
-										<string>fr.whitebox.Packages.requirement.scripts</string>
+										<string>fr.whitebox.Packages.requirement.javascript</string>
 										<key>MESSAGE</key>
-										<array>
-											<dict>
-												<key>LANGUAGE</key>
-												<string>English</string>
-												<key>VALUE</key>
-												<string>For OS X 10.7 (Leopard) only.</string>
-											</dict>
-										</array>
+										<array/>
 										<key>NAME</key>
-										<string>OS</string>
+										<string>OS X 10.7</string>
 										<key>STATE</key>
 										<true/>
 									</dict>
@@ -568,78 +579,6 @@ Description: The GPGPreferences pane allows you to set basic GPG options and to 
 								<integer>0</integer>
 								<key>UUID</key>
 								<string>CE736400-2158-4D61-996F-E3DFFC356B51</string>
-							</dict>
-							<dict>
-								<key>DESCRIPTION</key>
-								<array>
-									<dict>
-										<key>LANGUAGE</key>
-										<string>English</string>
-										<key>VALUE</key>
-										<string>Version: nightly build
-Web: https://gpgtools.org/gpgmail.html
-Requirements: OS X 10.6
-Installs to: /Library/Mail/Bundles
-Description: OpenPGP for Apple Mail.</string>
-									</dict>
-								</array>
-								<key>OPTIONS</key>
-								<dict>
-									<key>HIDDEN</key>
-									<false/>
-									<key>STATE</key>
-									<integer>1</integer>
-								</dict>
-								<key>PACKAGE_UUID</key>
-								<string>077ACCFA-E83E-43B4-A4CE-ADAE2818D733</string>
-								<key>REQUIREMENTS</key>
-								<array>
-									<dict>
-										<key>BEHAVIOR</key>
-										<integer>0</integer>
-										<key>DICTIONARY</key>
-										<dict>
-											<key>IC_REQUIREMENT_SCRIPT_ARGUMENTS</key>
-											<array>
-												<dict>
-													<key>IC_REQUIREMENT_SCRIPT_ARGUMENT_STATE</key>
-													<true/>
-													<key>IC_REQUIREMENT_SCRIPT_ARGUMENT_VALUE</key>
-													<string>6</string>
-												</dict>
-											</array>
-											<key>IC_REQUIREMENT_SCRIPT_COMPARATOR</key>
-											<integer>0</integer>
-											<key>IC_REQUIREMENT_SCRIPT_EMBED</key>
-											<true/>
-											<key>IC_REQUIREMENT_SCRIPT_PATH</key>
-											<dict>
-												<key>PATH</key>
-												<string>../Dependencies/GPGTools_Core/scripts/check_for_osver.sh</string>
-												<key>PATH_TYPE</key>
-												<integer>1</integer>
-											</dict>
-											<key>IC_REQUIREMENT_SCRIPT_VALUE</key>
-											<integer>0</integer>
-										</dict>
-										<key>IDENTIFIER</key>
-										<string>fr.whitebox.Packages.requirement.scripts</string>
-										<key>MESSAGE</key>
-										<array/>
-										<key>NAME</key>
-										<string>OS X 10.6</string>
-										<key>STATE</key>
-										<true/>
-									</dict>
-								</array>
-								<key>TITLE</key>
-								<array/>
-								<key>TOOLTIP</key>
-								<array/>
-								<key>TYPE</key>
-								<integer>0</integer>
-								<key>UUID</key>
-								<string>01464999-8C17-4CD5-8425-2E853577109D</string>
 							</dict>
 							<dict>
 								<key>DESCRIPTION</key>
@@ -921,29 +860,20 @@ Description: GPG Keychain Access is an open source application for Mac OS X. It 
 				</dict>
 				<dict>
 					<key>BEHAVIOR</key>
-					<integer>2</integer>
+					<integer>3</integer>
 					<key>DICTIONARY</key>
 					<dict>
-						<key>IC_REQUIREMENT_SCRIPT_ARGUMENTS</key>
-						<array/>
-						<key>IC_REQUIREMENT_SCRIPT_COMPARATOR</key>
+						<key>IC_REQUIREMENT_OS_DISK_TYPE</key>
+						<integer>1</integer>
+						<key>IC_REQUIREMENT_OS_DISTRIBUTION_TYPE</key>
 						<integer>0</integer>
-						<key>IC_REQUIREMENT_SCRIPT_EMBED</key>
-						<true/>
-						<key>IC_REQUIREMENT_SCRIPT_PATH</key>
-						<dict>
-							<key>PATH</key>
-							<string>../Dependencies/GPGTools_Core/scripts/fix_installer_105.sh</string>
-							<key>PATH_TYPE</key>
-							<integer>1</integer>
-						</dict>
-						<key>IC_REQUIREMENT_SCRIPT_VALUE</key>
-						<integer>0</integer>
+						<key>IC_REQUIREMENT_OS_MINIMUM_VERSION</key>
+						<integer>100600</integer>
 					</dict>
 					<key>IC_REQUIREMENT_CHECK_TYPE</key>
 					<integer>0</integer>
 					<key>IDENTIFIER</key>
-					<string>fr.whitebox.Packages.requirement.scripts</string>
+					<string>fr.whitebox.Packages.requirement.os</string>
 					<key>MESSAGE</key>
 					<array>
 						<dict>
@@ -952,11 +882,11 @@ Description: GPG Keychain Access is an open source application for Mac OS X. It 
 							<key>SECONDARY_VALUE</key>
 							<string></string>
 							<key>VALUE</key>
-							<string>This should not happen.</string>
+							<string>This Installer is only for Mac OS X 10.6 or higher.</string>
 						</dict>
 					</array>
 					<key>NAME</key>
-					<string>Leopard fix</string>
+					<string>OS X &gt;= 10.6</string>
 					<key>STATE</key>
 					<true/>
 				</dict>
@@ -1142,7 +1072,9 @@ Description: GPG Keychain Access is an open source application for Mac OS X. It 
 	<key>SHARED_GLOBAL_DATA</key>
 	<dict>
 		<key>IC_REQUIREMENT_JAVASCRIPT_SHARED_SOURCE_CODE</key>
-		<string></string>
+		<string>function checkOS(version) {
+	return system.version.ProductVersion.substr(0, 4) == ("10." + version);
+}</string>
 	</dict>
 	<key>TYPE</key>
 	<integer>0</integer>
