@@ -50,12 +50,12 @@
 				<key>LOCATION</key>
 				<integer>0</integer>
 				<key>NAME</key>
-				<string>GPGMail_10.7</string>
+				<string>GPGMail_LML</string>
 			</dict>
 			<key>PATH</key>
 			<dict>
 				<key>PATH</key>
-				<string>../build/GPGMail_10.7_Core.pkg</string>
+				<string>../build/GPGMail_LML_Core.pkg</string>
 				<key>PATH_TYPE</key>
 				<integer>1</integer>
 			</dict>
