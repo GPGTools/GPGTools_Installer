@@ -461,7 +461,7 @@ Description: OpenPGP for Apple Mail.</string>
 										<key>LANGUAGE</key>
 										<string>English</string>
 										<key>VALUE</key>
-										<string>GPGMail (10.7)</string>
+										<string>GPGMail</string>
 									</dict>
 								</array>
 								<key>TOOLTIP</key>
