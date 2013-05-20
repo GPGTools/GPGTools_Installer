@@ -438,19 +438,19 @@ Description: OpenPGP for Apple Mail.</string>
 										<integer>0</integer>
 										<key>DICTIONARY</key>
 										<dict>
-											<key>IC_REQUIREMENT_JAVASCRIPT_FUNCTION</key>
-											<string>checkOS</string>
-											<key>IC_REQUIREMENT_JAVASCRIPT_PARAMETERS</key>
-											<array>
-												<string>7</string>
-											</array>
+											<key>IC_REQUIREMENT_OS_DISK_TYPE</key>
+											<integer>0</integer>
+											<key>IC_REQUIREMENT_OS_DISTRIBUTION_TYPE</key>
+											<integer>0</integer>
+											<key>IC_REQUIREMENT_OS_MINIMUM_VERSION</key>
+											<integer>100700</integer>
 										</dict>
 										<key>IDENTIFIER</key>
-										<string>fr.whitebox.Packages.requirement.javascript</string>
+										<string>fr.whitebox.Packages.requirement.os</string>
 										<key>MESSAGE</key>
 										<array/>
 										<key>NAME</key>
-										<string>OS X 10.7</string>
+										<string>OS X &gt;= 10.7</string>
 										<key>STATE</key>
 										<true/>
 									</dict>
