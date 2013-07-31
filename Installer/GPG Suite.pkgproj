@@ -522,7 +522,29 @@ Description: Allows you to manage OpenPGP keys.</string>
 								<key>PACKAGE_UUID</key>
 								<string>08E63095-E8E2-4428-BBC9-2508A185D14F</string>
 								<key>REQUIREMENTS</key>
-								<array/>
+								<array>
+									<dict>
+										<key>BEHAVIOR</key>
+										<integer>1</integer>
+										<key>DICTIONARY</key>
+										<dict>
+											<key>IC_REQUIREMENT_OS_DISK_TYPE</key>
+											<integer>0</integer>
+											<key>IC_REQUIREMENT_OS_DISTRIBUTION_TYPE</key>
+											<integer>0</integer>
+											<key>IC_REQUIREMENT_OS_MINIMUM_VERSION</key>
+											<integer>100700</integer>
+										</dict>
+										<key>IDENTIFIER</key>
+										<string>fr.whitebox.Packages.requirement.os</string>
+										<key>MESSAGE</key>
+										<array/>
+										<key>NAME</key>
+										<string>OS X &gt;= 10.7</string>
+										<key>STATE</key>
+										<true/>
+									</dict>
+								</array>
 								<key>TITLE</key>
 								<array/>
 								<key>TOOLTIP</key>
