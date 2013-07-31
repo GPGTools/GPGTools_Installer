@@ -10,26 +10,6 @@
 				<key>LOCATION</key>
 				<integer>0</integer>
 				<key>NAME</key>
-				<string>autofix</string>
-			</dict>
-			<key>PATH</key>
-			<dict>
-				<key>PATH</key>
-				<string>../Dependencies/GPGTools_Core/installer/autofix.pkg</string>
-				<key>PATH_TYPE</key>
-				<integer>1</integer>
-			</dict>
-			<key>TYPE</key>
-			<integer>1</integer>
-			<key>UUID</key>
-			<string>CA2D3B63-9966-47F1-B643-630BF15D160D</string>
-		</dict>
-		<dict>
-			<key>PACKAGE_SETTINGS</key>
-			<dict>
-				<key>LOCATION</key>
-				<integer>0</integer>
-				<key>NAME</key>
 				<string>key</string>
 			</dict>
 			<key>PATH</key>
@@ -405,43 +385,6 @@ Description: OpenPGP for Apple Mail.</string>
 								<integer>0</integer>
 								<key>UUID</key>
 								<string>94EACC92-12A5-4BB3-B489-041D305D3C62</string>
-							</dict>
-							<dict>
-								<key>DESCRIPTION</key>
-								<array>
-									<dict>
-										<key>LANGUAGE</key>
-										<string>English</string>
-										<key>VALUE</key>
-										<string>Automatically fixes issues you might have with your GPGTools installation.</string>
-									</dict>
-								</array>
-								<key>OPTIONS</key>
-								<dict>
-									<key>HIDDEN</key>
-									<true/>
-									<key>STATE</key>
-									<integer>0</integer>
-								</dict>
-								<key>PACKAGE_UUID</key>
-								<string>CA2D3B63-9966-47F1-B643-630BF15D160D</string>
-								<key>REQUIREMENTS</key>
-								<array/>
-								<key>TITLE</key>
-								<array>
-									<dict>
-										<key>LANGUAGE</key>
-										<string>English</string>
-										<key>VALUE</key>
-										<string>GPGTools Autofix</string>
-									</dict>
-								</array>
-								<key>TOOLTIP</key>
-								<array/>
-								<key>TYPE</key>
-								<integer>0</integer>
-								<key>UUID</key>
-								<string>D4C376BA-42C7-4072-86EE-AA8701058C5A</string>
 							</dict>
 							<dict>
 								<key>DESCRIPTION</key>
