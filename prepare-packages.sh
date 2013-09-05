@@ -2,7 +2,7 @@
 
 PWD="$(pwd)"
 BUILDDIR="$PWD/build"
-PKGPROJ="GPGTools.pkgproj"
+PKGPROJ="GPG Suite.pkgproj"
 PKGPROJ_PATH="$PWD/Installer/$PKGPROJ"
 
 # Include some core helper methods.

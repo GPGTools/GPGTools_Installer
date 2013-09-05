@@ -13,3 +13,7 @@ $(MAKE_DEFAULT):
 init: $(MAKE_DEFAULT)
 
 $(PRODUCT):
+ifeq ("$(CORE_PKG_DIR)","")
+	@./prepare-packages.sh build
+endif
+	@./prepare-packages.sh $(CORE_PKG_DIR)
