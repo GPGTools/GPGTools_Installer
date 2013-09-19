@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>question</key>
+	<string>Möchten Sie GPGTools wirklich deinstallieren?</string>
+	<key>succeeded</key>
+	<string>Deinstallation erfolgreich!</string>
+	<key>Uninstall</key>
+	<string>Deinstallieren</string>
+	<key>Cancel</key>
+	<string>Abbrechen</string>
+	<key>OK</key>
+	<string>OK</string>
+</dict>
+</plist>
