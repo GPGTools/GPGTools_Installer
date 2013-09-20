@@ -55,7 +55,7 @@ fi
 
 rmv "$HOME/Library/Preferences/org.gpgtools."*
 rmv -r "/Library/Application Support/GPGTools" "$HOME/Library/Application Support/GPGTools"
-rmv -r "/Library/Frameworks/Libmacgpg.framework"
+rmv -r "/Library/Frameworks/Libmacgpg.framework" "$HOME/Library/Frameworks/Libmacgpg.framework"
 
 pkgutil --regexp --forget 'org\.gpgtools\..*'
 
