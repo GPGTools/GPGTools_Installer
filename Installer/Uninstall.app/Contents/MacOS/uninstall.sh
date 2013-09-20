@@ -7,7 +7,6 @@ if [[ $UID -ne 0 ]] ;then
 	set question to localized string "question" in bundle bndl
 	set cancel to localized string "Cancel" in bundle bndl
 	set uninstall to localized string "Uninstall" in bundle bndl
-	return question
 	activate
 	display dialog question buttons {cancel, uninstall} default button uninstall
 	try
