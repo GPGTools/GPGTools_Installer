@@ -3,6 +3,6 @@
 <plist version="1.0">
 <dict>
 	<key>question</key>
-	<string>Voulez-vous vraiment désinstaller GPGTools?</string>
+	<string>Voulez-vous vraiment désinstaller GPG Suite?</string>
 </dict>
 </plist>

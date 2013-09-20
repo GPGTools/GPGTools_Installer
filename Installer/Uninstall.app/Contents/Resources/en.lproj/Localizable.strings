@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>question</key>
-	<string>Are you sure that you want to uninstall GPGTools?</string>
+	<string>Are you sure that you want to uninstall GPG Suite?</string>
 	<key>succeeded</key>
-	<string>Uninstallation successful!</string>
+	<string>GPG Suite was removed successfully!</string>
 	<key>Uninstall</key>
 	<string>Uninstall</string>
 	<key>Cancel</key>

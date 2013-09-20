@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>question</key>
-	<string>Möchten Sie GPGTools wirklich deinstallieren?</string>
+	<string>Möchten Sie GPG Suite wirklich deinstallieren?</string>
 	<key>succeeded</key>
 	<string>Deinstallation erfolgreich!</string>
 	<key>Uninstall</key>
