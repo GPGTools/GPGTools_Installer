@@ -1,8 +1,9 @@
 #!/bin/bash
 
 if [[ $UID -ne 0 ]] ;then
+	bundle="${0%/*}/../.."
 	osascript -e '
-	set bndl to POSIX file "/Users/Roman/OpenSource/GPG/GPGTools_Installer/Installer/Uninstall.app"
+	set bndl to POSIX file "'"$bundle"'"
 	set question to localized string "question" in bundle bndl
 	set cancel to localized string "Cancel" in bundle bndl
 	set uninstall to localized string "Uninstall" in bundle bndl
