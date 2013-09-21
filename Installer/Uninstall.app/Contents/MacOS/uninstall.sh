@@ -31,11 +31,6 @@ function rmv () {
 	rm -f "$@"
 }
 
-# Kill the gpg-agent
-killall -9 gpg-agent
-# Kill the XPC service.
-launchctl unload /Library/LaunchAgents/org.gpgtools.Libmacgpg.xpc.plist
-
 rmv -r /Library/Services/GPGServices.service "$HOME"/Library/Services/GPGServices.service
 rmv -r /Library/Mail/Bundles/GPGMail.mailbundle "$HOME"/Library/Mail/Bundles/GPGMail.mailbundle /Network/Library/Mail/Bundles/GPGMail.mailbundle
 rmv -r /usr/local/MacGPG2
