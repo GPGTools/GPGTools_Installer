@@ -2,6 +2,13 @@
 
 if [[ $UID -ne 0 ]] ;then
 	bundle="${0%/*}/../.."
+	
+	# Hell this is ugly, but unfortunately spaces have to be escaped
+	# for Apple Script as they are in a shell with \, but \ is special
+	# in Apple Script so we have to escape \ as well, which means
+	# "test folder" is escaped to "test\\ folder"
+	escape_filed_path=$(echo $0 | sed "s/ /\\\\\\\\ /g")
+	
 	osascript -e '
 	set bndl to POSIX file "'"$bundle"'"
 	set question to localized string "question" in bundle bndl
@@ -18,7 +25,7 @@ if [[ $UID -ne 0 ]] ;then
 	try
 		quit application id "org.gpgtools.gpgservices"
 	end try
-	do shell script "'"$0"'" with administrator privileges
+	do shell script "'"$escape_filed_path"'" with administrator privileges
 	set succeeded to localized string "succeeded" in bundle bndl
 	set ok to localized string "OK" in bundle bndl
 	activate
