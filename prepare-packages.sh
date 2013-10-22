@@ -53,7 +53,9 @@ for package in $CLEAN_REQUIRED_PACKAGES; do
 		errExit "Core package $package not available: you might have to build it first."
 	fi
 	
-	echo " * Copy $package to build dir."
-	cp "$corePackagePath" "$corePackageDestPath" || errExit "Failed to copy $corePackagePath to destination. Abort!"
+	if python -c "import os,sys; exit(os.path.realpath(sys.argv[1]) == os.path.realpath(sys.argv[2]))" "$corePackagePath" "$corePackageDestPath"; then # Don't copy if source and dest are the same.
+		echo " * Copy $package to build dir."
+		cp "$corePackagePath" "$corePackageDestPath" || errExit "Failed to copy $corePackagePath to destination. Abort!"
+	fi
 done
 echoBold "Done!"
