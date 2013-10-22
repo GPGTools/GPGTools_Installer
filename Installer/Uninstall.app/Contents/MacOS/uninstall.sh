@@ -39,15 +39,23 @@ function rmv () {
 }
 
 # Kill the gpg-agent
-killall -9 gpg-agent
-# Kill the XPC service.
-launchctl unload /Library/LaunchAgents/org.gpgtools.Libmacgpg.xpc.plist
+killall -kill gpg-agent
+
+sudo -nu "$USER" launchctl remove org.gpgtools.Libmacgpg.xpc
+sudo -nu "$USER" launchctl remove org.gpgtools.gpgmail.patch-uuid-user
+sudo -nu "$USER" launchctl remove org.gpgtools.macgpg2.fix
+sudo -nu "$USER" launchctl remove org.gpgtools.macgpg2.shutdown-gpg-agent
+sudo -nu "$USER" launchctl remove org.gpgtools.macgpg2.updater
+sudo -nu "$USER" launchctl remove org.gpgtools.macgpg2.gpg-agent
+
+
 
 rmv -r /Library/Services/GPGServices.service "$HOME"/Library/Services/GPGServices.service
 rmv -r /Library/Mail/Bundles/GPGMail.mailbundle "$HOME"/Library/Mail/Bundles/GPGMail.mailbundle /Network/Library/Mail/Bundles/GPGMail.mailbundle
 rmv -r /usr/local/MacGPG2
 rmv -r /private/etc/paths.d/MacGPG2
 rmv -r /private/etc/manpaths.d/MacGPG2
+rmv -r /private/tmp/gpg-agent
 
 [[ "$(readlink /usr/local/bin/gpg2)" =~ MacGPG2 ]] && rmv /usr/local/bin/gpg2
 [[ "$(readlink /usr/local/bin/gpg)" =~ MacGPG2 ]] && rmv /usr/local/bin/gpg
