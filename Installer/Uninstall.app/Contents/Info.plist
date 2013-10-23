@@ -10,6 +10,8 @@
 	<string>uninstall.sh</string>
 	<key>CFBundleIconFile</key>
 	<string>Trash.icns</string>
+	<key>CFBundleIdentifier</key>
+	<string>org.gpgtools.gpgsuite.uninstall</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
