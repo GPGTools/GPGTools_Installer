@@ -781,7 +781,7 @@ Description: OpenPGP core implementation.</string>
 						<key>IC_REQUIREMENT_OS_DISTRIBUTION_TYPE</key>
 						<integer>0</integer>
 						<key>IC_REQUIREMENT_OS_MINIMUM_VERSION</key>
-						<integer>100600</integer>
+						<integer>101000</integer>
 					</dict>
 					<key>IC_REQUIREMENT_CHECK_TYPE</key>
 					<integer>0</integer>
@@ -795,11 +795,11 @@ Description: OpenPGP core implementation.</string>
 							<key>SECONDARY_VALUE</key>
 							<string></string>
 							<key>VALUE</key>
-							<string>This Installer is only for Mac OS X 10.6 or higher.</string>
+							<string>This Installer is only for Mac OS X 10.10 or higher.</string>
 						</dict>
 					</array>
 					<key>NAME</key>
-					<string>OS X &gt;= 10.6</string>
+					<string>OS X &gt;= 10.10</string>
 					<key>STATE</key>
 					<true/>
 				</dict>
