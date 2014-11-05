@@ -7,7 +7,7 @@ Requirements
 Before you can build the GPGTools Installer you need to build all tools that are
 part of GPGTools first. These are:
 * GPG Keychain Access
-* GPGMail (10.6, 10.7, 10.8)
+* GPGMail
 * GPGServices
 * GPGPreferences
 * MacGPG2

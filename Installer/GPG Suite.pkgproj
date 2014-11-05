@@ -110,12 +110,12 @@
 				<key>LOCATION</key>
 				<integer>0</integer>
 				<key>NAME</key>
-				<string>GPGKeychainAccess</string>
+				<string>GPGKeychain</string>
 			</dict>
 			<key>PATH</key>
 			<dict>
 				<key>PATH</key>
-				<string>../build/GPGKeychainAccess_Core.pkg</string>
+				<string>../build/GPGKeychain_Core.pkg</string>
 				<key>PATH_TYPE</key>
 				<integer>1</integer>
 			</dict>
