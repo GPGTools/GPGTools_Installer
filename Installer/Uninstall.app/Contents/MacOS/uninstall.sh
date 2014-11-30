@@ -23,6 +23,9 @@ if [[ $UID -ne 0 ]] ;then
 		quit application id "org.gpgtools.gpgkeychainaccess"
 	end try
 	try
+		quit application id "org.gpgtools.gpgkeychain"
+	end try
+	try
 		quit application id "org.gpgtools.gpgservices"
 	end try
 	do shell script "'"$escape_filed_path"'" with administrator privileges
@@ -64,7 +67,13 @@ rmv -r /Library/PreferencePanes/GPGPreferences.prefPane "$HOME"/Library/Preferen
 
 gkaLocation=$(mdfind -onlyin /Applications "kMDItemCFBundleIdentifier = org.gpgtools.gpgkeychainaccess" | head -1)
 gkaLocation=${gkaLocation:-/Applications/GPG Keychain Access.app}
-rmv -r "$gkaLocation"
+[[ "$gkaLocation" != "" ]] && rmv -r "$gkaLocation"
+
+# GPG Keychain Access has sinced been renamed to GPG Keychain, so let's make
+# sure that GPG Keychain is removed as well. 
+gkLocation=$(mdfind -onlyin /Applications "kMDItemCFBundleIdentifier = org.gpgtools.gpgkeychain" | head -1)
+gkLocation=${gkLocation:-/Applications/GPG Keychain.app}
+[[ "$gkLocation" != "" ]] && rmv -r "$gkLocation"
 
 if pushd /Library/LaunchAgents &>/dev/null ;then
 	rmv org.gpgtools.Libmacgpg.xpc.plist org.gpgtools.gpgmail.patch-uuid-user.plist org.gpgtools.macgpg2.fix.plist org.gpgtools.macgpg2.shutdown-gpg-agent.plist org.gpgtools.macgpg2.updater.plist org.gpgtools.macgpg2.gpg-agent.plist
